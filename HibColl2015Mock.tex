@@ -1,0 +1,279 @@
+
+
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+
+
+\usepackage{graphicx} 
+\usepackage{framed}
+
+
+
+\title{Hibernia College}
+\author{Kevin O'Brien}
+
+\begin{document}
+
+
+\begin{center}
+\huge{Mathematics for Computing}\\
+\LARGE{Logic}
+\end{center}
+
+\begin{itemize}
+\item (2 Marks) Covert the decimal integer $(407)_{10}$ to binary notation.
+
+\item (2 Marks) Showing your working, express the following number 
+\[ 1.024024024024\ldots\]
+as a ration number in its simplest form.
+
+\end{itemize}
+%---------------------------%
+
+% Propositions
+% Logical Operations
+% Conditional Connectives
+% Logical Proofs
+% De Morgan's Law
+
+%-----------------------------------%
+
+% \frametitle{Propositions}
+
+\begin{itemize}
+\item Contra-positives
+\end{itemize}
+
+
+% \frametitle{Logical Notation}
+
+\begin{center}
+\begin{tabular}{|c|c|}
+Logical & Negation \\ \hline
+$p$	& $\neg p$ \\ \hline
+$T$	& $F$      \\ \hline
+$F$	& $T$      \\ \hline
+\end{tabular}
+\end{center}
+
+
+%-----------------------------------%
+
+(2.2.2) Cardinality 
+The number of distinct elements in a finite set is called its cardinality.
+
+
+(2.2.3) Power Set
+
+(2.3) Operations on Sets
+
+(2.3.1) Complement of a set
+(2.3.2) Binary Operations on Sets
+-Union
+-Intersection
+-Set Difference
+-Symmetric Difference 
+
+
+$ A \otimes B$
+
+{2, 3, 4, 6, 7, 8}
+
+Rules of Inclusion
+{1,2,3,4,5,6}
+{0,1,2,3,4,5,6,7,8,9}
+{-3,0,3,6,9,12}
+
+%================================= %
+$ A \in S$
+$ A \in S$
+$ A \cup B$
+$ A \cap B$
+%================================= %
+\subsection*{Example 1: }
+\begin{verbatim}
+If $U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}$, \\
+
+$A = {2, 4, 6, 8, 10}$, \\
+$B = (1, 3, 6, 7, 8}$ \\
+$C = {3, 7}$, \\
+
+find $A \cap B$, $A \cup C$, $B \cap A^{c}$, $B \cap C^{c}$
+\end{verbatim}
+\begin{verbatim}
+Solution: 
+
+$U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}$\\
+$A = {2, 4, 6, 8, 10}$\\
+%$B = (1, 3, 6, 7, 8} $\\
+$C = {3, 7}$\\
+
+%A n B = {6, 8}
+%A \cap C = {2, 3, 4, 6, 7, 8, 10}
+%B n A^C = {1, 3, 7}
+%B n C^C = {1, 6, 8}
+\end{verbatim}
+\begin{verbatim}
+
+%> A
+%[1]  1  8  9 10
+%> B
+%[1] 4 7 9
+%> C
+%[1] 1 2 3 4 9
+%> D
+%[1] 2 5 6
+\end{verbatim}
+
+
+
+\section{Logic}
+\begin{itemize}
+\item The NOT operator $\neg$ (also known as the negation operator)
+\end{itemize}
+\subsection{Truth Tables}
+{
+\Large
+\begin{center}
+\begin{tabular}{|c|c||c|c||c|c|}
+\hline $p$ & $q$ & $p \wedge q$ & $p\vee q$ & $\neg p$  & $\neg (p \wedge q)$ \\ 
+\hline 0 & 0 & 0 & 0 & 1 & 1 \\ 
+\hline 0 & 1 & 0 & 1 & 1 & 1 \\ 
+\hline 1 & 0 & 0 & 1 & 0 & 1 \\ 
+\hline 1 & 1 & 1 & 1 & 0 & 0 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+}
+%-------------------------%
+
+\subsection*{Prepositional Logic}
+
+
+
+
+
+
+
+\section{Section 3 Logic}
+\subsection{Logical Operations}
+\begin{itemize}
+\item $\neg p$ the negation of proposition $p$.
+\item $p \wedge q$ Both propositions p and q are simultaneously true (Logical State AND)
+\item $p \vee q $ One of the propositions is true, or both (Logical State : OR)
+\item $p \otimes q$ Only one of the propositions is true (Logical State : exclusive OR (i.e XOR)
+\end{itemize}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+p & q & $p \vee q$ & $q \wedge p$ & $p \otimes q$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 1\\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0\\
+\hline
+\end{tabular}
+\end{center}
+%---------------------------------------------------------%
+\section{Conditional Connectives}
+Construct the truth table for the proposition $p \rightarrow q$.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+p & q & $p \rightarrow q$ & $q \rightarrow p$ \\
+\hline
+0 & 0 & 1& 1 \\
+0 & 1 & 1 & 0 \\
+1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+
+%-------------------------------------------------------------------------%
+\newpage
+
+\section{Section 4 Functions}
+
+\subsection{Invertible Functions}
+A function is invertible if it fulfils two criteria
+\begin{itemize}
+\item The function is \textbf{\textit{onto}},
+\item The function is \textbf{\textit{one-to-one}}.
+\end{itemize}
+
+State the conditions to be satisfied by a function
+$f : X \leftarrow Y$ for it to have an inverse function
+$f^{-1} : Y \leftarrow X$.
+%---------------------------------------------------------%
+
+$\lceil \frac{x^2+1}{4} \rceil$
+where $f : A \rightarrow \textbf{Z}$
+\begin{itemize}
+\item[(i)] Find $f(4)$ and the ancestors of 3.
+\item[(ii)] Find the range of $f$.
+\item[(iii)] Is f invertible? Justify your answer
+\end{itemize}
+
+Given $f : \textbf{R} \rightarrow \textbf{R}$ where f(x) =3x-1,define fully
+the inverse of the function f ,i.e.$f^{-1}$. 
+State the value of $f^{-1}(2)$
+%---------------------------------------------------------%
+\subsection{Precision Functions}
+
+\begin{itemize}
+\item Absolute Value Function $| x |$
+\item Ceiling Function $\lceil x \rceil$
+\item Floor Function  $\lfloor x \rfloor $
+\end{itemize}
+%\[ \lfloorx\rfloor\]
+
+\noindent \textbf{Question1.2}: State the range and domain of the following function
+\[ F(x) = \lfloor x-1 \rfloor \]
+
+
+
+%---------------------------------------------------------%
+
+\section{graph theory }
+Given the following definitions for simple, connected graphs:
+\begin{itemize}
+\item $K_n$ is a graph on $n$ vertices where each pair of vertices is connected by an edge;
+\item $C_n$ is the graph with vertices $v_1, v_2, v_3, \dots, v_n$ and edges $\{v_1,v_2\}, \{v_2,v_3\}, \dots\{v_n, v_1\}$;
+\item $W_n$ is the graph obtained from $C_n$ by adding an extra vertex,$v_{n+1}$, and edges
+from this to each of the original vertices in $C_n$.
+\end{itemize}
+(a) Draw $K_4$, $C_4$, and $W_4$. 
+%----------------------------------------------------------------%
+\newpage
+\section{Digraphs and Relatiosn}
+% 2007 Q8
+Given a flock of chickens, between any two chickens one of them is
+dominant. A relation, R, is defined between chicken x and chicken y as xRy if x is
+dominant over y. This gives what is known as a pecking order to the flock. Home
+Farm has 5 chickens: Amy, Beth, Carol, Daisy and Eve, with the following relations:
+
+\begin{itemize}
+\item Amy is dominant over Beth and Carol
+\item Beth is dominant over Eve and Carol
+\item Carol is dominant over Eve and Daisy
+\item Daisy is dominant over Eve, Amy and Beth
+\item Eve is dominant over Amy.
+\end{itemize}
+
+\newpage
+\section{Counting}
+% 2007 Q8
+Given S is the set of all 5 digit binary strings, E is the set of a 5 digit
+binary strings beginning with a 1 and F is the set of all 5 digit binary strings ending
+with two zeroes.
+\begin{itemize}
+\item[(a)] Find the cardinality of S, E and F.
+\item[(b)] Draw a Venn diagram to show the relationship between the sets S, E and F.
+Show the relevant number of elements in each region of your diagram.
+\end{itemize}
+%-------------------------------------------------------------------------%
+\newpage
+\end{document}

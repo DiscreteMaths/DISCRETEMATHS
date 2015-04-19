@@ -1,0 +1,96 @@
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\usepackage{eurosym}
+\usepackage{vmargin}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{fancyhdr}
+\usepackage{subfiles}
+
+\begin{document}
+%---------------------------------------------------------%
+
+\section{Fundamental of Mathematics}
+
+\subsection{Powers}
+
+\[  2^ 4 = 2 \times 2 \times 2 \times 2 = 16 \]
+
+\[  5^ 3 = 5 \times 5 \times 5 =125 \]
+
+\subsubsection{Special Cases}
+
+Anything to the power of zero is always 1
+
+\[  X^ 0 = 1 \mbox{ for all values of X} \]
+
+Sometimes the power is a negative number.
+
+\[  X^{-Y} = { 1 \over X^Y}  \]
+
+Example 
+\[  2^{-3} = { 1 \over 2^3} = { 1 \over 8}  \]
+
+
+%====================================== %
+\newpage
+\begin{center}
+\huge{Mathematics for Computing}\\
+{\LARGE Session 2 : Set Theory}
+\end{center}
+
+
+\subfile{session02a.tex}
+\newpage
+%====================================== %
+\newpage
+\begin{center}
+\huge{Mathematics for Computing}\\
+{\LARGE Session 3 : Logic}
+\end{center}
+\subfile{session03a.tex}
+\subfile{session03d.tex}
+\subfile{DM0305DeMorgans.tex}
+
+%============================================ 
+
+\newpage
+
+\subsection{Exponentials Functions}
+
+\[ e^a \times e^b = e^{a+b}\]
+
+\[ (e^a )^b = e^{ab}\]
+
+%---------------------------------------------------------%
+\subsection{Logarithmic Functions}
+
+\subsubsection{Laws for Logarithms}
+The following laws are very useful for working with logarithms.
+\begin{enumerate}
+\item $\mbox{log}_b(X)$ + $\mbox{log}_b(Y)$ = $\mbox{log}_b(X\times Y)$
+\item $\mbox{log}_b(X)$ - $\mbox{log}_b(Y)$ = $\mbox{log}_b(X / Y)$
+\item $\mbox{log}_b(X^Y)$= $Y \mbox{log}_b(X)$
+\end{enumerate}
+
+\noindent \textbf{Question1.3} Compute the Logarithm of the following
+\begin{itemize}
+\item $\mbox{log}_2(8)$
+\item $\mbox{log}_2(\sqrt{128})$
+\item $\mbox{log}_2(64)$
+\item $\mbox{log}_5(125)$ +   $\mbox{log}_3(729)$
+\item $\mbox{log}_2(64/4)$
+\end{itemize}
+%====================================== %
+\newpage
+\begin{center}
+\huge{Mathematics for Computing}\\
+\LARGE{Digraphs and Relations}
+\end{center}
+\subfile{session06a.tex}
+\subfile{session06e-antisymmetricrelations.tex}
+\subfile{session06f.tex}
+
+
+\end{document}
