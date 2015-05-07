@@ -23,18 +23,17 @@
 \subsection*{Question 1}
 
 \begin{enumerate}[(i)]
-	\item Express the following hexadecimal number as a decimal number: $(A32.8)_16$.
-	[3]
-	\item Convert the following decimal number into base 2, showing all your working:
-	$(253)_{10}$. [2]
+	\item (1 Mark) When is the positive integer $p$ said to be a prime number?
+	\item (2 Marks) Express the following hexadecimal number as a decimal number, and as a binary number: \[(A32.8)_{16}\]
+	
+	\item (2 Marks) Convert the following decimal number into base 2, showing all your working:
+	$(253)_{10}$. 
 		\item (2 Marks) Covert the decimal integer $(407)_{10}$ to binary notation.
 		
 		\item (2 Marks) Showing your working, express the following number 
 		\[ 1.024024024024\ldots\]
 		as a ration number in its simplest form.
-	\item Express the recurring decimal $0.4242424\ldots$
-	as a rational number in its simplest
-	form. 
+	\item (1 Mark) Compute the following $101101_2 + 1101_2$ 
 \end{enumerate}
 %--------------------------------------------------- %
 \subsection*{Question 2}
@@ -46,6 +45,7 @@ U into 8 disjoint regions. [1]
 \item[(b)] (3 Marks) The subset $X \subseteq U$ is defined by the following membership table below. Shade the region X on your diagram. Describe the region you have shaded in
 set notation as simply as you can. 
 \end{itemize}
+{\LARGE
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 	\hline
@@ -60,11 +60,11 @@ set notation as simply as you can.
 	1 & 1 & 1 & 0 \\ \hline
 \end{tabular} 
 \end{center}
-
+}
 \begin{itemize}
 \item[(c)] (3 Marks) The subset $Y \subseteq U$ is defined as $Y = A \cup (C − B)$. Construct the membership
 table for Y. 
-\item[(d)] For each of the following statements say whether it is true or false, justifying
+\item[(d)] (3 Marks) For each of the following statements say whether it is true or false, justifying
 your answer, using the Venn diagram you drew earlier.
 
 \begin{enumerate}[(i)]
@@ -76,21 +76,23 @@ your answer, using the Venn diagram you drew earlier.
 %=====================================================================%
 \subsection*{Question 3}
 %2003
-(a) Let n be an element of the set $\{10, 11, 12, 13, 14, 15, 16, 17, 18, 19\}$,
-and p and q be the propositions:
 
-\[p : n \mbox{ is odd},   q : n < 15\].
-Draw up truth tables for the following statements and find the values of n for
+\begin{itemize}
+\item[(a)] Let n be an element of the set $\{10, 11, 12, 13, 14, 15, 16, 17, 18, 19\}$,
+and p and q be the propositions:
+\[p : n \mbox{ is odd},   q : n < 15\]. Draw up truth tables for the following statements and find the values of n for
 which they are true:
-(i) $ p \vee \neg q$ (ii) $\neg p \wedge q$
-(ii) Use truth tables to find a statement that is logically equivalent to ¬p ! q.
-[6]
+\begin{itemize}
+\item[(i)] $ p \vee \neg q$ 
+\item[(ii)] $\neg p \wedge q$
+\end{itemize}
+\item[(b)] Use truth tables to find a statement that is logically equivalent to $\neg p \rightarrow q$.
+\end{itemize}
+
 %--------------------- %
 % - 1.2 2010 
 \begin{enumerate}[(i)]
-\item Let p and q be propositions. Use Truth Tables to prove that
-
-\[ p \rightarrow q \equiv \neg q \rightarrow \neg\]
+\item
 \end{enumerate}
 %=====================================================================%
 \subsection*{Question 4}
@@ -113,6 +115,13 @@ inverse function $f^{−1} : Y \rightarrow X$.
 \item[(d)] (2 Marks) Define the inverse functions for each of the following:
 \end{itemize}
 %---------------------------------------------------------%
+\section*{Question 5}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{GraphTheoryQuestion2012}
+
+\end{figure}
 
 \section*{Question 5}
 Given the following definitions for simple, connected graphs:
@@ -178,27 +187,46 @@ Explain what it means to say thet $\mathcal{R}$ is
 	
 \end{itemize}
 
+
+%--------------------------------------------------------------------------- %
+\section*{Question 7}
+Let the sequence un be defined by the recurrence relation
+\[u_{n+1} = u_n + 2n, \mbox{ for n = 1, 2, 3, ...}\]
+and let $u_1 = 1$.\\
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.11\linewidth]{SeqSerQuestion2005}
+\end{figure}
+
 %---------------------------------------------------------------------------%
 % TREES
+\newpage
 \section*{Question 8}
-	Question 8A
-	\begin{enumerate}
-		\item How many edges are in the spanning tree $T$ ?
-		\item What is the sum of the degree sequence of $T$?
-		\item Write down all the possible degree sequences for the spanning tree $T$.
-	\end{enumerate}
+\noindent \textbf{(Part A : Spanning Trees -  5 Marks) }\\
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.11\linewidth]{TreesQuestion2012}
+\end{figure}
+
+%	Question 8A
+%	\begin{enumerate}
+%		\item How many edges are in the spanning tree $T$ ?
+%		\item What is the sum of the degree sequence of $T$?
+%		\item Write down all the possible degree sequences for the spanning tree $T$.
+%	\end{enumerate}
 %---------------------------------------------------------------------------%
 	
 
+\noindent \textbf{(Part B :Binary Search Trees -  5 Marks) }\\
 Suppose a database, comprised of 30,000 internal nodes, is structured as a Binary Search Tree.
 
-\begin{enumerate}
+\begin{enumerate}[(i)]
 	\item What is the Key of the Root node?
 	\item What are the keys of the nodes at level 1?
-	\item For the nodes at level1, how many subtrees are there?
-	\item State which nodes are in the substrees of the level 1 nodes?
-	\item How many nodes are the between the root (level 0) and level 7. ]
-	(Hint: use a summation theorem mentioned in session 7
+	\item For the nodes at level 1, how many subtrees are there?
+%	\item State which nodes are in the substrees of the level 1 nodes?
+	\item How many nodes are the between the root (level 0) and level 4. ]
+%	(Hint: use a summation theorem mentioned in session 7
 	\item What is the maximum number of searchs in this database?
 \end{enumerate}
 
@@ -241,40 +269,32 @@ with two zeroes.
 	areas?
 	
 \end{itemize}
-
+\newpage
 %===========================================================%
 \section*{Question 10}
+%--------------------------------------------%
+\noindent \textbf{Part A : Matrix Operations - 4 Marks}\\ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.11\linewidth]{MatrixQuestion2012}
 
-(a) Given the following adjacency matrices A and B where
-A =
+\end{figure}
 
-1 0 1
-0 1 2
-1 2 0
-
-,B =
-
-1 2 0
-2 0 1
-0 1 1
-
-%MAKE NO
 
 %--------------------------------------------%
-
+\noindent \textbf{Part B : Gaussian Elimination - 5 Marks}\\ 
 \begin{itemize}
 	\item[(i)] Say whether or not the graphs they represent are isomorphic.
 	\item[(ii)] Calculate $A^2$ and $A^4$ and say what information each gives about the graph
 	corresponding to A. [6]
 \end{itemize}
 	%===========================================%
-	(b) 
 	\begin{itemize}
 		\item[(i)] Write down the augmented matrix for the following system of equations.
 		\[2x + y - z = 2\]
 		\[x - y + z = 4\]
 		\[x + 2y + 2z = 10\]
-		\item[(ii)] Use Gaussian elimination to solve the system. [4]
+		\item[(ii)] Use Gaussian elimination to solve the system. 
 	\end{itemize}
 %=========================================================================================== %
 
