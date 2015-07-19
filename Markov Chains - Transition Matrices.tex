@@ -1,0 +1,58 @@
+% http://www.sosmath.com/matrix/markov/markov.html
+% http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf
+%------------------------------------------------------------------------------------------%
+\begin{frame}{MathsResource.com}{Markov Chains}
+\Large
+\begin{itemize}
+\item Ireland never has two nice days in a row. 
+
+\item If they have a nice day, they are just as likely to have light showers as heavy rain the
+next day. 
+
+\item If they have light showers or heavy rain, they have an even chance of having the same
+the next day. 
+
+\item If there is change from light showers or heavy rain, only half of the time is this a
+change to a nice day
+\end{itemize}
+\end{frame}
+%------------------------------------------------------------------------------------------%
+\begin{frame}{MathsResource.com}{Markov Chains}
+\Large
+\textbf{Transition Matrix}
+ 
+% R  1/2 1/4 1/4
+% N  1/2  0    1/2
+% S  1/4  1/4 1/2
+
+
+\end{frame}
+%------------------------------------------------------------------------------------------%
+
+\begin{frame}{MathsResource.com}{Markov Chains}
+\Large
+\textbf{Absorbing States}
+\begin{itemize}
+\item A state $S_i$ of a Markov chain is called \textbf{absorbing} if it is impossible
+to leave it (i.e. $p_{ii} = 1$). 
+\item A Markov chain is absorbing if it has at least one absorbing
+state, and if from every state it is possible to go to an absorbing state (not necessarily
+in one step).
+\item In a Markov chain that contains an absorbing state, a state which is not absorbing is
+called a \textbf{transient} state.
+\end{itemize}
+\end{frame}
+%---------------------------------------------------------%
+\section{Canonical Form}
+\begin{frame}{MathsResource.com}{Markov Chains}
+\Large
+\textbf{
+Canonical Form}
+\begin{itemize}
+\item Consider an arbitrary absorbing Markov chain. \item Renumber the states so that the
+transient states come first. \item If there are r absorbing states and t transient states,
+the transition matrix will have the following canonical form
+\end{itemize}
+
+%----------------------------------------------------------------------------%
+\end{document}

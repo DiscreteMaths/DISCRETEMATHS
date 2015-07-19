@@ -1,73 +1,177 @@
-%=================================================
-%
-A. Let S = {0, 1, 2, 3}. 
-Define a relation R1 between the elements of S by
-“x is related to y if the product xy is even”.
+\documentclass{beamer}
 
-B. Let S = {0, 1, 2, 3}. 
-Define a relation R2 between the elements of S by
-“x is related to y if x − y \in {0, 3,−3}”.
+\usepackage{amsmath}
+\usepackage{amssymb}
 
-C. Let S = {{1}, {1, 2}, {1, 2, 3}, {1, 2, 4}}. 
-Define a relation R3 between
-the elements of S by “X is related to Y if X \subseteq Y ”.
-%-------------------------------------------------------------%
+\begin{document}
+
+% Ex 1
+\section{Video 1 :  Set Theory Listing Method}
+%--------------------------------------------%
 \begin{frame}
-(i) Draw the relationship digraph.
-(ii) Determine whether the relation is either reflexive, symmetric, transitive
-or anti-symmetric. For the cases when one of these properties
-does not hold, justify your answer by giving an example to show that
-it does not hold.
-\end{frame}
-%-------------------------------------------------------------%
-\begin{frame}
-(iii) Determine which of the relations is an equivalence relation. For the
-case when it is an equivalence relation, calculate the distinct equivalence
-classes and verify that they give a partition of S.
-(iv) Determine which of the relations is a partial order or an order.
-%------------------------------------------------------------%
-\begin{frame}
-% Part A
-The relation:
-is not reflexive e.g. 1 is not related to 1;
-is symmetric;
-is not transitive e.g. 1 is related to 2, and 2 is related to 3, but 1
-is not related to 3;
-is not anti-symmetric e.g. 1 is related to 2, and 2 is related to 1,
-but 1 6= 2.
-\end{frame}
-%-------------------------------------------------------------%
-\begin{frame}
-(iii) R1 is not an equivalence relation because it is neither reflexive
-nor transitive.
-(iv) R1 is not a partial order or an order.
-\end{frame}
-%-------------------------------------------------------------%
-\begin{frame}
-% Part B
-The relation:
-is reflexive, symmetric and transitive;
-is not anti-symmetric e.g. 0 is related to 3, and 3 is related to 0,
-but 0 6= 3.
-\end{frame}
-%-------------------------------------------------------------%
-\begin{frame}
-(iii) R2 is an equivalence relation. The three equivalence classes are
-{0, 3}, {1}, and {2}. These form a partition of {0, 1, 2, 3}.
-(iv) R2 is not a partial order or an order as it is not anti-symmetric.
+\frametitle{Set Theory : Listing Method}
+\Large
+Describe the following sets using the Listing Method
+
+\begin{itemize}
+\item[(i)] $ \{ 10^m : -2 \leq m \leq 4, m \in \mathbb{Z} \} $
+\item[(ii)]  $ \{ \frac{1}{n}: 1 < n < 4, n \in \mathbb{Z} \} $
+\end{itemize}
 \end{frame}
 
-%-------------------------------------------------------------%
+%--------------------------------------------%
 \begin{frame}
-% Part C
-ii) The relation:
-is reflexive, transitive and anti-symmetric;
-is not symmetric e.g. {1} is related to {1, 2}, but {1, 2} is not
-related to {1}.
+\frametitle{Set Theory : Listing Method}
+\Large
+\vspace{-4cm}
+\textbf{Part 1:} $ \{ 10^m : -2 \leq m \leq 4, m \in \mathbb{Z} \} $
+
 \end{frame}
-%-------------------------------------------------------------%
+%--------------------------------------------%
 \begin{frame}
-(iii) R3 is not an equivalence relation as it is not symmetric.
-(iv) R3 is a partial order but not an order (since {1, 2, 3} and {1, 2, 4}
-are not related to each other).
+\frametitle{Set Theory : Listing Method}
+\Large
+\vspace{-4cm}
+\textbf{Part 2:} $ \{ \frac{1}{n}: 1 < n < 4, n \in \mathbb{Z} \} $
+
 \end{frame}
+% Ex 2
+\section{Video 2 : Set Theory}
+%--------------------------------------------%
+\begin{frame}
+\frametitle{Set Theory : Set Operations}
+\Large
+Given the following sets
+
+\begin{center}
+\begin{tabular}{|c|c|} \hline
+$\mathcal{U}$ & $\{1,2,3,4,5,6,7,8,9\}$ \\ \hline
+$\mathcal{A}$ & $\{1,2,5,6,8\}$ \\ \hline
+$\mathcal{B}$ & $\{3,5,7,8\}$ \\ \hline
+$\mathcal{C}$ & $\{5,6,7,8,9\}$ \\ \hline
+\end{tabular}
+\end{center}
+
+List the elements of the following
+$A^{\prime} \cap B $\\
+$A^{\prime} \cap C $\\
+\end{frame}
+%--------------------------------------------%
+\begin{frame}
+\frametitle{Set Theory : Set Operations}
+\Large
+\begin{itemize}
+\item[(i)] $\{5,8\}$
+\item[(ii)] $\{1,2,3,4,5,6,7,8,9\}$ 
+\end{itemize}
+\end{frame}
+
+%Exercise 3
+\section{Video 3 : Set Theory}
+%--------------------------------------------%
+\begin{frame}
+\frametitle{Set Theory : Set Operations}
+\Large
+\begin{itemize}
+\item[\textbf{A}] $ \{ 2n : n \in \mathbb{Z^{+}} \} $
+\item[\textbf{B}] $ \{ 3,6,9,12,15,18,\ldots \} $
+\end{itemize}
+\textbf{Questions}
+\begin{itemize}
+\item[(i)] \textbf{A} is described by the rules of inclusion. Describe \textbf{A} with the listing method.
+\item[(ii)] \textbf{B} is described by the listing method. Describe \textbf{B} with the rules of inclusion. 
+\end{itemize}
+\end{frame}
+
+%--------------------------------------------%
+% Exercise 4 
+\section{Video 4 : Graph Theory}
+\begin{frame}
+\frametitle{Graph Theory}
+\Large
+\vspace{-0.7cm}
+Draw the graph \textbf{G}, which has the vertices $v_1$,$v_2$,$v_3$,$\ldots$,$v_7$, and the adjacency list:
+
+\begin{itemize}
+\item[$v_1$]: $v_2$,$v_4$
+\item[$v_2$]: $v_1$,$v_3$
+\item[$v_3$]: $v_2$,$v_4$
+\item[$v_4$]: $v_1$,$v_3$,$v_5$
+\item[$v_5$]: $v_4$,$v_6$
+\item[$v_6$]: $v_5$,$v_7$
+\item[$v_7$]: $v_5$,$v_6$
+\end{itemize}
+%Draw the graph \textbf{G}.
+\end{frame}
+%------------------------------------------------------------------------- %
+\section{Video 6 : Graph Theory - Isomorphic Graphs}
+\begin{frame}[fragile]
+% http://www3.ul.ie/cemtl/pdf%20files/cm2/IsomorphicGraph.pdf
+\frametitle{Isomorphic Graphs}
+\begin{itemize}
+\item If the graphs are not simple, we need more sophisticated methods to check for when two graphs are isomorphic. 
+\item However, it is often straightforward to show that two graphs are not isomorphic. 
+\item You can do this by showing any of the following seven conditions are true.
+\end{itemize}
+\end{frame}
+%-------------------------------------------------------------------------- %
+\begin{frame}[fragile]
+\frametitle{Isomorphic Graphs}
+
+\begin{enumerate}
+\item The two graphs have different numbers of vertices.
+\item The two graphs have different numbers of edges.
+\item One graph has parallel edges and the other does not.
+\item One graph has a loop and the other does not.
+\item One graph has a vertice of degree k (for example) and the other does not.
+\item One graph is connected and the other is not.
+\item One graph has a cycle and the other has not.
+\end{enumerate}
+\end{frame}
+
+% Ex 8 Inequality Operators
+\section{Video 8 : Numbers}
+%------------------------------------------------------------------------- %
+\begin{frame}
+\frametitle{Inequality Symbols}
+\Large
+Given $x = \sqrt{2}$ determine whether the following statements are true or false:
+
+\begin{itemize}
+\item[(i)] $x \leq 2$
+\item[(ii)] $1.42 > x > 1.41$
+\item[(iii)] x is a rational number
+\item[(iv)] $\sqrt{2} = 2$
+\end{itemize}
+\end{frame}
+%------------------------------------------------------------------------- %
+\section{Video 6}
+\begin{frame}
+\frametitle{Inequality Symbols}
+\Large
+Convert the following statements into symbols:
+
+\begin{itemize}
+\item $\sqrt{2}$ is less than 1.5 and greater than 1.4
+\item $\sqrt{2}$ is greater than or equal to 5
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------------------------------- %
+% Floating Point Notation
+\section{Video 7 : Numbers}
+\begin{frame}
+\frametitle{Floating Point Notation}
+\Large
+
+\begin{description}
+\item[mantissa]
+\item[abscissa]
+\item[radix point]
+\end{description}
+\end{frame}
+\end{document}
+
+
+
