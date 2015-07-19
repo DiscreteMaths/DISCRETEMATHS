@@ -1,0 +1,98 @@
+A Markov chain (discrete-time Markov chain or DTMC[1]), named after Andrey Markov, is a random process that undergoes transitions from one state to another on a state space. It must possess a property that is usually characterized as "memoryless": the probability distribution of the next state depends only on the current state and not on the sequence of events that preceded it. This specific kind of "memorylessness" is called the Markov property. Markov chains have many applications as statistical models of real-world processes.
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+\frametitle{Markov Chains: Formal definition}
+A Markov chain is a sequence of random variables X1, X2, X3, ... with the Markov property, namely that, given the present state, the future and past states are independent. Formally,
+\[\Pr(X_{n+1}=x\mid X_1=x_1, X_2=x_2, \ldots, X_n=x_n) = \Pr(X_{n+1}=x\mid X_n=x_n)\], if both conditional probabilities are well defined, i.e. if $\Pr(X_1=x_1,...,X_n=x_n)>0$.
+The possible values of $X_i$ form a countable set S called the state space of the chain.
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+\begin{itemize}
+\item Markov chains are often described by a sequence of directed graphs, where the edges of graph n are labeled by the probabilities of going from one state at time n to the other states at time n+1,$ \Pr(X_{n+1}=x\mid X_n=x_n)$. 
+\item The same information is represented by the transition matrix from time n to time $n+1$. 
+\item However, Markov chains are frequently assumed to be time-homogeneous (see variations below), in which case the graph and matrix are independent of n and so are not presented as sequences.
+\end{itemize}
+
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+	
+	These descriptions highlight the structure of the Markov chain that is independent of the initial distribution $\Pr(X_1=x_1)$. When time-homogeneous, the chain can be interpreted as a state machine assigning a probability of hopping from each vertex or state to an adjacent one. The probability $\Pr(X_n=x|X_1=x_1)$ of the machine's state can be analyzed as the statistical behavior of the machine with an element $x_1$ of the state space as input, or as the behavior of the machine with the initial distribution $\Pr(X_1=y)=[x_1=y]$ of states as input, where [P] is the Iverson bracket.
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+The fact that some sequences of states might have zero probability of occurring corresponds to graph that has multiple connected components, where we suppress edges that carry a 0 transition probability. For example, if a has a nonzero probability of going to b, but a and x lie in different connected components of the graph, then $\Pr(X_{n+1}=b|X_n=a)$ is defined, while $\Pr(X_{n+1}=b|X_1=x, ...,  X_n=a)$ is not.
+
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+Example[edit]
+Main article: Examples of Markov chains
+Finance Markov chain example state space.svg
+A state diagram for a simple example is shown in the figure on the right, using a directed graph to picture the state transitions. The states represent whether a hypothetical stock market is exhibiting a bull market, bear market, or stagnant market trend during a given week. According to the figure, a bull week is followed by another bull week 90\% of the time, a bear week 7.5\% of the time, and a stagnant week the other 2.5\% of the time. 
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+Labelling the state space {1 = bull, 2 = bear, 3 = stagnant} the transition matrix for this example is
+\[P = \begin{bmatrix}
+	0.9 & 0.075 & 0.025 \\
+	0.15 & 0.8 & 0.05 \\
+	0.25 & 0.25 & 0.5
+\end{bmatrix}.\]
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+The distribution over states can be written as a stochastic row vector x with the relation x(n + 1) = x(n)P. So if at time n the system is in state 2 (bear), then three time periods later, at time n + 3 the distribution is
+\begin{align}
+	x^{(n+3)} &= x^{(n+2)} P = \left(x^{(n+1)} P\right) P \\\\
+	&= x^{(n+1)} P^2 = \left( x^{(n)} P^2 \right) P\\
+	&= x^{(n)} P^3 \\
+	&= \begin{bmatrix} 0 & 1 & 0 \end{bmatrix} \begin{bmatrix}
+		0.9 & 0.075 & 0.025 \\
+		0.15 & 0.8 & 0.05 \\
+		0.25 & 0.25 & 0.5
+	\end{bmatrix}^3 \\
+\end{align}	
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+
+\begin{align}
+x^{(n+3)}	&= \begin{bmatrix} 0 & 1 & 0 \end{bmatrix} \begin{bmatrix}
+		0.7745 & 0.17875 & 0.04675 \\
+		0.3575 & 0.56825 & 0.07425 \\
+		0.4675 & 0.37125 & 0.16125 \\
+	\end{bmatrix} \\
+	& = \begin{bmatrix} 0.3575 & 0.56825 & 0.07425 \end{bmatrix}.
+	
+\end{align}
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+Using the transition matrix it is possible to calculate, for example, the long-term fraction of weeks during which the market is stagnant, or the average number of weeks it will take to go from a stagnant to a bull market. Using the transition probabilities, the steady-state probabilities indicate that 62.5\% of weeks will be in a bull market, 31.25% of weeks will be in a bear market and 6.25% of weeks will be stagnant, since:
+\lim_{N\to \infty } \, P^N=
+\begin{bmatrix}
+	0.625 & 0.3125 & 0.0625 \\
+	0.625 & 0.3125 & 0.0625 \\
+	0.625 & 0.3125 & 0.0625 \\
+\end{bmatrix}
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
+A thorough development and many examples can be found in the on-line monograph Meyn & Tweedie 2005.[6]
+A finite state machine can be used as a representation of a Markov chain. Assuming a sequence of independent and identically distributed input signals (for example, symbols from a binary alphabet chosen by coin tosses), if the machine is in state y at time n, then the probability that it moves to state x at time n + 1 depends only on the current state.
+\end{frame}
+%=========================================================================================== %
+\begin{frame}
+	\frametitle{Markov Chains: Formal definition}
