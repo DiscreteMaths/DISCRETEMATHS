@@ -1,0 +1,15 @@
+%-----------------------------------------------------%
+\begin{frame}
+
+\large
+\begin{itemize}
+
+\item Permutations where repetition is allowed: 
+\[ n! \]
+\item Permutations where repetition is not allowed
+\[ \frac{n!}{(n-k)!} /]
+\end{itemize}
+
+\end{frame}
+%-----------------------------------------------------%
+
