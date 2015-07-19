@@ -1,0 +1,45 @@
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{Finite State Machines}
+In accordance with the general classification, the following formal definitions are found:
+A deterministic finite state machine or acceptor deterministic finite state machine is a quintuple $(\Sigma, S, s_0, \delta, F)$, where:
+\begin{itemize}
+\item $\Sigma$ is the input alphabet (a finite, non-empty set of symbols).
+\item S is a finite, non-empty set of states.
+\item $s_0$ is an initial state, an element of S.
+\item $\delta$ is the state-transition function: \delta: S \times \Sigma \rightarrow S (in a nondeterministic finite automaton it would be $\delta: S \times \Sigma \rightarrow \mathcal{P}(S)$, i.e., $\delta$ would return a set of states).
+\item F is the set of final states, a (possibly empty) subset of S.
+\end{itemize}
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{Finite State Machines}
+For both deterministic and non-deterministic FSMs, it is conventional to allow $\delta$ to be a partial function, i.e. $\delta(q,x)$ does not have to be defined for every combination of $q \isin S$ and $x \isin \Sigma$. If an FSM M is in a state q, the next symbol is x and \delta(q,x) is not defined, then M can announce an error (i.e. reject the input). This is useful in definitions of general state machines, but less useful when transforming the machine. Some algorithms in their default form may require total functions.
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{Finite State Machines: Restricted Turing Machine}
+A finite-state machine is a restricted Turing machine where the head can only perform "read" operations, and always moves from left to right.[13]
+A finite state transducer is a sextuple (\Sigma, \Gamma, S, s_0, \delta, \omega), where:
+\Sigma is the input alphabet (a finite non-empty set of symbols).
+\Gamma is the output alphabet (a finite, non-empty set of symbols).
+S is a finite, non-empty set of states.
+s_0 is the initial state, an element of S. In a nondeterministic finite automaton, s_0 is a set of initial states.
+\delta is the state-transition function: \delta: S \times \Sigma \rightarrow S.
+\omega is the output function.
+
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{Finite State Machines}
+If the output function is a function of a state and input alphabet (\omega: S \times \Sigma \rightarrow \Gamma) that definition corresponds to the Mealy model, and can be modelled as a Mealy machine. If the output function depends only on a state (\omega: S \rightarrow \Gamma) that definition corresponds to the Moore model, and can be modelled as a Moore machine. A finite-state machine with no output function at all is known as a semiautomaton or transition system.
+
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{Finite State Machines}
+	If we disregard the first output symbol of a Moore machine, $\omega (s_0)$, then it can be readily converted to an output-equivalent Mealy machine by setting the output function of every Mealy transition (i.e. labeling every edge) with the output symbol given of the destination Moore state. The converse transformation is less straightforward because a Mealy machine state may have different output labels on its incoming transitions (edges). Every such state needs to be split in multiple Moore machine states, one for every incident output symbol.
+
+\end{frame}
+
+\end{document}

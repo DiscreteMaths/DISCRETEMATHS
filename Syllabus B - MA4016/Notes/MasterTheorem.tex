@@ -1,0 +1,101 @@
+
+%====================================================================================================================== %
+\begin{frame}
+\frametitle{The Master Theorem}
+In the analysis of algorithms, the master theorem provides a solution in asymptotic terms (using Big O notation) for recurrence relations of types that occur in the analysis of many divide and conquer algorithms. 
+
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+\frametitle{The Master Theorem}
+It was popularized by the canonical algorithms textbook Introduction to Algorithms by Cormen, Leiserson, Rivest, and Stein, in which it is both introduced and proved. Not all recurrence relations can be solved with the use of the master theorem; its generalizations include the Akra–Bazzi method.
+
+\end{frame}
+%====================================================================================================================== %
+
+
+Example[edit]
+T(n) = 8 T\left(\frac{n}{2}\right) + 1000n^2
+As one can see from the formula above:
+a = 8, \, b = 2, \, f(n) = 1000n^2, so
+f(n) \in O\left(n^c\right), where c = 2
+Next, we see if we satisfy the case 1 condition:
+\log_b a = \log_2 8 = 3>c.
+It follows from the first case of the master theorem that
+T(n) \in \Theta\left( n^{\log_b a} \right) = \Theta\left( n^{3} \right)
+(indeed, the exact solution of the recurrence relation is T(n) = 1001 n^3 - 1000 n^2, assuming T(1) = 1).
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{The Master Theorem}
+	
+	Case 2[edit]
+Generic form[edit]
+If it is true, for some constant k ≥ 0, that:
+f(n) = \Theta\left( n^{c} \log^{k} n \right) where c = \log_b a
+then:
+T(n) = \Theta\left( n^{c} \log^{k+1} n \right)
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{The Master Theorem}
+	
+Example[edit]
+T(n) = 2 T\left(\frac{n}{2}\right) + 10n
+As we can see in the formula above the variables get the following values:
+a = 2, \, b = 2, \, c = 1, \, f(n) = 10n
+f(n) = \Theta\left(n^{c} \log^{k} n\right) where c = 1, k = 0
+
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{The Master Theorem}
+	
+Next, we see if we satisfy the case 2 condition:
+\[\log_b a = \log_2 2 = 1, and therefore, yes, c = \log_b a\]
+So it follows from the second case of the master theorem:
+\[T(n) = \Theta\left( n^{\log_b a} \log^{k+1} n\right) = \Theta\left( n^{1} \log^{1} n\right) = \Theta\left(n \log n\right)\]
+Thus the given recurrence relation T(n) was in Θ(n log n).
+(This result is confirmed by the exact solution of the recurrence relation, which is T(n) = n + 10 n\log_2 n, assuming T(1) = 1.)
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{The Master Theorem}
+	
+Case 3[edit]
+Generic form[edit]
+If it is true that:
+\[f(n) = \Omega\left( n^{c} \right) where c > \log_b a\]
+and if it is also true that:
+a f\left( \frac{n}{b} \right) \le k f(n) for some constant k < 1 and sufficiently large n (often called the regularity condition)
+then:
+\[T\left(n \right) = \Theta\left(f(n) \right)\]
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{The Master Theorem}
+	
+Example[edit]
+\[T(n) = 2 T\left(\frac{n}{2}\right) + n^2 \]
+As we can see in the formula above the variables get the following values:
+a = 2, \, b = 2, \, f(n) = n^2
+f(n) = \Omega\left(n^c\right), where c = 2
+Next, we see if we satisfy the case 3 condition:
+\[ \log_b a = \log_2 2 = 1, and therefore, yes, c > \log_b a\]
+
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{The Master Theorem}
+	
+The regularity condition also holds:
+2 \left(\frac{n^2}{4}\right) \le k n^2 , choosing  k = 1/2 
+So it follows from the third case of the master theorem:
+T \left(n \right) = \Theta\left(f(n)\right) = \Theta \left(n^2 \right).
+Thus the given recurrence relation T(n) was in Θ(n2), that complies with the f (n) of the original formula.
+(This result is confirmed by the exact solution of the recurrence relation, which is T(n) = 2 n^2 - n, assuming T(1) = 1.)
+\end{frame}
+%====================================================================================================================== %
+\begin{frame}
+	\frametitle{The Master Theorem}
+	

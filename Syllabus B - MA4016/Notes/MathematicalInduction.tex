@@ -1,0 +1,38 @@
+Mathematical Induction
+Mathematical Induction (MI) is a proof method used to establish the truth of a statement
+P about the natural number n. Examples of such statements are:
+• 1 + 2 + 3 + · · · + n =
+n(n+1)
+2
+• The number of subsets of a set with n elements is 2n
+The steps involved in MI are
+1. Base Step : Establish P for some initial value n = n0
+2. Inductive Step: Show that if P is true for n = k, then P is also true for n = k + 1.
+The combination of these two steps ensures that P is true for all n greater than or equal
+to n0.(why ?)
+Example: Use MI to prove P : 1 + 2 + 3 + · · · + n =
+n(n+1)
+2
+Base Step: When n = 1 the left hand side (LHS) of P is 1. The RHS is 1(1+1)
+2 = 1.
+Inductive Step: Assume P is true for n = k i.e.
+1 + 2 + 3 + · · · + k =
+k(k + 1)
+2
+When n = k + 1, the LHS of P is
+1 + 2 + 3 + · · · + k + (k + 1) = [1 + 2 + 3 + · · · + k] + (k + 1)
+And using the inductive assumption, this becomes
+k(k + 1)
+2
++ (k + 1) = (k + 1)(k
+2
++ 1) = (k + 1)(k + 2)
+2
+which is the RHS of P when n = k + 1. This completes the proof, and shows that the
+result is true for n ≥ 1.
+The version of MI given in the box above is called weak induction. Strong induction
+consists of
+1. Base Step : Establish P for some initial value n = n0
+2. Inductive Step: Show that if P is true for n = 1, 2, 3, . . . , k, then P is also true for
+n = k + 1.
+Both versions are equivalent.
