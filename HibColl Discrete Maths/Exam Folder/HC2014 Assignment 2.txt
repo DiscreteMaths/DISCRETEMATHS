@@ -1,0 +1,31 @@
+
+%------------------------------------%
+\section*{Question 3}
+% Logical Proofs
+
+
+%------------------------------------%
+\section*{Question 4}
+\[ \mbox{Log}_4 64 + \mbox{Log}_5 625 + \mbox{Log}_9 3 \] 
+
+
+%------------------------------------%
+\section*{Question 5}
+\begin{enumerate}
+\item Draw two non-isomorphic graphs with the following degree sequence.
+\[ 4,3,3,2,2,2,2,1,1\]
+\item
+\end{enumerate}
+%------------------------------------%
+\section*{Question 6}
+%Relations and Digraphs
+
+%------------------------------------%
+\section*{Question 7b}
+
+Compute the following summation
+
+\[ \sum^{i=100}_{i=25} i^2 + 3i -5)\]
+
+
+%------------------------------------%

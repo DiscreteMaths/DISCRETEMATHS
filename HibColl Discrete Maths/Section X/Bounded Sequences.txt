@@ -1,0 +1,32 @@
+% UDEMY 7 - Bounded Sequences
+
+\section{What is a Bounded Sequence}
+
+
+% Increasing Sequences
+% Convergent and Divergent Sequences
+
+%------------------------------------------%
+\begin{frame}
+\frametitle{Bounded Sequences}
+
+\begin{itemize}
+\item
+\item
+\item
+\item
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------%
+\section{The Ratio Test}
+\begin{frame}
+\frametitle{The Ratio Test}
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+\end{document}

@@ -1,0 +1,36 @@
+Set theory
+
+Specifying Sets (2.1)
+
+Listing Method
+Rules of Inclusion
+
+Subsets (2.2)
+Subsets and Proper Subsets
+Cardinality of a Set
+Power Set
+
+
+Set operations (2.3)
+
+complement
+union 
+intersection
+set difference
+
+
+venn diagrams
+8 Disjoint Regions
+
+DE Muorgan's Laws (Useful for Propositions)
+
+membership tables
+
+proof by truth tables
+AND
+OR
+NOT
+Set difference
+symmetric difference
+
+

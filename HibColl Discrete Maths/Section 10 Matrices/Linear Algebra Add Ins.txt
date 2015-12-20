@@ -1,0 +1,9 @@
+
+
+
+\begin{itemize}
+\item Cholesky decomposition
+\item LU decomposition by Doolittle's method
+\end{itemize}
+%--------------------------------------------------%
+\newpage

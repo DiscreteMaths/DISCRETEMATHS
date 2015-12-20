@@ -1,0 +1,72 @@
+\documentclass[12pt]{beamer} % use larger type; default would be 10pt
+
+
+\usepackage{graphicx} 
+\usepackage{framed}
+
+\begin{document}
+
+\begin{frame}
+\frametitle{De Morgan's Laws}
+The De Morgan's Laws allow the expression of conjunctions and disjunctions purely in terms of each other via negation.
+
+
+The laws can be verbalized as:
+\begin{itemize}
+\item The negation of a conjunction is the disjunction of the negations.
+\item The negation of a disjunction is the conjunction of the negations.
+\end{itemize}
+
+\end{frame}
+%------------------------------------------------------------ %
+\begin{frame}
+\frametitle{De Morgan's Laws}
+\Large
+The Rules can be verbalized as 
+
+\begin{itemize}
+\item[(i)]"not (A and B)" is the same as "(not A) or (not B)"
+
+\item[(ii)] "\textit{not (A or B)}" is the same as "\textit{(not A) and (not B)}"
+\end{itemize
+
+\end{frame}
+
+%------------------------------------------------------------ %
+\begin{frame}
+\frametitle{De Morgan's Laws}
+Use Truth Tables to prove De Morgan's Laws (see page 40).
+\[  \neg (p \vee q) = \neg p \wedge \neg q\]
+\begin{center}
+\begin{tabular}{|c|c||c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+p	&	q	&	$ p \vee q$	&	$ p \wedge q$&	$\neg (p \vee q)$	&	$\neg (p \wedge q)$\\
+	&		&	(1)	&	(2)	&	(3)	&	(4)	\\ \hline
+0	&	0	&	0	&	0	&	1	&	1 \\
+0	&	1	&	1	&	0	&	0	&	1\\
+1	&	0	&	1	&	0	&	0	&	1\\
+1	&	1	&	1	&	1	&	0	&	0\\
+  \hline
+\end{tabular}
+\end{center}
+\end{frame}
+%------------------------------------------------------------ %
+\begin{frame}
+\begin{center}
+\begin{tabular}{|c|c||c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+p	&	q	&	$\neg$p	&	$\neg$q	&	$\neg p \wedge \neg q$	&	$\neg p \vee \neg q$ \\ 
+	&		&	(5)	&	(6)	&	(7)	&	(8)	\\
+\hline
+0	&	0	&	1	&	1	&	1	&	1	\\
+0	&	1	&	1	&	0	&	0	&	1	\\
+1	&	0	&	0	&	1	&	0	&	1	\\
+1	&	1	&	0	&	0	&	0	&	0	\\
+  \hline
+\end{tabular}
+\end{center}
+\end{frame}
+%------------------------------------------------------------ %
+\end{document}
