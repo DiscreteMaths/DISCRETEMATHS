@@ -18,8 +18,8 @@
 
 \pagestyle{fancy}
 \setmarginsrb{20mm}{0mm}{20mm}{25mm}{12mm}{11mm}{0mm}{11mm}
-\lhead{Hibernia College} \rhead{Kevin O'Brien}
-\chead{Mathematics for Computing Part 2 Sheet A}
+\lhead{Stats-Lab.com} \rhead{Section 2 Sheet A}
+\chead{Mathematics for Computing }
 %\input{tcilatex}
 
 \begin{document}
@@ -55,21 +55,21 @@ $\sqrt{9} = 3$).
 For each of the following sets, write out the set using the listing method.
 Also write down the cardinality of each set.
 
-\begin{itemize}
+\begin{itemize} 
 \item $\{ s : s $ is an negative integer $ -10 \leq s \leq 0 \}$
 \item $\{ t : t $ is an even number $ 1 \leq t \leq 20 \}$
 \item $\{ u : u $ is a prime number $ 1 \leq u \leq 20 \}$
 \item $\{ v : v $ is a multiple of 3 $ 1 \leq v \leq 20 \}$
 \end{itemize}
-%-------------------------------------------------%
+%-------------------------------------------------% 
 
 \section*{Power Sets}
 \subsection*{Worked Example}
 Consider the set $Z$:
 \[ Z = \{ a,b,c\}  \]
 \begin{itemize}
-\item[Q1] How many sets are in the power set of $Z$?
-\item[Q2] Write out the power set of $Z$.
+\item[Q1] How many sets are in the power set of $Z$? 
+\item[Q2] Write out the power set of $Z$. 
 \item[Q3] How many elements are in each element set?
 \end{itemize}
 %----------------------------------------------%
@@ -86,9 +86,9 @@ Consider the set $Z$:
 \item[Q3]
 \begin{itemize}
 \item[*] One element set is the null set - i.e. containing no
-elements \item[*] Three element sets have only elements \item[*]
-Three element sets have two elements \item[*] One element set
-contains all three elements \item[*] 1+3+3+1=8
+elements \item[$\bullet$] Three element sets have only elements \item[$\bullet$]
+Three element sets have two elements \item[$\bullet$] One element set
+contains all three elements \item[$\bullet$] 1+3+3+1=8
 \end{itemize}
 \end{itemize}
 \subsection*{Exercise}
@@ -99,11 +99,10 @@ previous exercise
 %------------------------------------------------------%
 
 \section*{Complement of a Set}
-%(2.3.1)
+%(2.3.1) 
 Consider the universal set $U$ such that
 \[U=\{2,4,6,8,10,12,15\} \]
 For each of the sets $A$,$B$,$C$ and $D$, specify the complement sets.
-
 \begin{center}
 \begin{tabular}{|c|c|}
   \hline
@@ -123,9 +122,9 @@ $C=\{2,6,12,15\}$ & \\ \hline $D=\{8,10,15\}$ & \\ \hline
 
 \section*{Set Operations}
 Consider the universal set $U$ such that
-\[U=\{1,2,3,4,5,6,7,8,9\} \]
+\[U=\{1,2,3,4,5,6,7,8,9\} \] 
 and the sets
-\[A=\{2,5,7,9\} \]
+\[A=\{2,5,7,9\} \] 
 \[B=\{2,4,6,8,9\} \]
 
 \begin{itemize}
@@ -141,11 +140,11 @@ and the sets
 \section*{Venn Diagrams}
 
 Draw a Venn Diagram to represent the universal set
-$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets
-$A = \{2,4,5\}$
-$B = \{1,4,5,6\}$
+$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets:\\
+$A = \{2,4,5\}$\\
+$B = \{1,4,5,6\}$\\
 
-Find each of the following
+\noindent Find each of the following
 \begin{itemize}
 \item[(a)] $A \cup B $
 \item[(b)] $A \cap B $
@@ -154,130 +153,11 @@ Find each of the following
 \item[(e)] $A \otimes B$
 \end{itemize}
 
-\newpage
-\subsection*{Conversion to Binary Form}
-\[
-\begin{tabular}{|c|c|c|c|}
-	&		&	Quotient	&	Remainder	\\
-507	&\emph{	253.5	}&	253	&	1	\\
-253	&\emph{	126.5	}&	126	&	1	\\
-126	&\emph{	63	}&	63	&	0	\\
-63	&\emph{	31.5	}&	31	&	1	\\
-31	&\emph{	15.5	}&	15	&	1	\\
-15	&\emph{	7.5	}&	7	&	1	\\
-7	&\emph{	3.5	}&	3	&	1	\\
-3	&\emph{	1.5	}&	1	&	1	\\
-1	&\emph{	0.5	}&	0	&	1	\\
-\end{tabular} \]
-
-Correct Answer : 111111011
-
-
-2011 Question 1C
-
-List all the set of positive integers with precisely 3 bits in binary notation
-
-\[\begin{array}{|c|c|}
-100 & 4 \\
-101 & 5 \\
-110 & 6 \\
-111 & 7 \\
-\end{array}\]
-
-Let n be a positive integer. How many positive integers have precisely n bits in binary notation. 
-
-\newpage
-Express the binary number (1011.011) as a decimal, showing all of your working
-\[\begin{tabular}{|c|c|c|c|}
-Digit	&	Power	&	Weight	&		\\
-1	&	3	&	2^{3} = 8	&	8	\\
-0	&	2	&	2^{2} =4	&	0	\\
-1	&	1	&	2^{1}=2	&	2	\\
-1	&	0	&	2^{0}=1	&	1	\\
-.	&	.	&	.	&	.	\\
-0	&	-1	&	2^{-1}=0.5	&	0	\\
-1	&	-2	&	2^{-1}=0.25	&	0.25	\\
-1	&	-3	&	2^{-3}=0.125	&	0.125	\\
-	&		&		&	11.375	\\
-\hline 
-\end{tabular} \]
-
-
-
-
-
-\newpage
-\subsection*{2011 Question 1b}
-
-Working in Binary, and showing all carries, compute the following:\\
-$(11010)_{2} + (111)_{2}$ (i.e. $(26)_10 +7_{10}$)
-\\
-(Demonstration on whiteboard)
-\\
-Answer: 11010 + 111 = 100001
-\\
-
-
-\begin{itemize} 
-\item Remark 0 is not a positive integer.
-\item How many have 1 bit : Answer only one 1.
-\item How many have 2 bits :  Answer only two : 10 and 11 (i.e. 2 and 3 in decimal)
-\item From above: 4 have 3 bits.
-\item What is the first 4 bit numbers? : 1000 (i.e 8 in decimal)
-\item What is the last 4 bit number? 1111 (i.e 15 in decimal)
-\item How many numbers have 4 bits? Answer :8
-\item Answer to question: $2^{n-1}$
-\item Return to this after "Proof by Induction".
-\end{itemize}
-\newpage
-
-\newpage
-\begin{verbatim}
-If U = {2, 3, 4, 7, 9, 10, 11, 13} and A = {3, 4, 9, 10}
-
-Then
-
-Compliment of A = A’	 = U - A
-= {2, 3, 4, 7, 9, 10, 11, 13} – {3, 4, 9, 10}
-= {2, 7, 11, 13}
-
-\begin{verbatim}
-UNIVERSAL SET: 
-
-A universal set is a set of all elements under consideration. It is denoted by U. 
-A Universal set is always a non-empty set.
-
-For example: The set of real numbers R is a universal set
-for the operations related to real numbers.
-
-Example: 
-
-Given that U = {5, 6, 7, 8, 9, 10, 11, 12}, list the elements of the following sets. 
-A = {x : x is a prime number}
-B = {x : x is a factor of 60}
-Solution: 
-
-The elements of sets A and B can only be selected 
-from the given universal set U 
-A = {5, 7, 11}
-B = {5, 6, 10, 12}
-\end{verbatim}
-
-\newpage
-\begin{verbatim}
-MUTUALLY EXCLUSIVE SETS OR DISJOINT SETS: 
-
-Two sets are called disjoint if they don't have any common element. 
-
-For example, A = {2, 3, 4} and B = {5, 6, 7} are disjoint sets.
-
-\end{verbatim}
-
 \end{document}
 
 
 
-
+   
 
 
 
@@ -427,4 +307,69 @@ Using membership tables
   \hline
 \end{tabular}
 
-%
+%----------------------------------------------------------%
+\section*{Section B: Hexadecimal Numbers}
+\begin{itemize}
+\item[B.1]
+\item[B.2]
+\item[B.3]
+\item[B.4]
+\item[B.5]
+\item[B.6]
+\item[B.7]
+\item[B.8]
+\end{itemize}
+\newpage
+
+
+\subsection*{Associative Laws}
+\[ (A \cup B) \cup C =  A \cup (B \cup C)  \]
+\[ (A \cap B) \cap C =  A \cap (B \cap C)  \]
+
+\subsection*{Distributive Laws}
+\[ (A \cup B) \cap C =  (A \cup B) \cap (A \cup C)  \]
+\[ (A \cap B) \cup C =  (A \cap B) \cup (A \cap C)  \]
+
+
+\[ (A \cup B) \cap B^{\prime} \]
+%----------------------------------------------------------%
+\section*{Section C: Real and Rational Numbers}
+\begin{itemize}
+\item[C.1]
+\item[C.2]
+\item[C.3]
+\item[C.4]
+\item[C.5]
+\item[C.6]
+\item[C.7]
+\item[C.8]
+\end{itemize}
+\newpage
+%----------------------------------------------------------%
+\newpage
+\section*{Formulae}
+\begin{itemize}
+
+
+
+
+\item Bayes' Theorem:
+\begin{equation*}
+P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
+\end{equation*}
+
+
+
+\item Binomial probability distribution:
+\begin{equation*}
+P(X = k) = ^{n}C_{k} \times p^{k} \times \left( 1-p\right) ^{n-k}\qquad \left( \text{where}\qquad
+^{n}C_{k} =\frac{n!}{k!\left(n-k\right) !}. \right)
+\end{equation*}
+
+\item Poisson probability distribution:
+\begin{equation*}
+P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
+\end{equation*}
+\end{itemize}
+
+\end{document} 
