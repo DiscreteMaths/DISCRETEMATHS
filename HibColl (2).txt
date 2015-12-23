@@ -1,0 +1,101 @@
+
+
+XR= matrix(c(0.6,0.4),ncol=2)
+XD= matrix(c(0.6,0,0,0.4),ncol=2)
+CM= matrix(c(0.7,0.3,0.2,0.8),nrow=2,byrow=T)
+Y=XR %*% CM
+J=XD %*% CM
+
+
+
+
+
+
+
+\begin{document}
+\section*{Schedules}
+\begin{itemize}
+\item[0] Numeracy
+\item[1]
+	\begin{itemize}
+	\item[1A]
+	\item[1B]
+	\end{itemize}
+\item[2]
+\item
+\item
+\item
+\end{itemize}
+%------------------------------------------%
+\newpage
+%------------------------------------------%
+\section*{Numeracy Skills}
+\begin{itemize}
+\item[0.1] Powers
+\item[0.2] Factorials
+\item[0.3] Priority of Operation
+\item[0.4] 
+\end{itemize}
+
+
+\section*{Digraphs}
+\begin{itemize}
+\item[1B.1] Real Numbers
+\item[1B.2] Rational Numbers
+\item[1B.3] Floating Point Aritmetic
+\item[1B.4] 
+\end{itemize}
+
+\begin{itemize}
+\item
+\item
+\item
+\end{itemize}
+%-------------------------------%
+\begin{itemize}
+\item[10A.1] Dimensions of a Matrix
+\item[10A.2]
+\item[10A.3] Scalar Multiplication 
+\item[10A.4] Matrix Multiplication
+\end{itemize}
+%-----------------------------------%
+\section{Digraphs and Relations}
+\begin{itemize}
+\item[6A.1]
+\item[6A.2]
+\item[6A.3]
+\end{itemize}
+
+\section*{Session 09: Probability}
+\begin{itemize}
+\item[9A.1] 
+\item[9A.2] 
+\item[9A.3] 
+\item[9A.4] 
+\end{itemize}
+
+\begin{itemize}
+\item[9B.1] 
+\item[9B.2] 
+\item[9B.3] 
+\item[9B.4] 
+\end{itemize}
+
+
+\section*{Session 10: Matrices and Systems of Equations}
+\begin{itemize}
+\item[10A.1] Dimensions of a Matrix
+\item[10A.2] Matrix Multiplication
+\item[10A.3] Matrix Calculations
+\item[10A.4] 
+\end{itemize}
+
+\begin{itemize}
+\item[10B.1] Systems of Equations
+\item[10B.2] Expression Systems of Equations as Matrices
+\item[10B.3] Augmented Matrices
+\item[10B.4] Guassian Elimination
+\end{itemize}
+%-----------------------------------%
+
+\end{document}

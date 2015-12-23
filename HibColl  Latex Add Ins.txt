@@ -1,0 +1,201 @@
+
+%
+%
+%
+\begin{frame}
+\begin{itemize}
+\item Number Systems
+\item Set Theory
+\item Function
+\item 
+\item Graph Theory
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item Digraphs
+\item Set Theory
+\item Function
+\item Probability
+\item MAtrices
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{(1.4.1) Decimal to Binary Conversion}
+\begin{itemize}
+\item Continuously divide the decimal number by 2.
+\item Keep record of the remainder, either 0 or 1.
+\item The sequence of remainders is the binary number required.
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Hexadecimal Numbers}
+\begin{itemize}
+\item Hex Characters $\{0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}
+\item 
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Floating Point Notation}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{rame}
+%-------------------------------------%
+\begin{frame}
+\frametitle{Relatiional Operators}
+\begin{itemize}
+\item $\neq$ Not Equal
+\item < Less than
+\item > greater than
+\item $\geq$ greater than or equal to
+\item $\leq$ Not Equal to
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{itemize}
+\item Natural Numbers $\{1,2,3,4, \ldots\}$
+\item Integers $\{\ldots,-2,-1,0,1,2,3,\ldots\}$
+\item Rational Numbers e.g $4/7$ , $11/25$
+\item Real Numbers Any number e.g. $3.1415$
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
+%------------------------------------------%
+
+`
+Floating Point Noation
+
+Section 1
+Section 1.2
+Section 1.3
+Section 14
+%----------------------------------------------%
+
+Hibernia College induction day
+
+todays Class
+
+Session 1
+/Session 2
+
+Number Systems
+
+Decmal Number Systesm
+Base 10
+
+Binary Number Systems
+Base 2
+allowable characters are {0.1} only
+
+Base 16 Hexadecimal
+
+Use all of the decimal digits, in addition to 6 more A,B~,D,D,E,F
+
+(where might you see this  - specifying colours RGB Numbers
+
+For example FF in hexadecimal is is 255 in decimal 
+
+
+Rational Numbers
+
+Natural Numbers indies
+Integers Z
+
+
+%--------------------------------------------%
+
+Computing a binary number
+
+Useful
+
+2^0 = 1
+2^1 = 2
+2^2 = 4
+2^3 = 8
+2^4 = 16
+2^5 = 32
+2^6 = 64
+2^7 = 128
+
+Firslly determine the highest power
+
+Suppose the number we wish to convert is 58
+
+Hwhat is the highest power of two that deivides
+
+
+%-----------------------------------------%
+
+\begin{frame}
+\begin{itemize}
+\end{itemize}
+
+\end{frame}
+
+%-----------------------------------------%
+
+
+supo

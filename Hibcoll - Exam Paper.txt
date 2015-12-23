@@ -1,0 +1,118 @@
+Hib College
+------------------------------------------------------
+Question 1 
+Working in base 2 and showing all your workings, compute the following.
+$(10110)_2 \times (111)_2$
+
+Express the binary number (1101.101)_2 as a decimal, showing all your workings
+Express the decimal number (3599)_{10} in base 2
+
+Say which of the set the following numbers belong to.
+
+If they belong to more than one of these sets, give all the sets.
+
+$\sqrt{2}$
+$\frac{3}{7}$
+
+------------------------------------------------------
+Question 2
+Describe the following set by the rules of inclusion method.
+
+Describe the following set by the listing method
+the set of positive multiples of 3 which are less than 20.
+
+Let A and B be subsets of univerisal set U
+
+Use the membership rule to prove that
+
+(A^\prime  \cap B)^\prime = A \cup B^\prime
+
+shade the region corresponding to this set on a Venn Diagram
+
+Given the universal set \mathcal{U} = {1,2,3,4,5,6,7,8,9}
+and the subsets A=\{1,3,5,7\}
+B = \{6,7,8,9}
+list the set A^\prime \cap B)^\prime 
+
+
+------------------------------------------------------
+Question 3
+
+Let $\mathcal{S} = \{10,11,12,13,14,15,16,17,18,19,20\}$
+$n  \element \mathcal{S}$
+p : n is a multiple of two
+q : n is a multiple of five
+
+Express the following statement using logic symbols
+n is not a multiple of either 2 or 5.
+
+List the elements of S which are in the truth set for the statement in (ii).
+
+Write the contrapositive of the following statement concerning an integer $n$.
+
+If the last digit of n is 4, then n is divisible by 3
+
+------------------------------------------------------
+Question 4
+
+A function f: X-> Y , where $X = \{p,q,r,s\}$ and $Y =\{1,2,3,4,5\}$
+is given by the subset of $X \times Y$
+
+
+\begin{itemize}
+\item Show f as an arrow diagram
+\item state the domain, the co-domain, and the range of f
+\ite, Say why f does not have the one-to-one property and why f does 
+not have the "onto" property, giving a specific counter example in each case.
+\end{itemize}
+------------------------------------------------------
+Question 5
+
+A sequence is defined by the formula 
+$u_n = 5n-3$ for $n\geq 1$
+
+\frac{n(n+1)(2n+1)}{6}
+
+Write the following sums in the \Sigma notation and evaluate them
+
+1^2 + 2^2 + 3^2 +  \ldots +  40^2 = ?
+2 + 5 + 10 + \ldots + 1601 = ?
+2+8+18+\ldots +3200 = ?
+
+------------------------------------------------------
+Question 7
+Say with reason whether or not \mathcal{R} os
+\begin{itemize}
+\item reflexive
+\item symmetric
+\item transitive
+\end{itemize}
+
+In the cases where the given property does not hold provide a counter example to justify this.
+------------------------------------------------------
+Question 8
+
+1) Draw this tree
+2) Construct all the isomorphic tress with 6 vertices which can be obtainbed by attaching a new vertex of degreee one to a vertex of T.
+3) Explain briefly why the tree obtained in (ii) is not isomorphic to each other.
+4) Construct a tree with 6 vertices which is not isomorphic to any tree you constructed in (ii)
+
+Part b
+Determine the number of nodes on level 5 and level 10
+Find an expression in terms of \Sigma and h for the number of internal nodes in such a tree.
+What is the smallest possible height of such a tree if there are at least 900 internal nodes.
+
+------------------------------------------------------
+Question 10
+
+Say what informaiton the first row of the matrix contains.
+Find the number of edges of G.
+
+
+Write doen the augmented matrix for the following system of equations.
+x+y+2z=7
+2x+y+3z =11
+x-27+5z=4
+
+
+Use Gaussian elimination to solve the system.

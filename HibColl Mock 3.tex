@@ -25,6 +25,7 @@ Secondly, both methods of measurement have the same  within-subject variability.
 Lastly, the methods have equal between-subject variability.  Put simply, for the mean measurements for each case, the variances of the mean measurements from both methods are equal.
 \subsection{Testing for Inter-method Bias}
 Firstly, a practitioner would investigate whether a significant inter-method bias is present between the methods. This bias is specified as a fixed effect in the LME model.  For a practitioner who has a reasonable level of competency in \texttt{R} and undergraduate statistics (in particular simple linear regression model) this is a straight-forward procedure.
+\end{document}
 \subsection{Reference Model (Ref.Fit)}
 Conventionally LME models can be tested using Likelihood Ratio Tests, wherein a reference model is compared to a nested model.
 \begin{framed}
@@ -52,6 +53,10 @@ Roy(2009) presents two nested models that specify the condition of equality as r
 
 \newpage
 \section{Big Data}
+\subsection{Apache Hadoop }
+Apache Hadoop is an open source software framework this supports data-intensive distributed applications licensed under the Apache v2 license.
+It enables applications to work with thousands of computational independent computers and petabytes of data. Hadoop was derived from Google's MapReduce and Google File System (GFS) papers.
+Hadoop is a top-level Apache project being built and used by a global community of contributors, written in the Java programming language. Yahoo! has been the largest contributor to the project, and uses Hadoop extensively across its businesses.
 
 \subsection{bigmemory}
 This project extends the R statistical programming environment.  Package bigmemory supports the creation, storage, access, and manipulation of massive matrices.  These matrices are allocated to shared memory and may use memory-mapped files.  The associated packages provide advanced functionality.
@@ -205,28 +210,6 @@ SELECT columns or computations
 	LIMIT offset,count;
 \end{verbatim}
 \end{framed}
-%-----------------------------------------------------------%
-\section{Character Manipulation}
-R is usually thought of as a language designed for numerical computation,
-it contains a full complement of functions which can manipulate character
-data.
-
-\begin{itemize}
-\item The \texttt{nchar()} function can be used to find the number of characters in a character value.
-\item Character values will be displayed when they are passed to the  \texttt{print()} function.
-\item The \texttt{cat()}  function will combine
-character values and print them to the screen or a file directly. The \texttt{cat()}
-function coerces its arguments to character values, then concatenates and displays
-them. This makes the function ideal for printing messages and warnings
-from inside of functions.
-\end{itemize}
-
-%-----------------------------------------------------------%
-\subsection{Regular Expressions in \texttt{R}}
-Regular expressions are a method of expressing patterns in character values
-which can then be used to extract parts of strings or to modify those strings in some way. Regular expressions are supported in the \texttt{R} functions \texttt{strsplit()},
-\texttt{grep()}, \texttt{sub()}, and \texttt{gsub()}, as well as in the\texttt{ regexp()} and \texttt{gregexpr()} functions which
-are the main tools for working with regular expressions in \texttt{R}.
 
 %-----------------------------------------------------------%
 \subsection{Breaking Apart Character Values}
@@ -239,179 +222,6 @@ parts.
 %-----------------------------------------------------------%
 
 %---------------------------------------------------------------------------------------------------%
-\newpage
-\section{Matrices with \texttt{R}}
-
-Matrices are a very useful data structure. 
-An inputted vector can be transformed into matrix form before further constructing it as a vector.
-
-Suppose the following vector was scanned in as a vector, but intended as a data frame.
-\begin{framed}
-\begin{verbatim}
-2 1.15 
-3 1.56
-5
-2
-
-DAT = c(2
-\end{verbatim}
-\end{framed}
-%-------------------------------%
-\section{Reading in Data}
-
-%------------------------------%
-\section{A Brief Introduction to fitting Linear Models}
-
-A very commonly used statistical procedure is \textbf{simple linear regression}
-\begin{itemize}
-\item \texttt{lm()}
-\item \texttt{summary()}
-\end{itemize}
-
-\begin{framed}
-\begin{verbatim}
-Y <- c( )
-X <- c( )
-
-plot(X,Y)
-cor(X,Y)
-lm(Y~X)
-\end{verbatim}
-\end{framed}
-%------------------------%
-\begin{framed}
-\begin{verbatim}
-FitA =lm(Y~X)
-summary(FitA)
-\end{verbatim}
-\end{framed}
-%--------------------------------%
-Let's look at this summary output in more detail, to see how it is structured. Importantly this object is structur3ed as a list of named components.
-\begin{framed}
-\begin{verbatim}
-names(summary(FitA))
-class(summary(FitA))
-mode(summary(FitA))
-str(summary(FitA))
-\end{verbatim}
-\end{framed}
-
-%-------------------------------%
-The summary of \texttt{FitA} is a data object in it's own right. We will save it under the name \texttt{Sum.FitA} (N.B. The dot in the name has no particular meaning).
-\begin{framed}
-\begin{verbatim}
-Sum.FitA=summary(FitA)
-Sum.FitA[1]
-Sum.FitA$pvalue
-\end{verbatim}
-\end{framed}
-%------------------------------%
-Suppose we wish require the p-value for the slope estimate only.(
-\begin{framed}
-\begin{verbatim}
-class(Sum.FitA$pvalue)
-mode(Sum.FitA$pvalue)
-dim(Sum.FitA$pvalue)
-\end{verbatim}
-\end{framed}
-
-%------------------------------%
-\section{Programming Language Statements}
-
-\begin{itemize}
-\item \texttt{for}
-\item \texttt{while}
-\item \texttt{if}
-\item \texttt{break}
-\item \texttt{switch}
-\end{itemize}
-
-\begin{framed}
-\begin{verbatim}
-for (i in 1:5)
-    {
-    cat("This is loop",i, "\n")
-    cat("The square of ", i, "is ",i^2,"\n\n")
-    }
-\end{verbatim}
-\end{framed}
-
-
-\begin{verbatim}
-> for (i in 1:5)
-+     {
-+     cat("This is loop",i, "\n")
-+     cat("The square of ", i, "is ",i^2,"\n\n")
-+     }
-This is loop 1 
-The square of  1 is  1 
-
-This is loop 2 
-The square of  2 is  4 
-
-This is loop 3 
-The square of  3 is  9 
-
-This is loop 4 
-The square of  4 is  16 
-
-This is loop 5 
-The square of  5 is  25 
-\end{verbatim}
-
-\subsection{\texttt{While}}
-
-\begin{framed}
-\begin{verbatim}
-
-X=sample(1:20,5)
-i=0
-while( mean(X) != floor(mean(X)) )
- {
- 
- cat("This is attempt",i,"\n")
- cat("The mean value of X is",mean(X),"\n \n")
-
- X=sample(1:20,6)
- i = i+1
- }
-
-cat(
- "First Successful Attempt \n 
- This is attempt",i,"\n
- The data set is", X , "\n
- The mean value of X is",mean(X),"\n")
-
-
-\end{verbatim}
-\end{framed}
-
-\begin{verbatim}
-...
-
-This is attempt 10 
-The mean value of X is 9.166667 
- 
-This is attempt 11 
-The mean value of X is 8.833333 
- 
-This is attempt 12 
-The mean value of X is 12.33333 
- 
-This is attempt 13 
-The mean value of X is 10.16667 
-\end{verbatim}
-\begin{verbatim}
-First Successful Attempt 
- 
- This is attempt 14 
-
- The data set is 10 15 4 17 18 2 
-
- The mean value of X is 11 
-
-\end{verbatim}
- %---------------------------------%
 
 \newpage
 \begin{verbatim}
@@ -458,7 +268,8 @@ Discriminant analysis is a \textbf{classification} method.
 \item To predict the classes of new data, the trained classifier finds the class with the smallest misclassification cost.
 \end{itemize}
 %-----------------------------------------------------------------------------------%
-
+\subsection{Recall and Precision}
+In a classification task, the precision for a class is the number of true positives (i.e. the number of items correctly labeled as belonging to the positive class) divided by the total number of elements labeled as belonging to the positive class (i.e. the sum of true positives and false positives, which are items incorrectly labeled as belonging to the class). Recall in this context is defined as the number of true positives divided by the total number of elements that actually belong to the positive class (i.e. the sum of true positives and false negatives, which are items which were not labeled as belonging to the positive class but should have been).
 %-----------------------------------------------------------------------------------%
 \subsection*{Cost}
 There are two costs associated with discriminant analysis classification: the true misclassification cost per class, and the expected misclassification cost per observation.
@@ -568,8 +379,11 @@ You answer: the "precision" was 60 out of 200 = 30\%
 
 \newpage
 
+\section{Missing Data}
 
+\section{What is multiple imputation?}
 
+Imputation, the practice of 'filling in' missing data with plausible values, is an attractive approach to analyzing incomplete data. It apparently solves the missing-data problem at the beginning of the analysis. However, a naive or unprincipled imputation method may create more problems than it solves, distorting estimates, standard errors and hypothesis tests, as documented by Little and Rubin (1987) and others.
 
 
 
@@ -637,10 +451,156 @@ grubbs.test(X,two.tailed=T)
 \end{framed}
 %-------------------------------------------------------------------------%
 \newpage
+\section{Section 3 Logic}
+\subsection{Logical Operations}
+\begin{itemize}
+\item $\neg p$ the negation of proposition $p$.
+\item $p \wedge q$ Both propositions p and q are simultaneously true (Logical State AND)
+\item $p \vee q $ One of the propositions is true, or both (Logical State : OR)
+\item $p \otimes q$ Only one of the propositions is true (Logical State : exclusive OR (i.e XOR)
+\end{itemize}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+p & q & $p \vee q$ & $q \wedge p$ & $p \otimes q$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 1\\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0\\
+\hline
+\end{tabular}
+\end{center}
+%---------------------------------------------------------%
+\section{Conditional Connectives}
+Construct the truth table for the proposition $p \rightarrow q$.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+p & q & $p \rightarrow q$ & $q \rightarrow p$ \\
+\hline
+0 & 0 & 1& 1 \\
+0 & 1 & 1 & 0 \\
+1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{center}
 
 
 %-------------------------------------------------------------------------%
 \newpage
+
+\section{Section 4 Functions}
+
+\subsection{Invertible Functions}
+A function is invertible if it fulfils two criteria
+\begin{itemize}
+\item The function is \textbf{\textit{onto}},
+\item The function is \textbf{\textit{one-to-one}}.
+\end{itemize}
+
+State the conditions to be satisfied by a function
+$f : X \leftarrow Y$ for it to have an inverse function
+$f^{-1} : Y \leftarrow X$.
+%---------------------------------------------------------%
+
+$\lceil \frac{x^2+1}{4} \rceil$
+where $f : A \rightarrow \textbf{Z}$
+\begin{itemize}
+\item[(i)] Find $f(4)$ and the ancestors of 3.
+\item[(ii)] Find the range of $f$.
+\item[(iii)] Is f invertible? Justify your answer
+\end{itemize}
+
+Given $f : \textbf{R} \rightarrow \textbf{R}$ where f(x) =3x-1,define fully
+the inverse of the function f ,i.e.$f^{-1}$. 
+State the value of $f^{-1}(2)$
+%---------------------------------------------------------%
+\subsection{Precision Functions}
+
+\begin{itemize}
+\item Absolute Value Function $| x |$
+\item Ceiling Function $\lceil x \rceil$
+\item Floor Function  $\lfloor x \rfloor $
+\end{itemize}
+%\[ \lfloorx\rfloor\]
+
+\noindent \textbf{Question1.2}: State the range and domain of the following function
+\[ F(x) = \lfloor x-1 \rfloor \]
+%---------------------------------------------------------%
+\subsection{Powers}
+
+\[  2^ 4 = 2 \times 2 \times 2 \times 2 = 16 \]
+
+\[  5^ 3 = 5 \times 5 \times 5 =125 \]
+
+\subsubsection{Special Cases}
+
+Anything to the power of zero is always 1
+
+\[  X^ 0 = 1 \mbox{ for all values of X} \]
+
+Sometimes the power is a negative number.
+
+\[  X^{-Y} = { 1 \over X^Y}  \]
+
+Example 
+\[  2^{-3} = { 1 \over 2^3} = { 1 \over 8}  \]
+
+
+
+%---------------------------------------------------------%
+\subsection{Exponentials Functions}
+
+\[ e^a \times e^b = e^{a+b}\]
+
+\[ (e^a )^b = e^{ab}\]
+%---------------------------------------------------------%
+\subsection{Logarithmic Functions}
+
+\subsubsection{Laws for Logarithms}
+The following laws are very useful for working with logarithms.
+\begin{enumerate}
+\item $\mbox{log}_b(X)$ + $\mbox{log}_b(Y)$ = $\mbox{log}_b(X\times Y)$
+\item $\mbox{log}_b(X)$ - $\mbox{log}_b(Y)$ = $\mbox{log}_b(X / Y)$
+\item $\mbox{log}_b(X^Y)$= $Y \mbox{log}_b(X)$
+\end{enumerate}
+
+\noindent \textbf{Question1.3} Compute the Logarithm of the following
+\begin{itemize}
+\item $\mbox{log}_2(8)$
+\item $\mbox{log}_2(\sqrt{128})$
+\item $\mbox{log}_2(64)$
+\item $\mbox{log}_5(125)$ +   $\mbox{log}_3(729)$
+\item $\mbox{log}_2(64/4)$
+\end{itemize}
+\section{graph theory }
+Given the following definitions for simple, connected graphs:
+\begin{itemize}
+\item $K_n$ is a graph on $n$ vertices where each pair of vertices is connected by an edge;
+\item $C_n$ is the graph with vertices $v_1, v_2, v_3, \dots, v_n$ and edges $\{v_1,v_2\}, \{v_2,v_3\}, \dots\{v_n, v_1\}$;
+\item $W_n$ is the graph obtained from $C_n$ by adding an extra vertex,$v_{n+1}$, and edges
+from this to each of the original vertices in $C_n$.
+\end{itemize}
+(a) Draw $K_4$, $C_4$, and $W_4$. 
+%----------------------------------------------------------------%
+\newpage
+\section{Digraphs and Relatiosn}
+% 2007 Q8
+Given a flock of chickens, between any two chickens one of them is
+dominant. A relation, R, is defined between chicken x and chicken y as xRy if x is
+dominant over y. This gives what is known as a pecking order to the flock. Home
+Farm has 5 chickens: Amy, Beth, Carol, Daisy and Eve, with the following relations:
+
+\begin{itemize}
+\item Amy is dominant over Beth and Carol
+\item Beth is dominant over Eve and Carol
+\item Carol is dominant over Eve and Daisy
+\item Daisy is dominant over Eve, Amy and Beth
+\item Eve is dominant over Amy.
+\end{itemize}
 
 \newpage
 \section{Counting}

@@ -1,0 +1,108 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{amssymb}
+\usepackage{graphics}
+
+\begin{document}
+\begin{frame}
+\Huge
+\[ \mbox{Mathematics for Computing} \]
+\huge
+\[ \mbox{Binary Strings and Functions} \]
+
+\Large
+\[ \mbox{kobriendublin.wordpress.com} \]
+\[ \mbox{Twitter: @StatsLabDublin} \]
+
+\end{frame}
+%--------------------------------------------------- %
+\begin{frame}
+\frametitle{Binary Strings and Functions}
+\Large
+Let $S$ be the set of all 4 bit binary strings. 
+
+The function $f : S \rightarrow \mathbb{Z}$
+is defined by the rule:
+\[f(x) = \mbox{the number of zeros in x}\]
+for each binary string $x \in S$.\\
+Find:
+\begin{enumerate}
+\item the number of elements in the domain
+\item $f(1000)$
+\item the set of pre-images of 1
+\item the range of $f$.
+\end{enumerate}
+
+\end{frame}
+\begin{frame}
+\frametitle{Binary Strings and Functions}
+\Large
+\vspace{-1cm}
+\textbf{Part 1}: Find the number of all elements in the domain.\\
+
+
+\begin{itemize}
+\item In this question, the domain is $S$
+\item $S$ is the set of all 4 bit binary strings. 
+\begin{center}
+{
+\LARGE
+1010 \; 1101 \; 0101\; ... \\
+0010 \; 1001 \; 1110\; ... \\
+}
+\end{center}
+\item There are $2^4$ 4-bit binary strings.
+\[ 2^4 = \boldsymbol{16}\]
+\end{itemize}
+\end{frame}
+%-------------------------------------- %
+\begin{frame}
+\frametitle{Binary Strings and Functions}
+\Large
+\vspace{-1cm}
+\textbf{Part 2}: Find $f(1000)$
+
+\begin{itemize}
+\item Recall
+\[f(x) = \mbox{the number of zeros in x}\]
+\item How many zeros in the binary string 1000? 
+\[f(1000) =3\]
+\end{itemize}
+
+
+\end{frame}
+%-------------------------------------- %
+\begin{frame}
+\frametitle{Binary Strings and Functions}
+\Large
+\vspace{-1cm}
+\textbf{Part 3}: Find the set of pre-images of 1.
+
+\begin{itemize}
+\item Find all the 4-bit binary strings with only one zero.
+\LARGE
+\[\{1110, \; 1101, \; 1011,\; 0111\; \}\] 
+
+\end{itemize}
+\end{frame}
+%-------------------------------------- %
+\begin{frame}
+\frametitle{Binary Strings and Functions}
+\Large
+\vspace{-1cm}
+\textbf{Part 4}: Find the range of $f$.
+
+\begin{itemize}
+\item What is minimum and maximum numbers of 0s in a 4-bit binary string
+\item There can be no 0s or as many as 4.
+\item $f(1111) = 0$ and $f(0000) = 4$
+\item The range of $f$ is therefore
+\LARGE 
+\[\{0,1,2,3,4\}\] 
+
+\end{itemize}
+\end{frame}
+%-------------------------------------- %
+\end{document}

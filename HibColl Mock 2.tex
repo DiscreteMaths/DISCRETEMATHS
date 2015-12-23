@@ -1,0 +1,178 @@
+
+
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+
+
+\usepackage{graphicx} 
+\usepackage{framed}
+
+
+
+\title{Hibernia College}
+\author{Kevin O'Brien}
+
+\begin{document}
+\maketitle
+\tableofcontents
+% Joanne O'Hagan
+% The Exchange
+% June 13th to 20th
+% Pub Standards
+
+% https://onlinecourses.science.psu.edu/stat505/node/78
+
+% http://rer.sagepub.com/content/45/4/543.full.pdf
+
+
+%-----------%
+
+
+%http://www.uvm.edu/~dhowell/StatPages/More_Stuff/Missing_Data/Missing.html
+
+% http://www.uvm.edu/~dhowell/StatPages/More_Stuff/Missing_Data/Missing.html
+% http://www.stat.columbia.edu/~gelman/arm/missing.pdf
+%---------------------------------------------------------------------------------------------------%
+\section{Dublin's Data Community}
+
+CeADAR
+Dublin Data Visualization
+Dublin Riak
+Coding Grace
+Dublin MongoDB
+Dublin Cassandra
+Python Ireland
+IRlogi
+Irish Ecological Modelling
+ie-pug Irish PostGresQL user group
+Open Data Ireland
+
+EngineYard
+
+\begin{itemize}
+\item \texttt{roots()} roots of a polynomial
+\item \texttt{poly()} characteristic equation
+\item \texttt{primes()} generate a sequence of prime numbers
+\item \texttt{isprime()} check for prime numbers
+\item \texttt{any()} check if any value fulfils a logical condition
+\item \texttt{all()} check if all value fulfils a logical condition
+\end{itemize}
+
+ \newpage
+
+\textbf{Grubbs Test}
+
+p: value
+
+
+
+The null hypothesis is that both sampmes are drawn from the same population of values.
+
+The test is a non parametric test. Non Parametric tests are a family of inference tests that do not require the assumption of normality.
+\subsection{Grubbs's Test for Outliers}
+Grubbs Testnis is used to determine whether or not a particular value in the data set is an \textbf{\textit{outlier}}. There is no standard definition of what defines an outlier. The definition of an outlier used for this procedure is a value that is numerically distance from the rest of the values of the data set. (We will refer to such an outlier as a \textbf{\textit{Grubbs outlier}}.
+
+
+Another type of outlier is a point identified as such by a boxplot. We will refer to this type of outlier as a \textbf{\textit{boxplot outlier}}.  An outlier may be either one or the other type, but not necessarily both.
+
+Some outliers may be due to incorrectly recorded data. Other outliers are correctly recorded, but very unusual, values.
+
+null $H_0$ : There are no outliers present in the data set.
+
+alt $H_1$ : There is an outlier present in the data set.
+
+\subsubsection{Implementation using \texttt{R}}
+To implement the Grubbs test, we require the package \textbf{\textit{outliers}}.
+
+%--------------------------------------------------------------------------------%
+\subsection{Kolmorgorov Smirnov Test}
+Two sample KS test
+
+The Kolmorogorov Smirnov Test (aka The KS test) is used to determine whether or not two data sets are from the same distribution.
+The test is implemented in \texttt{R}n using the command \texttt{ks.test()}. No packages are required to run this procedure.
+
+
+
+
+\begin{framed}
+\begin{verbatim}
+x=c(3,4,5,1,6)
+library(outliers)
+grubbs.test(X,two.tailed=T)
+\end{verbatim}
+\end{framed}
+
+
+%-------------------------------------------------------------------------%
+\newpage
+
+%-------------------------------------------------------------------------%
+\newpage
+\newpage
+\begin{verbatim}
+MONDAY 15 April
+1. MS4024 MATLAB (Project Euler) - DONE
+2. MS4024 R (Complete Course) - Week 12 DONE
+3. MA4128 - Paper Submit (Joe Lynch) - DONE
+4. MA4128 - Practical Exam Sample Paper FORWARD
+5. MA4704 11A
+           Update Sample Papers(DONE)
+           Re-publish 10B/C (DONE)
+           HTs and CIs for Proportions (DONE)
+           sample size estimation for proportions (Corrections)
+6. HibColl Review Sessions 3 and 4
+7. Corrections for MTs
+
+TUESDAY 16 April
+1. MA4128 Discriminant Analysis + Missing Data 
+2. HibColl Review Sessions 5 and 6
+3. Update Sample Questions for MA4128
+
+WEDNESDAY 17 April
+1. Dentist (09:30) DONE
+2. Dublin R (17:30) and Python Ireland (18:30) DONE
+3. MA4704 Tutorials Prep (Proportions + p-value prcoedures)
+4. MT2 MA4704 Corrections (Some Done)
+5. MS4024 Payments
+6. Method Comparison Studies
+FRIDAY 19 April
+1. Kubrick Night (Cant Make It)
+2.Julia Language - Learn
+3. Coursera Downloads
+4. Prof. Nial Friel (4pm)
+\end{verbatim}
+\newpage
+%---------------------------------------------%
+\section{Useful MATLAB Functions}
+
+\begin{itemize}
+\item \texttt{unique()}
+\item \texttt{primes()}
+\item \texttt{size()}
+\item \texttt{factor()}
+\end{itemize}
+\begin{framed}
+\begin{verbatim}
+
+factor(223)
+
+\end{verbatim}
+\end{framed}
+
+
+\subsection{For Loops in MATLAB}
+\begin{framed}
+\begin{verbatim}
+for( )
+
+\end{verbatim}
+\end{framed}
+\subsection{While Loops in MATLAB}
+\texttt{while} operator allows a set of commands to be repeated until a specific logical condition is met.
+
+\begin{framed}
+\begin{verbatim}
+while( )
+
+\end{verbatim}
+\end{framed}
+\end{document}
