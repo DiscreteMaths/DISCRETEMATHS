@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass{article}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -6,8 +6,12 @@
 \begin{document}
 
 %---------------------------------------------------------%
-\begin{frame}
-\frametitle{Conditional Connectives}
+\LARGE
+\section{Conditional Connectives}
+\begin{itemize}
+	\item $p \rightarrow q$ is logically equivalent to $\neg(p \wedge \neg q)$.
+\end{itemize}
+
 Construct the truth table for the proposition $p \rightarrow q$.
 
 \begin{center}
@@ -15,14 +19,16 @@ Construct the truth table for the proposition $p \rightarrow q$.
 \hline
 p & q & $p \rightarrow q$ & $q \rightarrow p$ \\
 \hline
-0 & 0 & 1& 1 \\
+\phantom{sp}0\phantom{sp} & \phantom{sp}0\phantom{sp} & 1& 1 \\
 0 & 1 & 1 & 0 \\
 1 & 0 & 0 & 1 \\
 1 & 1 & 1 & 1 \\
 \hline
 \end{tabular}
 \end{center}
-\end{frame}
+
+\phantom{sp}
+\end{document}
 %------------------------------------------------------------------ %
 
 \end{document}

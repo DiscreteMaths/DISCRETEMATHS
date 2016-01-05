@@ -1,0 +1,127 @@
+\documentclass{beamer}
+
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+%Slide 1 Title Slide
+\begin{frame}
+\bigskip
+{
+\Huge
+\[ \mbox{Powers and Logarithms}\]
+}
+{
+\Large
+\[ \mbox{kobriendublin.wordpress.com}\]
+\[ \mbox{Youtube: StatsLabDublin}\]
+}
+\end{frame}
+
+
+%-------------------------------------------------------%
+
+
+\begin{frame}
+\frametitle{Exercises}
+\Large
+Showing your workings, use the rules of indices and logarithms to give the following two expression in their simplest form.
+\bigskip
+\begin{itemize}
+\item \textbf{Exercise 1}
+\[ 4 \cdot 2^x - 2^{x+1} \]
+\item \textbf{Exercise 2}
+\[  \frac{\mbox{ln}(2) + \mbox{ln}(2^2) + \mbox{ln}(2^3)  + \mbox{ln}(2^4) + \mbox{ln}(2^5)  }  {\mbox{ln}(4)}  \]
+\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------%
+\begin{frame}
+\frametitle{Exercise 1}
+\Large
+\[ 4 \cdot 2^x - 2^{x+1} \]
+
+\textbf{Remarks:}\\
+\textit{(looking at the second term)}
+\begin{itemize}
+\item[1] Using the following rule
+\[ a^b \cdot a^c = a^{(b+c)}  \] 
+\item[2] Using this rule in reverse we can say
+\[ 2^{x+1} = 2^x \cdot 2^1  = 2\cdot (2^x) \] 
+\end{itemize}
+\[ 4 \cdot 2^x - 2^{x+1} \mbox{   } = \mbox{   } (4 \cdot 2^x) -  (2\cdot 2^{x}) \]
+\end{frame}
+
+%-------------------------------------------------------%
+\begin{frame}
+\frametitle{Exercise 1}
+\Large
+\vspace{-0.9cm}
+
+\textbf{Remarks:}
+\begin{itemize}
+\item[3] This expression is in the form 
+\[ (a  \cdot b ) - ( c  \cdot b) \]
+which can be re-expressed as follows 
+\[ (a - c\sqrt{b} )  \cdot b \]
+\end{itemize}
+\[ (4 \cdot 2^x) -  (2\cdot 2^{x}) = (4-2)  \cdot 2^{x} \]
+\[   = 2 \cdot 2^x = 2^{x+1}\]
+\end{frame}
+%-------------------------------------------------------%
+
+\begin{frame}
+\frametitle{Exercise 2}
+\Large
+
+\[  \frac{\mbox{ln}(2) + \mbox{ln}(2^2) + \mbox{ln}(2^3)  + \mbox{ln}(2^4) + \mbox{ln}(2^5)  }  {\mbox{ln}(4)}  \]
+Useful Rule of Logarithms
+\[  \mbox{ln}(a^b)  = b\cdot \mbox{ln}(a)  \]
+\[  \frac{\mbox{ln}(2) + 2 \cdot \mbox{ln}(2) + 3 \cdot\mbox{ln}(2)  + 4 \cdot \mbox{ln}(2) + 5 \cdot \mbox{ln}(2)  }  {\mbox{ln}(4)}  \]
+\end{frame}
+%--------------------------------------%
+\begin{frame}
+\frametitle{Exercise 2}
+\Large
+Adding up all the terms in the numerator
+
+\[  \frac{1\cdot\mbox{ln}(2) + 2 \cdot \mbox{ln}(2) + 3 \cdot\mbox{ln}(2)  + 4 \cdot \mbox{ln}(2) + 5 \cdot \mbox{ln}(2)  }  {\mbox{ln}(4)} \]  \[= \frac{15 \cdot \mbox{ln}(2) }{\mbox{ln}(4)} \]
+
+
+\end{frame}
+
+%--------------------------------------%
+\begin{frame}
+\frametitle{Exercise 2}
+\Large
+Our expression has now simplified to 
+\[\frac{15 \cdot \mbox{ln}(2) }{\mbox{ln}(4)} \]
+
+We can simplify the denominator too
+
+\[ \mbox{ln}(4) =  \mbox{ln}(2^2) = 2 \cdot \mbox{ln}(2) \]
+
+
+\end{frame}
+
+%--------------------------------------%
+\begin{frame}
+\frametitle{Exercise 2}
+\Large
+Our expression has now simplified to 
+\[\frac{15 \cdot \mbox{ln}(2) }{\mbox{ln}(4)} = \frac{15 \cdot \mbox{ln}(2) }{2 \cdot \mbox{ln}(2)} \]
+
+We can divide above and below by $\mbox{ln}(2)$ to get our final answer
+
+
+\[ \frac{15 \cdot \mbox{ln}(2) }{2 \cdot \mbox{ln}(2)} = \frac{15}{2} = 7.5 \]
+
+\end{frame}
+
+\begin{frame}
+The End
+\end{frame}
+
+\end{document}
