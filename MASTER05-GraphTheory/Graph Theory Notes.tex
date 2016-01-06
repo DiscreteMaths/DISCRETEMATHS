@@ -119,6 +119,21 @@ Definition 5.18 The diagonal line of cells from the top left hand cell to the bo
 
 The adjacency matrix of a graph is always symmetric because the number of edges joining vertex i to vertex j is equal to the number of edges joining vertex j to vertex i. Geometrically, the symmetry of the matrix is about the main diagonal. Note that the entries on the main diagonal record the number of loops at each vertex.
 
+%==============================================================================================%
+%-https://en.wikibooks.org/wiki/Graph_Theory/Definitions#Distance_in_a_Graph
+
+Walk, closed walk, circuit and cycle[edit]
+A u-v walk is defined as a sequence of vertices starting at u and ending at v, where consecutive vertices in the sequence are adjacent vertices in the graph
+
+A drawing of a labelled graph on 6 vertices and 7 edges.
+A closed walk is a walk in which the first and last vertices are the same
+A u-v trail is a u-v walk, where no edge is repeated (each edge is used at most once)
+A circuit or closed trail is a trail in which the first and last vertices are the same
+A u-v path is a u-v walk, where no vertex is repeated (each vertex is used at most once)
+A cycle is a closed path in which the first and last vertices are the same
+For example, in the image to the right, (6,4,5,1) is a walk. While (4,5,2,3,4), and (1,5,2,1) are cycles.
+
+
 %----------------------------------------%
 %5.6.2 
 \subsection*{Adjacency lists}
