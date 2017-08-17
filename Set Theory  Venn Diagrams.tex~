@@ -1,0 +1,100 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{amssymb}
+\usepackage{graphics}
+
+\begin{document}
+\begin{frame}
+\Huge
+\[ \mbox{Mathematics for Computing} \]
+\huge
+\[ \mbox{Set Theory : Venn Diagrams} \]
+
+\Large
+\[ \mbox{kobriendublin.wordpress.com} \]
+\[ \mbox{Twitter: @StatsLabDublin} \]
+
+\end{frame}
+
+%-------------------------------------%
+\begin{frame}
+\frametitle{Set Theory : Venn Diagrams}
+\Large
+\vspace{-0.5cm}
+\begin{itemize}
+\item Let $A$,$B$ and $C$ be subsets of a universal set $U$.
+\item Draw a labelled Venn diagram depicting $A$,$B$,$C$ in such a way that they divide $U$ into 8 disjoint regions.
+\end{itemize}
+
+\end{frame}
+%-------------------------------------%
+\begin{frame}
+\frametitle{Subsets and Elements of Sets}
+\Large
+\vspace{-1cm}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline Region & A & B & C &  \\ 
+\hline 1 &\phantom{sp} No \phantom{sp}&\phantom{sp} No\phantom{sp} & \phantom{sp} No \phantom{sp} &  \\ 
+\hline 2 & Yes & No & No &  \\ 
+\hline 3 & No & Yes & No &  \\ 
+\hline 4 & Yes & Yes & No &  \\ 
+\hline 5 & No & No & Yes &  \\ 
+\hline 6 & Yes & No & Yes &  \\ 
+\hline 7 & No & Yes & Yes &  \\ 
+\hline 8 & Yes & Yes & Yes & $A \cap B \cap C$ \\ 
+\hline 
+\end{tabular}
+\end{center} 
+\end{frame}
+%-------------------------------------%
+\begin{frame}
+\frametitle{Subsets and Elements of Sets}
+\Large
+\vspace{-1cm}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline Region & A & B & C &  \\ 
+\hline 1 &\phantom{sp} No \phantom{sp}&\phantom{sp} No\phantom{sp} & \phantom{sp} No \phantom{sp} &  \\ 
+\hline 2 & Yes & No & No &  \\ 
+\hline 3 & No & Yes & No &  \\ 
+\hline 4 & Yes & Yes & No &  \\ 
+\hline 5 & No & No & Yes &  \\ 
+\hline 6 & Yes & No & Yes &  \\ 
+\hline 7 & No & Yes & Yes &  \\ 
+\hline 8 & Yes & Yes & Yes & $A \cap B \cap C$ \\ 
+\hline 
+\end{tabular}
+\end{center} 
+\end{frame}
+%-------------------------------------%
+\begin{frame}
+\frametitle{Subsets and Elements of Sets}
+\Large
+\vspace{-1cm}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline Region & A & B & C &  \\ 
+\hline 1 &\phantom{s} No \phantom{s}&\phantom{s} No\phantom{s} & \phantom{s} No \phantom{s} & $(A \cup B \cup C)^C$  \\ 
+\hline 2 & Yes & No & No &  \\ 
+\hline 3 & No & Yes & No &  $B-(A \cap C)$\\ 
+\hline 4 & Yes & Yes & No & $(A \cap B) - C$ \\ 
+\hline 5 & No & No & Yes &  $C-(A \cap B)$ \\ 
+\hline 6 & Yes & No & Yes & $(A \cap C) - B$ \\ 
+\hline 7 & No & Yes & Yes & $(B \cap C) - A$ \\ 
+\hline 8 & Yes & Yes & Yes & $A \cap B \cap C$ \\ 
+\hline 
+\end{tabular}
+\end{center} 
+\end{frame}
+%-------------------------------------%
+\begin{frame}
+\frametitle{Subsets and Elements of Sets}
+\Large
+\vspace{-0.5cm}
+\textbf{Elements of a Set}\\
+
+\end{frame}
+\end{document}

@@ -1,0 +1,86 @@
+
+\section{Video 13 : Probability}
+%------------------------------------------------------------------------- %
+\begin{frame}
+\frametitle{Probability}
+\Large
+\textbf{Description of the Experiment}
+\begin{itemize}
+\item Suppose we have two bags, each containing 2 marbles. 
+\item One bag has 2 red marbles and
+the other has a red marble and a yellow marble. 
+\item You pick a bag at random and then pick
+one of the marbles in that bag at random. 
+\item When you look at the marble, it is red. 
+You now pick the second marble from that same bag.
+\end{itemize} 
+\end{frame}
+
+%------------------------------------------------------------------------- %
+\begin{frame}
+\frametitle{Probability}
+\Large
+\textbf{Questions}
+\begin{itemize}
+\item[(a)] Write down the sample space for this experiment, where the outcomes are the ordered pairs of drawn marbles.
+\item[(b)] What is the probability that this marble
+is also red? Select one of the options below, with a justification for your answer.
+\end{itemize}
+\end{frame}
+
+% Computing with R
+%--------------------------------------------------------------------
+----- %
+\section{Video 31 : R Computing}
+% Basic R Maths Operations
+\begin{frame}[fragile]
+\frametitle{Computing with \texttt{R}}
+\Large
+\textbf{Basic Mathematical Exercises} Evaluate the following:
+
+\begin{itemize}
+\item The area of a circle of radius 2
+\item The factorial of 6
+\item The exponential of 6
+\item The natural log of 100
+\item The sine of 1.8$\pi$
+\end{itemize}
+\end{frame}
+
+
+
+
+
+%------------------------------------------------------------------------- %
+\section{Video 22 :  R Computing}
+% R Grep 
+\begin{frame}[fragile]
+\frametitle{The \texttt{grep} function}
+\begin{itemize}
+\item pattern of text, grep returns the indices  that match that pattern.
+\item
+\end{itemize}
+
+\end{frame}
+%------------------------------------------------------------------------- %
+\section{Video 32 : Inference with R}
+% prop.test
+\begin{frame}[fragile]
+\frametitle{The \texttt{prop.test} function}
+\begin{itemize}
+\item Test for equality for proportions
+\item Single sample and two sample 
+\end{itemize}
+\end{frame}
+%------------------------------------------------------------------------- %
+% prop.test
+\begin{frame}[fragile]
+\frametitle{The \texttt{prop.test} function}
+\begin{itemize}
+\item \texttt{conf.level = 0.95}
+\item \texttt{ "two-tailed","greater","less than"}
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------------------- %
+\end{document}
