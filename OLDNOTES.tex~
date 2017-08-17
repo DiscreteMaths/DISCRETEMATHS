@@ -229,4 +229,13 @@ grubbs.test(X,two.tailed=T)
 
 
 
-
+\section{graph theory }
+Given the following definitions for simple, connected graphs:
+\begin{itemize}
+\item $K_n$ is a graph on $n$ vertices where each pair of vertices is connected by an edge;
+\item $C_n$ is the graph with vertices $v_1, v_2, v_3, \dots, v_n$ and edges $\{v_1,v_2\}, \{v_2,v_3\}, \dots\{v_n, v_1\}$;
+\item $W_n$ is the graph obtained from $C_n$ by adding an extra vertex,$v_{n+1}$, and edges
+from this to each of the original vertices in $C_n$.
+\end{itemize}
+(a) Draw $K_4$, $C_4$, and $W_4$. 
+%----------------------------------------------------------------%
