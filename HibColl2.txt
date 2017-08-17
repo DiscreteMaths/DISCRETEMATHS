@@ -1,0 +1,19 @@
+(2.2.2) Cardinality 
+The number of distinct elements in a finite set is called its cardinality.
+
+
+(2.2.3) Power Set
+
+(2.3) Operations on Sets
+
+(2.3.1) Complement of a set
+(2.3.2) Binary Operations on Sets
+-Union
+-Intersection
+-Set Difference
+-Symmetric Difference 
+
+
+A \otimes B
+
+{2, 3, 4, 6, 7, 8}
