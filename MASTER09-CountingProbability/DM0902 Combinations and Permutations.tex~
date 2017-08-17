@@ -63,7 +63,7 @@ There are two types of permutation:
 \item If the order does matter it is a Permutation.
 \end{itemize}
 
-
+\large
 \begin{itemize}
 
 \item Permutations where repetition is allowed: 
@@ -114,18 +114,18 @@ If $P(A) = 3/10$ and $P(B) = 1/2$, find the values of $x$ and $y$
 
 
 %------------------------------------------------------ %
-
-\subsection{Permutations}
-
+\begin{frame}
+\frametitle{Permutations}
+\large
 \begin{itemize}
 \item In how many permutations are there of counting a subset of k elements, when there are $n$ elements in total.
 
 \item The number of permutations of a set of n elements is denoted n! (pronounced n factorial.)
 \end{itemize}
-
+\end{frame}
 %------------------------------------------------------ %
-
-\subsection{Permutation Formula}
+\begin{frame}
+\frametitle{Permutation Formula}
 
 A formula for the number of possible permutations of k objects from a set of n. This is usually written $^nP_k$ .
 
@@ -133,10 +133,10 @@ A formula for the number of possible permutations of k objects from a set of n. 
 \textbf{Formula:}	
 \[ ^nP_k = \frac{n!}{(n-k)!} =  n.(n-1).(n-2).\ldots(n-k+1) \]
 
-
+\end{frame}
 %------------------------------------------------------ %
-
-\subsection{Permutation Formula}
+\begin{frame}
+\frametitle{Permutation Formula}
 
 \textbf{Example:}\\	
 How many ways can 4 students from a group of 15 be lined up for a photograph?\\
@@ -146,82 +146,8 @@ How many ways can 4 students from a group of 15 be lined up for a photograph?\\
 There are $^{15}P_4$ possible permutations of 4 students from a group of 15.
 \[ ^{15}P_4 = \frac{15!}{11!} = 15\times 14\times 13\times 12 = 32760 \]
 There are 32760 different lineups.
-
+\end{frame}
 %------------------------------------------------------ %
-
-
-%------------------------------------------------------------------%
-
-\subsection{ Permutations }
-
-\begin{itemize}
-\item Given a set of distinct numbers, $\{1, 2, 3, 4, 5, 6\}$, find all permutations containing 3 numbers. All the permutations have to be in ascending order.
-
-\item For example, some correct permutations would be $\{1, 2, 3\}$, $\{2, 4, 6\}$, etc. 
-\item $\{2, 3, 1\}$ would not be acceptable because it is not in ascending order.
-\end{itemize}
-
-%------------------------------------------------------------------%
-
-\subsection{ Permutations}
-
-
-Given a set of distinct numbers, $\{1, 2, 3, 4 \}$, find all permutations containing 2 numbers. 
- \[\{1,2\},\{1,3\},\{1,4\}, \{2,1\}, \{2,3\}, \{2,4\}, \]
- \[\{3,1\},\{3,2\},\{3,4\}, \{4,1\}, \{4,2\}, \{4,3\}, \]
-\bigskip
-
-When all the permutations have to be in ascending order.
- \[\{1,2\},\{1,3\},\{1,4\}, \phantom{\{2,1\}}, \{2,3\}, \{2,4\}, \]
- 
-
- \[\phantom{\{3,1\},\{3,2\}},\{3,4\}, \phantom{\{4,1\}, \{4,2\}, \{4,3\}}\]
-
-
-
-%------------------------------------------------------------------%
-%
-
-\subsection{ Permutations}
-\[\{1,2\},\{1,3\},\{1,4\}, \{2,1\}, \{2,3\}, \{2,4\}, \]
-\[\{3,1\},\{3,2\},\{3,4\}, \{4,1\}, \{4,2\}, \{4,3\}, \]
-\[ ^4P_2 = \frac{4!}{2!} = 12 \; \]
-\bigskip
-
-\[\{1,2\},\{1,3\},\{1,4\}, \phantom{\{2,1\}}, \{2,3\}, \{2,4\}, \]
-\[\phantom{\{3,1\},\{3,2\}},\{3,4\}, \phantom{\{4,1\}, \{4,2\}, \{4,3\}}\]
-
-\[ ^4C_2 = \frac{4!}{2!\times 2!} = 6 \]
-
-
-
-
-
-\subsection{ Permutations}
-
-Given a set of distinct numbers, $\{1, 2, 3, 4 \}$, find all permutations containing 3 numbers. (Strictly ascending permutations in red). 
- \[\boldsymbol{	extbf{\{1,2,3\}}}, \boldsymbol{	extbf{\{1,2,4\}}}, \{1,3,2\},\boldsymbol{	extbf{\{1,3,4\}}}, \{1,4,2\},\{1,4,3\},  \]
- \[\{2,1,3\}, \{2,1,4\}, \{2,3,1\},\boldsymbol{	extbf{\{2,3,4\}}}, \{2,4,1\},\{2,4.3\},  \]
- \[\{3,1,2\}, \{3,1,4\}, \{3,2,1\},\{3,2,4\}, \{3,4,1\},\{3,4,2\},  \]
- \[\{4,1,2\}, \{4,1,3\}, \{4,2,1\},\{4,3,1\}, \{4,3,1\},\{4,3,2\}   \]  
-
-
-\[ ^4P_3 = \frac{4!}{1!} = 24 \]
-\[ ^4C_3 = \frac{4!}{3!\times 1!} = 4 \]
-
-
-
-%------------------------------------------------------------------%
-
-\subsection{ Permutations}
-
-\begin{itemize}
-\item In general, when you must select $k$ numbers from $n$, and those $k$ numbers must be in ascending order, then there are $^nC_k$ ways permutations.
-\end{itemize}
-\[ ^C_k = {n \choose k} = \frac{n!}{k!(n-k)!} \]
-
-
-
 \end{document}
 
 \end{document}
