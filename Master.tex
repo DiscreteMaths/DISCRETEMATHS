@@ -6,6 +6,7 @@
 
 \usepackage{framed}
 \usepackage{subfiles}
+\usepackage{enumerate}
 \usepackage{graphics}
 \usepackage{newlfont}
 \usepackage{eurosym}
@@ -40,7 +41,7 @@ HibColl Videos
 
 
 
-\chapter{Section 1}
+\chapter{Number Systems}
 \subsection{Significant Digits}
 There are three rules on determining how many significant figures are in a number: Non-zero digits are always significant. Any zeros between two significant digits are significant. A final zero or trailing zeros in the decimal portion ONLY are significant.
 
@@ -62,53 +63,7 @@ which the number of digits before and after the decimal point is set, called fix
 
 
 
-\chapter{Set Theory}
 
-
-
-\subsection{Cartesian Product}
-{
-\begin{itemize}
-\item Let $X$ and $Y$ be sets.
-\item The \textbf{cartesian product} $X \times Y$ is the set whose elements are \textbf{all} of 
-the ordered pairs of elements $(x,y)$ where $x \in X$ and $y \in Y$.
-\end{itemize}
-
-\begin{itemize}
-\item Let $X = \{a,b,c\}$
-\item Let $Y = \{0,1\}$ 
-\item The cartesian product $X \times Y$ is therefore:
-\end{itemize}
-
-\begin{itemize}
-\item Importantly $X \times Y \neq Y \times X$
-\item Recall: Let $X = \{a,b,c\}$ and let $Y = \{0,1\}$ 
-\item The cartesian product $Y \times X$ is therefore:
-\end{itemize}
-}
-
-
-%% --------------------%% --------------------%% --------------------%% --------------------%% ------------------------
-
-3.3.A
-
-4.4.B Logarithms
-4.4.C 
-
-%% --------------------%% --------------------%% --------------------%% --------------------%% ------------------------
-
-5.2.A Graph Theory
-5.2.B
-%% --------------------%% --------------------%% --------------------%% --------------------%% ------------------------
-
-
-
-
-
-
-\begin{center}
-  \textbf{Number Systems - Tutorial Sheet 2}
-\end{center}
 \section*{Part A: Number Systems - Binary Numbers}
 \begin{enumerate}
 \item Express the following decimal numbers as binary numbers.
@@ -300,7 +255,7 @@ the ordered pairs of elements $(x,y)$ where $x \in X$ and $y \in Y$.
     \item[a)] $73$
     \item[b)] $A5G$
     \item[c)] $11011$
-    \item[d)] $EEF	$
+    \item[d)] $EEF$
     \end{itemize}
   \end{multicols}
 
@@ -412,39 +367,302 @@ the ordered pairs of elements $(x,y)$ where $x \in X$ and $y \in Y$.
 %   \end{enumerate}
 
 
+\subsection*{Floating Point Notation}
+(Demonstration on white board)
 
 
-
-\subsection{The Cartesian Product}
-Exercises
-
-
- Discrete Maths
- 
-A binary relation on a set A is the collection of ordered pairs of elements of A. In other words, it is the subset of the cartesian product A2= AA
-
-Cartesian Product
- 
-This is a direct product pf 2 sets
- 
-XY = {(x,y)| xXandyY }
- 
-4 suits of cards and 13 Ranks, therefore 52 element cartesian prodcut.
- 
-N.B         AB BA
-              A=A =
- 
-Cartesian product is not associative
-\chapter{graph theory }
-Given the following definitions for simple, connected graphs:
+\section*{Part A: Number Systems - Binary Numbers}
+\begin{enumerate}
+\item Express the following decimal numbers as binary numbers.
+\begin{multicols}{4}
 \begin{itemize}
-\item $K_n$ is a graph on $n$ vertices where each pair of vertices is connected by an edge;
-\item $C_n$ is the graph with vertices $v_1, v_2, v_3, \dots, v_n$ and edges $\{v_1,v_2\}, \{v_2,v_3\}, \dots\{v_n, v_1\}$;
-\item $W_n$ is the graph obtained from $C_n$ by adding an extra vertex,$v_{n+1}$, and edges
-from this to each of the original vertices in $C_n$.
+\item[i)] $(73)_{10}$
+\item[ii)] $(15)_{10}$
+\item[iii)] $(22)_{10}$
 \end{itemize}
-(a) Draw $K_4$, $C_4$, and $W_4$. 
-%%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% ------------------------%
+\end{multicols}
+
+All three answers are among the following options.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(10110)_{2}$ %22
+\item[b)] $(1111)_{2}$ %15
+\item[c)] $(1001001)_{2}$ %73
+\item[d)] $(1000010)_{2}$ %64
+\end{itemize}
+\end{multicols}
+
+\item Express the following binary numbers as decimal numbers.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(101010)_{2}$
+\item[b)] $(10101)_{2}$
+\item[c)] $(111010)_{2}$
+\item[d)] $(11010)_{2}$
+\end{itemize}
+\end{multicols}
+\item Express the following binary numbers as decimal numbers.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(110.10101)_{2}$
+\item[b)] $(101.0111)_{2}$
+\item[c)] $(111.01)_{2}$
+\item[d)] $(110.1101)_{2}$
+\end{itemize}
+\end{multicols}
+\item Express the following decimal numbers as binary numbers.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(27.4375)_{10}$  %
+\item[b)] $(5.625)_{10}$
+\item[c)] $(13.125)_{10}$
+\item[d)] $(11.1875)_{10}$
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+
+\section*{Part B: Number Systems - Binary Arithmetic}
+%http://www.csgnetwork.com/binaddsubcalc.html
+(See section 1.1.3 of the text)
+\begin{enumerate}
+\item Perform the following binary additions.
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(110101)_{2}$ + $(1010111)_{2}$
+\item[b)] $(1010101)_{2}$ + $(101010)_{2}$
+\item[c)] $(11001010)_{2}$ + $(10110101)_{2}$
+\item[d)] $(1011001)_{2}$ + $(111010)_{2}$
+\end{itemize}
+\end{multicols}
+
+\item Perform the following binary subtractions.
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(110101)_{2}$ - $(1010111)_{2}$
+\item[b)] $(1010101)_{2}$ - $(101010)_{2}$
+\item[c)] $(11001010)_{2}$ - $(10110101)_{2}$
+\item[d)] $(1011001)_{2}$ - $(111010)_{2}$
+\end{itemize}
+\end{multicols}
+
+
+\item Perform the following binary multiplications.
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(1001)_{2}\times( 1000)_{2}$  % 9 by 8
+\item[b)] $(101)_{2}\times(1101)_{2}$ % 5 by 11
+\item[c)] $(111)_{2}\times(1111)_{2}$ % 7 by 15
+\item[d)] $(10000)_{2}\times(11001)_{2}$    %16 by 25
+\end{itemize}
+\end{multicols}
+
+\newpage
+
+\item Perform the following binary multiplications.
+%\begin{multicols}{2}
+%\begin{itemize}
+%\item[a)] $(1001000)_{2} \div ( 1000)_{2}$
+%\item[b)] $(101101)_{2} \div (1001)_{2}$
+%\item[c)] $(1001011000)_{2} \div (101000)_{2}$
+%\item[d)] $(1100000)_{2} \div (10000)_{2}$
+%\end{itemize}
+%\end{multicols}
+
+\begin{enumerate}
+\item Which of the following binary numbers is the result of this binary division: $(10)_{2} \times ( 1101)_{2}$. % % (2) /  (13)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(11010)_{2}$ %26
+\item[b)] $(11100)_{2}$ %28
+\item[c)] $(10101)_{2}$ %21
+\item[d)] $(11011)_2$ %27
+\end{itemize}
+\end{multicols}
+\item Which of the following binary numbers is the result of this binary division: $(101010)_{2} \times( 111 )_{2}$. % (4) /  (6)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(11000)_{2}$ %24
+\item[b)] $(11001)_{2}$ %25
+\item[c)] $(10101)_{2}$ %21
+\item[d)] $(11011)_2$ %27
+\end{itemize}
+\end{multicols}
+\item Which of the following binary numbers is the result of this binary division: $(1001110)_{2}\times ( 1101 )_{2}$. % (9) /  (3)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(11000)_{2}$ %24
+\item[b)] $(11001)_{2}$ %25
+\item[c)] $(10101)_{2}$ %21
+\item[d)] $(11011)_2$ %27
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+
+%----------------------------------------------------------------%
+
+\item Perform the following binary divisions.
+%\begin{multicols}{2}
+%\begin{itemize}
+%\item[a)] $(1001000)_{2} \div ( 1000)_{2}$
+%\item[b)] $(101101)_{2} \div (1001)_{2}$
+%\item[c)] $(1001011000)_{2} \div (101000)_{2}$
+%\item[d)] $(1100000)_{2} \div (10000)_{2}$
+%\end{itemize}
+%\end{multicols}
+
+\begin{enumerate}
+\item Which of the following binary numbers is the result of this binary division: $(111001)_{2} \div ( 10011)_{2}$. % (57) /  (19)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(10)_2$ %2
+\item[b)] $(11)_{2}$ %3
+\item[c)] $(100)_{2}$ %4
+\item[d)] $(101)_{2}$ %5
+\end{itemize}
+\end{multicols}
+\item Which of the following binary numbers is the result of this binary division: $(101010)_{2} \div ( 111 )_{2}$. % (42) /  (7)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(11)_2$ %3
+\item[b)] $(100)_{2}$ %4
+\item[c)] $(101)_{2}$ %5
+\item[d)] $(110)_{2}$ %6
+\end{itemize}
+\end{multicols}
+\item Which of the following binary numbers is the result of this binary division: $(1001110)_{2} \div ( 1101 )_{2}$. % (78) /  (13)
+\begin{multicols}{2}
+\begin{itemize}
+
+\item[a)] $(100)_{2}$ %4
+\item[b)] $(110)_{2}$ %6
+\item[c)] $(111)_{2}$ %7
+\item[d)] $(1001)_2$ %9
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+\section*{Part C: Number Bases - Hexadecimal}
+\begin{enumerate}
+
+\item Answer the following questions about the hexadecimal number systems
+\begin{itemize}
+\item[a)] How many characters are used in the hexadecimal system?
+\item[b)] What is highest hexadecimal number that can be written with two characters? \item[c)] What is the equivalent number in decimal form?
+\item[d)] What is the next highest hexadecimal number?
+\end{itemize}
+
+
+\item Which of the following are not valid hexadecimal numbers?
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $73$
+\item[b)] $A5G$
+\item[c)] $11011$
+\item[d)] $EEF$
+\end{itemize}
+\end{multicols}
+
+\item Express the following decimal numbers as a hexadecimal number.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(73)_{10}$
+\item[b)] $(15)_{10}$
+\item[c)] $(22)_{10}$
+\item[d)] $(121)_{10}$
+\end{itemize}
+\end{multicols}
+
+
+\item Compute the following hexadecimal calculations.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $5D2+A30$
+\item[b)] $702+ABA$
+\item[c)] $101+111$
+\item[d)] $210+2A1$
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+
+
+
+
+
+
+
+
+% \newpage
+\section*{Part D: Natural, Rational and Real Numbers}
+\begin{itemize}
+\item $\mathbb{N}$ : natural numbers (or positive integers) $\{1,2,3,\ldots\}$
+\item $\mathbb{Z}$ : integers $\{-3,-2,-1,0,1,2,3,\ldots\}$
+\begin{itemize}
+\item (The letter $\mathbb{Z}$ comes from the word \emph{Zahlen} which means ``numbers" in German.)
+\end{itemize}
+\item $\mathbb{Q}$ : rational numbers
+\item $\mathbb{R}$ : real numbers
+\item $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\begin{itemize}
+\item (All natural numbers are integers. All integers are rational numbers. All rational numbers are real numbers.)
+\end{itemize}
+\end{itemize}
+\newpage
+
+
+\begin{enumerate}
+\item State which of the following sets the following numbers belong to. 
+\begin{multicols}{4}
+\begin{itemize}
+\item[1)] $18$
+\item[2)] $8.2347\ldots$
+\item[3)] $\pi$
+\item[4)] $1.33333\ldots$
+\item[5)] $17/4$
+\item[6)] $4.25$
+\item[7)] $\sqrt{\pi}$
+\item[8)] $\sqrt{25}$
+%\item[i)]
+%\item[j)] $(15)_{10}$
+%\item[k)] $\pi$
+%\item[l)] $11.132$
+\end{itemize}
+\end{multicols}The possible answers are
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] Natural number : $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\item[b)] Integer : $ \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\item[c)] Rational Number : $ \mathbb{Q} \subseteq \mathbb{R}$
+\item[d)] Real Number $\mathbb{R}$
+
+%\item[i)]
+%\item[j)] $(15)_{10}$
+%\item[k)] $\pi$
+%\item[l)] $11.132$
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+
+
+
+
+\subsection{Irrational Numbers}
+An irrational number cannot be expressed as a ratio between two numbers and it cannot be written as a simple fraction because there is not a finite number of numbers when written as a decimal. Instead, the numbers in the decimal would go on forever, without repeating.
+
+
+
+In mathematics, the cardinality of a set is a measure of the "number of elements of the set". For example, the set A = {2, 4, 6} contains 3 elements, and therefore A has a cardinality of 3.
+
+
+
+
+
+\chapter{Set Theory}
+
+
 
 \section{Set Theory}
 \begin{enumerate}
@@ -455,33 +673,85 @@ from this to each of the original vertices in $C_n$.
 \item Relative Difference
 \end{enumerate}
 
-
-%---------------------------------------%
 \newpage
 
-Question 2B 2010 Zone A
+
+NOTATIONS FOR A SET:
+
+A set can be represented by two methods:
+1.ROSTER METHOD
+2.BUILDER METHOD
+ROSTER METHOD:
+
+In this method the elements of a set are separated by commas and are enclosed within curly brackets { }. For example:
+
+$A = {1, 2, 3, 4, 5, 6}$ is a set of numbers.
+
+B = {Sunny, Joy, Kartik, Harish, Girish} is a set of names.
+
+C = {a, e, i, o, u} is a set of vowels.
+
+D = {apple, banana, guava, orange, pear} is a set of fruits.
+
+Listing the elements in this way is called Roster method. In this method, it is not necessary for the elements to be listed in a particular order. The elements of the set can be written just plainly, separated by commas and in any order.
+
+
+BUILDER METHOD:
+
+This method is also called Property method. In Builder method, a set is represented by stating all the properties which are satisfied by the elements of that particular set only.
+
+For example:
+
+If A is a set of elements less than 0, then in Builder method it will be written as
+
+$A = {x: x < 0}$, this statement is read as "the set of all x such that x is less than 0"
+
+If A is a set of all real numbers less than 7, then in Builder method it is written as $A = {x   R: x < 7}$
+
+Similarly,
+
+$A = {2i: i is an integer}$ is a set of all even integers.
+
+$A = {x   R: x \neq 2}$ is a set of all real numbers except 2.
+
+$A = {x   R: x > 3 and x < 7}$ is a set of real numbers greater than 3 but less than 7.
+
+$A = {x   Z: x > 6}$ is a set of integers greater than 6.
+
+$A = {x   Z: 2x + 1}$ is a set of all odd integers.
+
+
+\subsection{Proper subset definition.} 
+A proper subset of a set A is a subset of A that is not equal to A. In other words, if B is a proper subset of A, then all elements of B are in A but A contains at least one element that is not in B. For example, if A={1,3,5} then B={1,5} is a proper subset of A.
+
+
+
+%---------------------------------------%
+
+
+%%- Question 2B 2010 Zone A
 
 
 \begin{itemize}
-	\item Let A and B be subsets of the a universal set $U$.
-	\item Use membership tables to prove that $(A \cup B^{\prime})^{\prime}$ = $A^{\prime} \cap B$
-	\item Shade the regions corresponding to this set on a Venn Diagram
+\item Let A and B be subsets of the a universal set $U$.
+\item Use membership tables to prove that $(A \cup B^{\prime})^{\prime}$ = $A^{\prime} \cap B$
+\item Shade the regions corresponding to this set on a Venn Diagram
 \end{itemize}
 
 \begin{tabular}{|c|c|| c | c| c|}
-	A	&	B	&	$B^{\prime}$	&	$A \cup B^{\prime}$	&	$(A \cup B^{\prime})^{\prime}$	\\ \hline
-	0	&	0	&	1	&	1	&	0	\\
-	0	&	1	&	0	&	0	&	1	\\
-	1	&	0	&	1	&	1	&	0	\\
-	1	&	1	&	0	&	1	&	0	\\
-\end{tabular}									
+A&B&$B^{\prime}$&$A \cup B^{\prime}$&$(A \cup B^{\prime})^{\prime}$\\ \hline
+0&0&1&1&0\\
+0&1&0&0&1\\
+1&0&1&1&0\\
+1&1&0&1&0\\
+\end{tabular}
 
-\begin{tabular}{|c|c|| c | c| }									
-	A	&	B	&	$A^{\prime}$	&	$A^{\prime} \cap B$	\\	\hline	
-	0	&	0	&	1	&	0	\\		
-	0	&	1	&	1	&	1	\\		
-	1	&	0	&	0	&	0	\\		
-	1	&	1	&	0	&	0	\\		
+\begin{tabular}{|c|c|| c | c| }
+A&B&$A^{\prime}$&$A^{\prime} \cap B$\\\hline
+0&0&1&0\\
+0&1&1&1\\
+1&0&0&0\\
+1&1&0&0\\
 \end{tabular}
 
 
@@ -490,16 +760,16 @@ Question 2B 2010 Zone A
 % 2010 Zone A Q 1c
 Given the universal set $U$ and subsets $A$ and $B$, list the set $(A \cup B^{\prime})^{\prime}$
 \begin{itemize}
-	\item $U=\{1,2,\ldots,8,9\}$
-	\item $A=\{2,4,6,8\}$
-	\item $B=\{ 4,5,6,7\}$
-	\item $B^{\prime}=\{ 1, 2, 3, 8, 9  \}$
-	\item $A \cup B^{\prime}=\{ 1, 2, 3,4, 6, 8, 9  \}$
-	\item $(A \cup B^{\prime})^{\prime}=\{ 5,7 \}$
+\item $U=\{1,2,\ldots,8,9\}$
+\item $A=\{2,4,6,8\}$
+\item $B=\{ 4,5,6,7\}$
+\item $B^{\prime}=\{ 1, 2, 3, 8, 9  \}$
+\item $A \cup B^{\prime}=\{ 1, 2, 3,4, 6, 8, 9  \}$
+\item $(A \cup B^{\prime})^{\prime}=\{ 5,7 \}$
 \end{itemize}
 
 
-\newpage
+
 
 %----------------------------------------------------------------%
 
@@ -514,9 +784,6 @@ Given the universal set $U$ and subsets $A$ and $B$, list the set $(A \cup B^{\p
 
 \end{itemize}
 
-%----------------------------------------------------------------%
-
-\subsection{Number Sets}
 
 %% %% - \vspace{-1cm}
 \textbf{Natural Numbers} ($\mathbb{N}$)
@@ -528,50 +795,50 @@ Given the universal set $U$ and subsets $A$ and $B$, list the set $(A \cup B^{\p
 \item In some branches of mathematics, $0$ might be counted as a natural number.
 \[\{0,1,2,3,4,5,6,\ldots\} \]
 \end{itemize}
- 
+
 %----------------------------------------------------------------%
 
- 
- \subsection{Number Sets}
- 
- 
- %% %% - \vspace{-0.5cm}
- \textbf{Integers} ($\mathbb{Z}$)
- \begin{itemize}
- \item The integers are all the whole numbers, all the negative whole numbers and zero.
- 
- \item The set of integers is 
- \[\{\ldots,-4,-3,-2,-1,\;0,\;1,\;2,\;3,\ldots\} \]
- \item The notation $\mathbb{Z}$ is from the German word for numbers: \textit{Zahlen}. 
- \item All natural numbers are integers.
- \[ \mathbb{Q}  \subset \mathbb{Z}\]
- \end{itemize}
-  
- %----------------------------------------------------------------%
- 
-  
-  \subsection{Number Sets}
-    
-  %% %% - \vspace{-1.8cm}
-  \textbf{Integers} ($\mathbb{Z}$)
-  \begin{itemize}
- \item Natural numbers may also be referred to as positive integers, denoted $\mathbb{Z}^{+}$. \\(note the superscript)
- \item Negative integers are denoted $\mathbb{Z}^{-}$.
- \[\{\ldots,-4,-3,-2,-1\}\]
-  \end{itemize}
-   
-  %----------------------------------------------------------------%
-  
-   
-   \subsection{Number Sets}
-     
-   %% %% - \vspace{-1.8cm}
-   \textbf{Integers} ($\mathbb{Z}$)
-   \begin{itemize}
- \item 0 is neither positive nor negative. The following set of non-negative numbers \[\{0,1,2,3,4,5,6,\ldots\} \] might be denoted $0 \cup \mathbb{Z}^{+}$
- \item $\cup$ is the mathematical symbol for \textbf{union}.
- \end{itemize}
-  
+
+\subsection{Number Sets}
+
+
+%% %% - \vspace{-0.5cm}
+\textbf{Integers} ($\mathbb{Z}$)
+\begin{itemize}
+\item The integers are all the whole numbers, all the negative whole numbers and zero.
+
+\item The set of integers is 
+\[\{\ldots,-4,-3,-2,-1,\;0,\;1,\;2,\;3,\ldots\} \]
+\item The notation $\mathbb{Z}$ is from the German word for numbers: \textit{Zahlen}. 
+\item All natural numbers are integers.
+\[ \mathbb{Q}  \subset \mathbb{Z}\]
+\end{itemize}
+
+%----------------------------------------------------------------%
+
+
+\subsection{Number Sets}
+
+%% %% - \vspace{-1.8cm}
+\textbf{Integers} ($\mathbb{Z}$)
+\begin{itemize}
+\item Natural numbers may also be referred to as positive integers, denoted $\mathbb{Z}^{+}$. \\(note the superscript)
+\item Negative integers are denoted $\mathbb{Z}^{-}$.
+\[\{\ldots,-4,-3,-2,-1\}\]
+\end{itemize}
+
+%----------------------------------------------------------------%
+
+
+\subsection{Number Sets}
+
+%% %% - \vspace{-1.8cm}
+\textbf{Integers} ($\mathbb{Z}$)
+\begin{itemize}
+\item 0 is neither positive nor negative. The following set of non-negative numbers \[\{0,1,2,3,4,5,6,\ldots\} \] might be denoted $0 \cup \mathbb{Z}^{+}$
+\item $\cup$ is the mathematical symbol for \textbf{union}.
+\end{itemize}
+
 
 
 \subsection{Number Sets}
@@ -590,29 +857,27 @@ Given the universal set $U$ and subsets $A$ and $B$, list the set $(A \cup B^{\p
 
 %% %% - \vspace{-1cm}
 \textbf{Rational Numbers} ($\mathbb{Q}$)
-   \begin{itemize}
-   \item All integers are rational numbers 
-   \[ \mathbb{Z}  \subset \mathbb{Q}\]
-   (and by extension all natural numbers are rational numbers too)
-   \item Examples of rational numbers
-   \[ 9500,\;7,\; \frac{1}{2} ,\; \frac{3}{7},\; -2.6 ,\; 0.001\] 
-   \end{itemize}
-   
-   %-------------------------------------------------------------- %   
-   
-   \subsection{Number Sets}
-   
-   %% %% - \vspace{-1cm}
-   \textbf{Irrational Numbers} 
-      \begin{itemize}
-   \item A number that can not be written as the ratio of two integers is known as an irrational number.
-   \item Two famous examples of irrational numbers are $\pi$ and $\sqrt{2}$. 
-   \[\pi = 3.141592\ldots\]
-   \[\sqrt{2} = 1.41421\ldots\]
-   \end{itemize}
-    
+\begin{itemize}
+\item All integers are rational numbers 
+\[ \mathbb{Z}  \subset \mathbb{Q}\]
+(and by extension all natural numbers are rational numbers too)
+\item Examples of rational numbers
+\[ 9500,\;7,\; \frac{1}{2} ,\; \frac{3}{7},\; -2.6 ,\; 0.001\] 
+\end{itemize}
+
+%-------------------------------------------------------------- %   
 
 \subsection{Number Sets}
+
+%% %% - \vspace{-1cm}
+\textbf{Irrational Numbers} 
+\begin{itemize}
+\item A number that can not be written as the ratio of two integers is known as an irrational number.
+\item Two famous examples of irrational numbers are $\pi$ and $\sqrt{2}$. 
+\[\pi = 3.141592\ldots\]
+\[\sqrt{2} = 1.41421\ldots\]
+\end{itemize}
+
 
 %% %% - \vspace{-1cm}
 \textbf{Real Numbers} ($\mathbb{R}$)
@@ -622,10 +887,8 @@ Given the universal set $U$ and subsets $A$ and $B$, list the set $(A \cup B^{\p
 \[ \mathbb{Q}  \subset \mathbb{R}\]
 
 \item A real number is simply any point anywhere on the number line.
-   \end{itemize}
-    
+\end{itemize}
 
-\subsection{Number Sets}
 
 %% %% - \vspace{-1cm}
 \textbf{Real Numbers} ($\mathbb{R}$)
@@ -633,15 +896,13 @@ Given the universal set $U$ and subsets $A$ and $B$, list the set $(A \cup B^{\p
 \item There are numbers that are not real numbers, for example \textbf{imaginary numbers}, but we will not cover them in this presentation.
 \end{itemize}
 
-   
+
 %------------------------------------------$
 2010 Zone B Q 1
 
 5n+1 Rules of Inclusion method
 
 $A = \{5n+1: n \in Z \}$
-\subsection*{Floating Point Notation}
-(Demonstration on white board)
 
 \subsection*{2011 Zone A question 1d}
 
@@ -665,33 +926,140 @@ $B = \{3n-1 :n \in Z^{+} \}$
 Describe the set B using the listing method
 
 \begin{itemize}
-	\item Let $n=1$. Consequently $3(1)-1 =2$
-	\item Let $n=2$. Likewise $3(2)-1 =5$
-	\item Let $n=3$. $3(3)-1 = 8 $
-	\item The repeated differences are 3. The next few values are 11, 14 and 17
-	\item So by the listing method $B= \{2,5,8,11,14,17,\ldots\}$
+\item Let $n=1$. Consequently $3(1)-1 =2$
+\item Let $n=2$. Likewise $3(2)-1 =5$
+\item Let $n=3$. $3(3)-1 = 8 $
+\item The repeated differences are 3. The next few values are 11, 14 and 17
+\item So by the listing method $B= \{2,5,8,11,14,17,\ldots\}$
 \end{itemize}
 
 $A = \{3,5,7,9,ldots \}$
 Describe the set A using the rules of inclusion method
 
 \begin{itemize}
-	\item The repeated differences are 2.
-	\item We can say the rule has the form $2n+k$
-	\item For the first value n=1. Therefore $2+k=3$
-	\item Checking this , for the second value , n=2. Therefore $4+k=5$
-	\item Clearly k = 1.
-	\item $A = \{2n+1 :n \in Z^{+} \}$
-	\item So by the listing method $B= \{2,5,8,11,14,17,\ldots\}$
+\item The repeated differences are 2.
+\item We can say the rule has the form $2n+k$
+\item For the first value n=1. Therefore $2+k=3$
+\item Checking this , for the second value , n=2. Therefore $4+k=5$
+\item Clearly k = 1.
+\item $A = \{2n+1 :n \in Z^{+} \}$
+\item So by the listing method $B= \{2,5,8,11,14,17,\ldots\}$
 \end{itemize}
+
+\subsection{Cartesian Product}
+{
+\begin{itemize}
+\item Let $X$ and $Y$ be sets.
+\item The \textbf{cartesian product} $X \times Y$ is the set whose elements are \textbf{all} of 
+the ordered pairs of elements $(x,y)$ where $x \in X$ and $y \in Y$.
+\end{itemize}
+
+\begin{itemize}
+\item Let $X = \{a,b,c\}$
+\item Let $Y = \{0,1\}$ 
+\item The cartesian product $X \times Y$ is therefore:
+\end{itemize}
+
+\begin{itemize}
+\item Importantly $X \times Y \neq Y \times X$
+\item Recall: Let $X = \{a,b,c\}$ and let $Y = \{0,1\}$ 
+\item The cartesian product $Y \times X$ is therefore:
+\end{itemize}
+}
+
+
+
+
+
+\subsection{The Cartesian Product}
+Exercises
+
+
+ Discrete Maths
+ 
+A binary relation on a set A is the collection of ordered pairs of elements of A. In other words, it is the subset of the cartesian product A2= AA
+
+Cartesian Product
+ 
+This is a direct product pf 2 sets
+ 
+XY = {(x,y)| xXandyY }
+ 
+4 suits of cards and 13 Ranks, therefore 52 element cartesian prodcut.
+ 
+N.B         AB BA
+              A=A =
+ 
+Cartesian product is not associative
+\subsection*{Worked Example}
+
+Suppose that the Universal Set $\mathcal{U}$ is the set of integers from 1 to 9.
+\[ \mathcal{U} = \{1,2,3,4,5,6,7,8,9\}, \]
+
+and that the set $\mathcal{A}$ contains the prime numbers between 1 to 9 inclusive.
+
+\[ \mathcal{A} = \{1,2,3,5,7\}, \]
+
+and that the set $\mathcal{B}$ contains the even numbers between 1 to 9 inclusive.
+
+\[ \mathcal{B} = \{2,4,6,8\}. \]
+
+%--------------------------------------------------------%
+\subsubsection*{Complements}
+\begin{itemize}
+
+\item The Complements of A and B are the elements of the universal set not contained in A and B.
+
+\item The complements are denoted $\mathcal{A}^{\prime}$ and $\mathcal{B}^{\prime}$
+\[ \mathcal{A}^{\prime} = \{4,6,8,9\}, \]
+\[ \mathcal{B}^{\prime} = \{1,3,5,7,9\}, \]
+
+\end{itemize}
+
+
+%--------------------------------------------------------%
+
+\subsubsection*{Intersection}
+\begin{itemize}
+
+\item Intersection of two sets describes the elements that are members of both the specified Sets
+
+\item The intersection is denoted $\mathcal{A\cap B}$ 
+\[ \mathcal{A\cap B} = \{2\}\]
+
+\item only one element is a member of both A and B.
+\end{itemize}
+%--------------------------------------------------------%
+
+\subsubsection*{Set Difference}
+\begin{itemize}
+
+\item The Set Difference of A with regard to B are list of elements of A not contained by B.
+
+\item The complements are denoted $\mathcal{A-B}$ and $\mathcal{B-A}$
+\[ \mathcal{A-B} = \{1,3,5,7\}, \]
+
+\[ \mathcal{B-A} = \{4,6,8\}, \]
+\end{itemize}
+\chapter{graph theory }
+Given the following definitions for simple, connected graphs:
+\begin{itemize}
+\item $K_n$ is a graph on $n$ vertices where each pair of vertices is connected by an edge;
+\item $C_n$ is the graph with vertices $v_1, v_2, v_3, \dots, v_n$ and edges $\{v_1,v_2\}, \{v_2,v_3\}, \dots\{v_n, v_1\}$;
+\item $W_n$ is the graph obtained from $C_n$ by adding an extra vertex,$v_{n+1}$, and edges
+from this to each of the original vertices in $C_n$.
+\end{itemize}
+(a) Draw $K_4$, $C_4$, and $W_4$. 
+%%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% --------------------%% ------------------------%
+
 
 \section{Set Theory}
 \begin{enumerate}
-	\item The Universal Set $\mathcal{U}$
-	\item Union
-	\item Intersection
-	\item Set Difference
-	\item Relative Difference
+\item The Universal Set $\mathcal{U}$
+\item Union
+\item Intersection
+\item Set Difference
+\item Relative Difference
 \end{enumerate}
 
 
@@ -854,7 +1222,419 @@ divides $y$ exactly.
 \[R = {(2, 4), (2, 6), (3, 6), (3, 9), (4, 4), (6, 6)}\]
 \end{itemize}
 
+%------------------------------------------------------------------------%
+\section{Sets of Numbers}
 
+\begin{itemize}
+\item $\mathbb{Z}$ Set of all integers
+\item $\mathbb{Q}$ Set of all rational numbers
+\item $\mathbb{R}$ Set of all real numbers
+\end{itemize}
+
+
+\begin{itemize}
+\item $\mathbb{Z}^{+}$ Set of all positive integers
+\item $\mathbb{Z}^{-}$ Set of all negative integers
+\item $\mathbb{R}^{+}$ Set of all positive real numbers
+\item $\mathbb{R}^{-}$ Set of all negative real numbers
+\end{itemize}
+% Session 4 - Functions
+
+%------------------------------------------------------------------------%
+\section{Arrow Diagrams}
+
+\begin{itemize}
+
+\item Domain
+\item Co-Domain
+\item Range
+\end{itemize}
+\[  f(x) : \mbox{Domain} \rightarrow \mbox{Co-Domain} \]
+\[  f(x) : \mathbb{R} \rightarrow \mathbb{R} \]
+%----------------------------------------------------------- %
+\newpage
+\subsection*{Polynomial Functions (4.1.5)}
+
+\begin{itemize}
+\item[Constants] $(P_0)$
+\item[Linear Functions] $(P_1)$
+\item[Quadratic Functions] $(P_2)$
+\item[Cubic Functions] $(P_3)$
+\end{itemize}
+
+
+\subsection*{Equality of Functions (4.1.6)}
+\[f(x) = g(x) \]
+
+%------------------------------------------------------------------------%
+\section{Special Mathematical Functions}
+\subsection{Mathematical Operators}
+\begin{itemize}
+\item The Square Root function
+\item The Floor and Ceiling functions
+\item The Absolute Value functions
+\end{itemize}
+
+
+\begin{itemize}
+\item Root Functions
+\item Absolute Value Function
+\item Floor Function
+\item Ceiling Function
+\end{itemize}
+{
+
+\begin{eqnarray}
+\lfloor 3.14 \rfloor =& 3 \\
+\lceil -4.5 \rceil =& -5 \\
+| -4 | =&  4
+\end{eqnarray}
+}
+For this course, only positive numbers have square roots. The square roots are positive numbers. (This statement is not strictly true. The square root of a negative number is called a complex number. However this is not part of the course).
+
+Negative numbers can have cube roots
+
+{
+\[ -27 = -3 \times -3 \times -3 \qquad \]
+\LARGE
+\[ \sqrt[3]{-27} = -3 \]
+}
+%-------------------------------------------------------------------------%
+
+
+\section{Exponential and Logarithms}
+\subsection*{Laws of Logarithms}
+
+\begin{itemize}
+\item Law 1 : Multiplcation of Logarithms
+\[ Log(a) \times Log(b) = Log(a+b) \]
+\item Law 2 : Division of Logarithms
+\[ \frac{Log(a)}{Log(b)} = Log(a-b) \]
+\item Law 3 : Powers of Logarithms
+\[ Log(a^b) = b \times Log(a) \]
+\end{itemize}
+
+
+
+%------------------------------------------------------%
+\subsection{Exercise} 
+$h(x): \mathbb{R} \rightarrow \mathbb{R}$ 
+$g(x): \mathbb{R} \rightarrow \mathbb{R}$
+
+\[f(x) = sqrt(x)\]
+\[g(x) = \sqrt{3}{x+2}\]
+\[h(x) = 2^x\]
+
+\begin{itemize}
+\item Is the function $h(x)$ an \textit{onto} function?
+\item determine the inverse function of $h(x)$ and $g(x)$
+\item Simplify the following function.
+\[ j(x) = \mbox{log}_4(h(6x))\]
+\end{itemize}
+%--------------------------------------------%
+\subsection{Onto Functions}
+Definition: If every element in the co-domain of the function has an ancestor, the function is said to be "onto".
+An onto function has the property that the domain is equal to the co-domain.
+
+
+\textbf{Example 4.26 Page 53}
+
+%--------------------------------------------%
+\subsection*{Exponential and Logarithms}
+
+\textbf{Rules}\\
+Expontials : Rules 4.18 Page 58 \\
+Logarithms : Rules 4.23 Page 61 \\
+
+\[ log_a(a) = 1 \]
+\[ log_a(b^c) = c \times log_a(b) \]
+
+\begin{itemize}
+\item $log_2(128) = 7$
+\item $log_2(1/4) = -2$
+\item $log_2(2) = 1$
+\end{itemize}
+
+\[ log_a(b) = \frac{log_x(b)}{log_x(a)} \]
+
+%------------------------------------------------------%
+\subsection{Logarithms} 
+- Laws of Logarithms
+- Change of Base
+
+\[ \mbox{Log}_b(x) = a \] \[b^a = x \]
+\[ \mbox{Log}_2(8) = 3 \] \[2^3 = 8 \]
+
+\[ \mbox{Log}_b(x) \times \mbox{Log}_b(y) =  \mbox{Log}_b(x+y) \]
+\[ \mbox{Log}_b(x^y) =  y \times \mbox{Log}_b(x) \]
+
+\[ \mbox{Log}_y(x)  =  \frac{ \mbox{Log}_b(x) }{ \mbox{Log}_b(y) } \]
+%------------------------------------------------------%
+\subsection{Exponents}
+- Rules of Exponents
+
+\[ (a^b)^c = a^{b \times c}\]
+
+\[ 64^{2/3} =  (4^3)^{2/3} = 4^{3\times2/3} = 4^2 = 16 \]
+
+
+\[ (a^b) \times (a^c) = a^{b+c}\]
+\[ (3^2) \times (3^3) = 3^{2+3} = 3^5  =243 \]
+
+%------------------------------------------------------%
+\textbf{Exercises}
+\begin{itemize}
+\item[(a)] 
+Complete the following table for the functions 
+\begin{itemize}
+\item[i)] $g(x) = \mbox{log}_3x$,
+\item[ii)] $h(x) =\sqrt[3]{x}$.
+\end{itemize} 
+\begin{center}
+
+\begin{tabular}{|c||c|c|c|c|c|c|}
+\hline $x$ &  \phantom{p}1\phantom{p}&  &  &  & 81 &  \\ 
+\hline \phantom{p} $g(x)$ \phantom{p}&  & \phantom{p}1\phantom{p} & \phantom{p}2\phantom{p} &  &  &  \phantom{p}5\phantom{p} \\ 
+\hline \phantom{p}$h(x)$ \phantom{p}&  &  &  &  3.00 & \phantom{p}\phantom{p}\phantom{p}  &  \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Express your answers to 2 decimal places only.
+
+\newpage
+%------------------------------------------------------------------------%
+\section{\textit{One-to-One} Functions and \textit{Onto} Functions}
+
+\subsection{Invertible Functions}
+\begin{itemize}
+\item One-to-One Function
+\item Onto Function
+\end{itemize}
+
+Onto Functions : Range and Co-Domain are equivalent
+
+\subsection{Inverting a Function}
+
+\begin{itemize}
+\item[$\bullet$] You are given $f(x)$ in terms of $x$
+\item[$\bullet$] Re-arrange the equation so that $x$ is given in terms of $f(x)$
+\item[$\bullet$] Replace $x$ with $f^{-1}(x)$ and $f(x)$ with $x$
+\end{itemize}
+
+\subsubsection{Example}
+\begin{itemize}
+\item[$\bullet$]Determine the inverse function of $f(x)$. Re-arrange the equation so that $x$ is given in terms of $f(x)$
+\[  f(x): \mathbb{R} \rightarrow \mathbb{R}  \mbox{   } f(x)  = \sqrt{x+1} \]
+\item[$\bullet$] Square both sides of the equation.
+\[[f(x)]^2 = x+1 \]
+\item[$\bullet$] Subtract 1 from both sides of the equation. We have the equation written in terms of x.
+\[f(x)^2-1 = x \]
+\item[$\bullet$] Replace $x$ with $f^{-1}(x)$ and $f(x)$ with $x$
+\[x^2-1 = f^{-1}(x) \]
+\item[$\bullet$] 
+Re-arrange equation and specify domain and co-domain.
+\[ f(x): \mathbb{R} \rightarrow \mathbb{R}  \mbox{   }  f^{-1}(x) = x^2-1  \]
+\end{itemize}
+% \[ f(x)  = \sqrt{x+1} \]
+% \[f(x)^2 = x+1 \]
+% \[f(x)^2-1 = x \]
+% \[x^2-1 = f^{-1}(x) \]
+\newpage
+\section{Big O-Notation}
+
+%------------------------------------------------------------------------%
+% Section 4 Functions
+% http://doc.gold.ac.uk/~maa01km/solutions/tut4sol.pdf
+
+\item[(b)] Let $S$ be the set of all 4 bit binary strings. 
+
+The function $f : S \rightarrow \mathbb{Z}$
+is defined by the rule:
+\[f(x) = \mbox{the number of zeros in x}\]
+for each binary string $x \in S$.\\
+Find:
+\begin{enumerate}
+\item the number of elements in the domain
+\item $f(1000)$
+\item the set of pre-images of 1
+\item the range of $f$.
+\end{enumerate}
+\item[(c)]
+\end{itemize}
+\newpage
+\begin{itemize}
+\item[4.a] $ \lfloor x - y \rfloor = \lfloor x \rfloor - \lfloor y \rfloor$
+\item[4.b]
+\item[4.c]
+\end{itemize}
+\newpage
+%------------------------------------------------------------------------%
+\section{Section 4 Functions}
+
+\subsection{Invertible Functions}
+A function is invertible if it fulfils two criteria
+\begin{itemize}
+\item The function is \textbf{\textit{onto}},
+\item The function is \textbf{\textit{one-to-one}}.
+\end{itemize}
+
+State the conditions to be satisfied by a function
+$f : X \leftarrow Y$ for it to have an inverse function
+$f^{-1} : Y \leftarrow X$.
+%---------------------------------------------------------%
+
+$\lceil \frac{x^2+1}{4} \rceil$
+where $f : A \rightarrow \textbf{Z}$
+\begin{itemize}
+\item[(i)] Find $f(4)$ and the ancestors of 3.
+\item[(ii)] Find the range of $f$.
+\item[(iii)] Is f invertible? Justify your answer
+\end{itemize}
+
+Given $f : \textbf{R} \rightarrow \textbf{R}$ where f(x) =3x-1,define fully
+the inverse of the function f ,i.e.$f^{-1}$. 
+State the value of $f^{-1}(2)$
+%---------------------------------------------------------%
+\subsection{Precision Functions}
+
+\begin{itemize}
+\item Absolute Value Function $| x |$
+\item Ceiling Function $\lceil x \rceil$
+\item Floor Function  $\lfloor x \rfloor $
+\end{itemize}
+%\[ \lfloorx\rfloor\]
+
+\noindent \textbf{Question1.2}: State the range and domain of the following function
+\[ F(x) = \lfloor x-1 \rfloor \]
+%---------------------------------------------------------%
+\subsection{Powers}
+
+\[  2^ 4 = 2 \times 2 \times 2 \times 2 = 16 \]
+
+\[  5^ 3 = 5 \times 5 \times 5 =125 \]
+
+\subsubsection{Special Cases}
+
+Anything to the power of zero is always 1
+
+\[  X^ 0 = 1 \mbox{ for all values of X} \]
+
+Sometimes the power is a negative number.
+
+\[  X^{-Y} = { 1 \over X^Y}  \]
+
+Example 
+\[  2^{-3} = { 1 \over 2^3} = { 1 \over 8}  \]
+
+
+
+%---------------------------------------------------------%
+\subsection{Exponentials Functions}
+
+\[ e^a \times e^b = e^{a+b}\]
+
+\[ (e^a )^b = e^{ab}\]
+%---------------------------------------------------------%
+\subsection{Logarithmic Functions}
+
+\subsubsection{Laws for Logarithms}
+The following laws are very useful for working with logarithms.
+\begin{enumerate}
+\item $\mbox{log}_b(X)$ + $\mbox{log}_b(Y)$ = $\mbox{log}_b(X\times Y)$
+\item $\mbox{log}_b(X)$ - $\mbox{log}_b(Y)$ = $\mbox{log}_b(X / Y)$
+\item $\mbox{log}_b(X^Y)$= $Y \mbox{log}_b(X)$
+\end{enumerate}
+
+\noindent \textbf{Question1.3} Compute the Logarithm of the following
+\begin{itemize}
+\item $\mbox{log}_2(8)$
+\item $\mbox{log}_2(\sqrt{128})$
+\item $\mbox{log}_2(64)$
+\item $\mbox{log}_5(125)$ +   $\mbox{log}_3(729)$
+\item $\mbox{log}_2(64/4)$
+\end{itemize}
+
+%----------------------------------------------------------------%
+
+\begin{itemize}
+\item $a^x = y$  $log_a(y) = x$
+
+\item $e^x = y$  $ln(y)=x$
+
+\item $log_a(x\times y) = log_a(x) + log_a(y)$
+
+\item $log_a(\frac{x}{y}) = log_a(x) - log_a(y)$
+
+\item $log_a(\frac{1}{x}) = - log_a(x)$
+
+\item $log_a(a) = 1$
+
+\item $log_a(1) = 0$
+\end{itemize}
+
+
+\begin{itemize}
+\item $\lceil x\rceil$
+
+\item $\lfloor x\rfloor$
+\end{itemize}
+
+\begin{tabular}{|c|c|c|c|}
+\hline Sample value x & Floor $\lfloor x\rfloor$ & Ceiling  $\lceil x\rceil$ & Fractional part $ \{ x \} $\\
+12/5 = 2.4 &2&3&2/5 = 0.4\\
+2.7&2&3&0.7\\
+-2.7&-3&-2&0.3\\
+-2&-2&-2&0\\
+\hline 
+\end{tabular} 
+
+
+\section*{Set Theory}
+
+\begin{itemize}
+\item[1.1] Introduction  
+\item[1.2] Sets  
+\item[1.3] Sub-sets  
+\item[1.4] The order of sets: finite and infinite sets .
+\item[1.5] Union and intersection of sets  
+\item[1.6] Differences and complements  
+\item[1.7] Venn diagrams  
+\item[1.8] Logic analysis
+\end{itemize}  
+%-----------------------------------------------------%
+\newpage
+\subsection*{Union and intersection of sets}
+
+\begin{itemize}
+\item The \textbf{union} of two sets A and B is a set containing all the elements in
+either A or B (or both)
+i.e. 
+\[A \cup B = {x / x \in A \mbox{ or } x \in B}.\]
+\item The \textbf{intersection} of two sets A and B is a set containing all the elements
+that are both in A and B
+i.e. 
+\[A \cap B = {x / x \in A \mbox{ and }x \in B}\].
+
+\item If sets A and B have no elements in common, i.e. $A \cap B = \emptyset$,then A and B
+are termed \textbf{disjoint sets}.
+\end{itemize}
+
+\subsection*{Subsets}
+
+\begin{itemize}
+\item Proper Subsets
+\end{itemize}
+\subsection*{The Power Set}
+
+
+\subsection*{Venn Diagrams}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.7\linewidth]{venndiagram}
+%
+%\end{figure}
+\[ \mbox{IMAGE}\]
 
 %----------------------------------------%
 \chapter{Logic}
@@ -875,16 +1655,16 @@ Let $p$, $Q$ and $r$ be the following propositions concerning integers $n$:
 \begin{center}
 \begin{tabular}{|c||c|c|c|}
 \hline 
-\phantom{spa} \textbf{n} \phantom{spa}	& \phantom{spa}	\textbf{p} \phantom{spa}	& \phantom{spa}	\textbf{q} \phantom{spa}	& \phantom{spa}	\textbf{r} \phantom{spa}	\\ \hline \hline
-1	&	1	&	1	&	1	\\ \hline
-2	&	1	&	0	&	1	\\ \hline
-3	&	0	&	1	&	1	\\ \hline
-4	&	1	&	0	&	1	\\ \hline
-6	&	0	&	0	&	1	\\ \hline
-9	&	0	&	1	&	1	\\ \hline
-12	&	0	&	0	&	1	\\ \hline
-18	&	0	&	0	&	1	\\ \hline
-36	&	0	&	0	&	1	\\
+\phantom{spa} \textbf{n} \phantom{spa}& \phantom{spa}\textbf{p} \phantom{spa}& \phantom{spa}\textbf{q} \phantom{spa}& \phantom{spa}\textbf{r} \phantom{spa}\\ \hline \hline
+1&1&1&1\\ \hline
+2&1&0&1\\ \hline
+3&0&1&1\\ \hline
+4&1&0&1\\ \hline
+6&0&0&1\\ \hline
+9&0&1&1\\ \hline
+12&0&0&1\\ \hline
+18&0&0&1\\ \hline
+36&0&0&1\\
 \hline 
 \end{tabular} 
 \end{center}
@@ -1163,16 +1943,16 @@ Exponentials
 \section{Laws of Exponents}
 Here are the Laws (explanations follow):
 
-Law	Example
-x1 = x	61 = 6
-x0 = 1	70 = 1
-x-1 = 1/x	4-1 = 1/4
-xmxn = xm+n	x2x3 = x2+3 = x5
-xm/xn = xm-n	x6/x2 = x6-2 = x4
-(xm)n = xmn	(x2)3 = x2×3 = x6
-(xy)n = xnyn	(xy)3 = x3y3
-(x/y)n = xn/yn	(x/y)2 = x2 / y2
-x-n = 1/xn	x-3 = 1/x3
+LawExample
+x1 = x61 = 6
+x0 = 170 = 1
+x-1 = 1/x4-1 = 1/4
+xmxn = xm+nx2x3 = x2+3 = x5
+xm/xn = xm-nx6/x2 = x6-2 = x4
+(xm)n = xmn(x2)3 = x2×3 = x6
+(xy)n = xnyn(xy)3 = x3y3
+(x/y)n = xn/yn(x/y)2 = x2 / y2
+x-n = 1/xnx-3 = 1/x3
 %--------------------------------------------------%
 Z Score
 \[ Z = \frac{X - \mu}{\sigma} \]
@@ -1282,61 +2062,82 @@ We can divide above and below by $\mbox{ln}(2)$ to get our final answer
 
 %% --------------------
 %-----------------------------------------------------%
-\section{Tree Definition}
-What properties must a graph have in order for it to be a
-tree?
-(ii) Say, with reason, whether or not it is possible to construct a tree with
-degree sequence 4, 3, 3, 1, 1.
+\section*{Prepositional Logic}
+
+
+%-------------------------------------------------------------------------%
 \newpage
+\section{Section 3 Logic}
+\subsection{Logical Operations}
+\begin{itemize}
+\item $\neg p$ the negation of proposition $p$.
+\item $p \wedge q$ Both propositions p and q are simultaneously true (Logical State AND)
+\item $p \vee q $ One of the propositions is true, or both (Logical State : OR)
+\item $p \otimes q$ Only one of the propositions is true (Logical State : exclusive OR (i.e XOR)
+\end{itemize}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+p & q & $p \vee q$ & $q \wedge p$ & $p \otimes q$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 1\\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0\\
+\hline
+\end{tabular}
+\end{center}
+%---------------------------------------------------------%
+\section{Conditional Connectives}
+Construct the truth table for the proposition $p \rightarrow q$.
 
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+p & q & $p \rightarrow q$ & $q \rightarrow p$ \\
+\hline
+0 & 0 & 1& 1 \\
+0 & 1 & 1 & 0 \\
+1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{center}
 
-\subsection{Irrational Numbers}
-An irrational number cannot be expressed as a ratio between two numbers and it cannot be written as a simple fraction because there is not a finite number of numbers when written as a decimal. Instead, the numbers in the decimal would go on forever, without repeating.
+% Question 1 - numbers - Started
+% Question 2 - Sets - Not Started
+% Question 3 - Logic - Not Started
+% Question 4 - Functions - Started
+% Question 5 - Graphs
+% Question 6 - Digraphs and Relations
+% Question 7 - 
+% Question 8 -
+% Question 9
+% Question 10 - Matrices - STARTED
 
-
-
-In mathematics, the cardinality of a set is a measure of the "number of elements of the set". For example, the set A = {2, 4, 6} contains 3 elements, and therefore A has a cardinality of 3.
-
-
-\subsection{Proper subset definition.} 
-A proper subset of a set A is a subset of A that is not equal to A. In other words, if B is a proper subset of A, then all elements of B are in A but A contains at least one element that is not in B. For example, if A={1,3,5} then B={1,5} is a proper subset of A.
-
-\subsection{logical implication}
-
-%- http://whatis.techtarget.com/definition/logical-implication
-
-Logical implication is a type of relationship between two statements or sentences. The relation translates verbally into "logically implies" or "if/then" and is symbolized by a double-lined arrow pointing toward the right ( $\rightarrow$). If A and B represent statements, then $A\rightarrow B$ means "A implies B" or "If A, then B." The word "implies" is used in the strongest possible sense.
-
-
-As an example of logical implication, suppose the sentences A and B are assigned as follows:
-
-A = The sky is overcast.
-B = The sun is not visible.
-
-In this instance, A B is a true statement (assuming we are at the surface of the earth, below the cloud layer.) However, the statement B A is not necessarily true; it might be a clear night. Logical implication does not work both ways. However, the sense of logical implication is reversed if both statements are negated. That is,
-
-$$(A \rightarrow B)  \equiv (-B \rightarrow -A)$$
-
-Using the above sentences as examples, we can say that if the sun is visible, then the sky is not overcast. This is always true. In fact, the two statements A B and -B -A are logically equivalent.
-
-\newpage
 %---------------------------------------%
 \subsection*{Question 1}
-
-(b) Express the following hexadecimal number as a decimal number: (A32.8)16.
+\begin{itemize}
+\item[(b)] Express the following hexadecimal number as a decimal number: (A32.8)16.
 [3]
-(c) Convert the following decimal number into base 2, showing all your working:
+\item[(c)]  Convert the following decimal number into base 2, showing all your working:
 $(253)_{10}$. [2]
-(d) Express the recurring decimal $0.4242424\ldots$
- as a rational number in its simplest
+\item[(d)]  Express the recurring decimal $0.4242424\ldots$
+as a rational number in its simplest
 form. [2]
-
+\end{itemize}
+%---------------------------------------%
+\subsection*{Question 4}
+%2001 Question 4
+\begin{center}
+\includegraphics[scale=0.55]{HibCollArrow.jpg}
+\end{center}
 
 %---------------------------------------%
-\subsection*{Question 7}
+\subsection*{Question 6}
 %2002 Question 7
-Let S be a set and let R be a relation on S
-Explain what it means to say thet $\mathcal{R}$ is
+Let $\mathcal{S}$ be a set and let $\mathcal{R}$ be a relation on $\mathcal{S}$
+Explain what it means to say that $\mathcal{R}$ is
 
 \begin{itemize}
 \item[(i)] reflexive
@@ -1346,20 +2147,20 @@ Explain what it means to say thet $\mathcal{R}$ is
 \end{itemize}
 
 
-\subsection{Question 10}
+\subsection*{Question 10}
 
 (a) Given the following adjacency matrices A and B where
-A =
-
-1 0 1
-0 1 2
-1 2 0
-
- ,B =
-
-1 2 0
-2 0 1
-0 1 1
+%A =
+%
+%1 0 1
+%0 1 2
+%1 2 0
+%
+% ,B =
+%
+%1 2 0
+%2 0 1
+%0 1 1
 
 %MAKE NO
 
@@ -1376,173 +2177,14 @@ corresponding to A. [6]
 (ii) Use Gaussian elimination to solve the system. [4]
 
 
-%--------------------------------------------%
-\newpage
-\chapter{Proof by Induction}
-%------------------------------------------------ %
 
-\subsection{Proof By Induction}
-
-Prove by Induction the following expression
-\[ \sum_{r=1}^{r=n} r^2 = \frac{n(n+1)(2n+1)}{6} \]
-for all $n \in N_0$.
-
-%------------------------------------------------ %
-
-\subsection{Proof By Induction}
-%% - \vspace{-1cm}
-
-\begin{itemize}
-\item \textbf{Step 1} : Is the proposition true for $n = 1$?
-\item \textbf{Step 2} : Show that if the proposition is true for $n=k$, then it is also true for $n=k+1$.
-\item \textbf{Step 3} : Conclude that the proposition is true for all natural numbers greater than or equal to one.
-\end{itemize}
-
-%------------------------------------------------ %
-
-\subsection{Proof By Induction}
-
-Prove by induction the following expression
-\[ \sum_{r=1}^{r=n} r^2 = \frac{n(n+1)(2n+1)}{6} \]
-for all $n \in N_0$.
-\begin{itemize}
-\item \textbf{Step 1} : Is the proposition true for $n = 1$? 
-\end{itemize}
-\textbf{Left-hand side}
-\[ \sum_{r=1}^{r=1} r^2 = 1^2 = 1 \]
-
-
-
-%------------------------------------------------ %
-
-\subsection{Proof By Induction}
-
-\textbf{Left-hand side}
-\[ \sum_{r=1}^{r=1} r^2 = 1^2 = \boldsymbol{1} \]
-\textbf{Right-hand side}
-
-\[ \frac{n(n+1)(2n+1)}{6}  = \frac{1(1+1)(2\cdot 1+1)}{6} \]
-\[  = \frac{1\times 2 \times 3}{6} = \frac{6}{6}=\boldsymbol{1} \]
-
-%------------------------------------------------ %
-
-\subsection{Proof By Induction}
-
-\begin{itemize}
-\item \textbf{Step 1} : Is the proposition true for $n = 1$? 
-\end{itemize}
-\bigskip
-Yes: The left-hand side and right-hand side of the equation yield the same value.
-
-
-%------------------------------------------------ %
-
-
-\subsection{Proof By Induction}
-%% - \vspace{-1cm}
-
-\begin{itemize}
-\item \textbf{Step 2} : Show that if the proposition is true for $n=k$, then it is also true for $n=k+1$.
-\end{itemize}
-Given: \[ \sum_{r=1}^{r=k} r^2 = \frac{k(k+1)(2k+1)}{6} \]
-
-To Prove: \[ \sum_{r=1}^{r=k+1} r^2 = \frac{(k+1)(k+2)(2k+3)}{6} \]
-
-
-%------------------------------------------------ %
-
-\subsection{Proof By Induction}
-%% - \vspace{-1cm}
-
-
-
-\[ \sum_{r=1}^{r=k+1} r^2 = 1^2 + 2^2 + 3^2 + \ldots + k^2 + (k+1)^2 \]
-
-
-
-
-%------------------------------------------------ %
-
-\subsection{Proof By Induction}
-%% - \vspace{-1cm}
-
-
-
-\[ \sum_{r=1}^{r=k+1} r^2 = 1^2 + 2^2 + 3^2 + \ldots + k^2 + (k+1)^2 \]
-
-\[ \sum_{r=1}^{r=k+1} r^2 = \boldsymbol{\sum_{r=1}^{r=k} r^2} + (k+1)^2 \]
-
-
-%------------------------------------------------ %
-
-\subsection{Proof By Induction}
-%% - \vspace{-1cm}
-
-\[ \sum_{r=1}^{r=k+1} r^2 = \boldsymbol{\sum_{r=1}^{r=k} r^2} + (k+1)^2 \]
-
-\[ \sum_{r=1}^{r=k+1} r^2 = \frac{k(k+1(2k+1
-))}{6} + (k+1)^2 \]
-
-
-%------------------------------------------------ %
-
-%---------------------------------------%
 \subsection*{Dice Rolls}
 Consider rolls of a die. What is the universal set?
 
 \[ \mathcal{U} = \{1,2,3,4,5,6\} \]
 
 %--------------------------------------%
-\subsection*{Worked Example}
 
-Suppose that the Universal Set $\mathcal{U}$ is the set of integers from 1 to 9.
-\[ \mathcal{U} = \{1,2,3,4,5,6,7,8,9\}, \]
-
-and that the set $\mathcal{A}$ contains the prime numbers between 1 to 9 inclusive.
-
-\[ \mathcal{A} = \{1,2,3,5,7\}, \]
-
-and that the set $\mathcal{B}$ contains the even numbers between 1 to 9 inclusive.
-
-\[ \mathcal{B} = \{2,4,6,8\}. \]
-
-%--------------------------------------------------------%
-\subsubsection*{Complements}
-\begin{itemize}
-	
-	\item The Complements of A and B are the elements of the universal set not contained in A and B.
-	
-	\item The complements are denoted $\mathcal{A}^{\prime}$ and $\mathcal{B}^{\prime}$
-	\[ \mathcal{A}^{\prime} = \{4,6,8,9\}, \]
-	\[ \mathcal{B}^{\prime} = \{1,3,5,7,9\}, \]
-	
-\end{itemize}
-
-
-%--------------------------------------------------------%
-
-\subsubsection*{Intersection}
-\begin{itemize}
-	
-	\item Intersection of two sets describes the elements that are members of both the specified Sets
-	
-	\item The intersection is denoted $\mathcal{A\cap B}$ 
-	\[ \mathcal{A\cap B} = \{2\}\]
-	
-	\item only one element is a member of both A and B.
-\end{itemize}
-%--------------------------------------------------------%
-
-\subsubsection*{Set Difference}
-\begin{itemize}
-	
-	\item The Set Difference of A with regard to B are list of elements of A not contained by B.
-	
-	\item The complements are denoted $\mathcal{A-B}$ and $\mathcal{B-A}$
-	\[ \mathcal{A-B} = \{1,3,5,7\}, \]
-	
-	\[ \mathcal{B-A} = \{4,6,8\}, \]
-\end{itemize}
 \subsection*{symbols}
 $\varnothing$,
 $\forall$,
@@ -1557,11 +2199,12 @@ $\cup$
 
 %-------------------------------------------------------------- %
 \begin{itemize}
-	\item $p \wedge q$
-	\item $p \vee q$
-	\item $p \rightarrow q$
+\item $p \wedge q$
+\item $p \vee q$
+\item $p \rightarrow q$
 \end{itemize}
 \newpage
+\chapter{Sequences and Series, and Proof by Induction}
 \section{Sequence and Series and Proof by Induction}
 
 
@@ -1570,44 +2213,44 @@ $\cup$
 %--------------------------------------------------------%
 \subsubsection*{Relative Difference}
 \begin{itemize}
-	\item $ A \otimes B$
+\item $ A \otimes B$
 \end{itemize}
 %--------------------------------------------------------%
 \subsubsection*{Power Sets}
 \begin{itemize}
-	\item Consider the set A where $ A = \{w,x,y,z\}$
-	\item There are 4 elements in set A.
-	\item The power set of A contains 16 element data sets.
-	\item \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \}  \]
-	\item (i.e. 1 null set, 4 single element sets, 6 two -elemnts sets, 4 three lement set and one 4- element set.)
+\item Consider the set A where $ A = \{w,x,y,z\}$
+\item There are 4 elements in set A.
+\item The power set of A contains 16 element data sets.
+\item \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \}  \]
+\item (i.e. 1 null set, 4 single element sets, 6 two -elemnts sets, 4 three lement set and one 4- element set.)
 \end{itemize}
 %------------------------------------------------%
 \newpage
 \begin{itemize}
-	\item $ p \rightarrow q$  p implies q
-	\item $p \lg q $
+\item $ p \rightarrow q$  p implies q
+\item $p \lg q $
 \end{itemize}
 \newpage
 
 %--------------------------------------------------------%
 \subsubsection*{Relative Difference}
 \begin{itemize}
-	\item $ A \otimes B$
+\item $ A \otimes B$
 \end{itemize}
 %--------------------------------------------------------%
 \subsubsection*{Power Sets}
 \begin{itemize}
-	\item Consider the set A where $ A = \{w,x,y,z\}$
-	\item There are 4 elements in set A.
-	\item The power set of A contains 16 element data sets.
-	\item \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \}  \]
-	\item (i.e. 1 null set, 4 single element sets, 6 two -elemnts sets, 4 three lement set and one 4- element set.)
+\item Consider the set A where $ A = \{w,x,y,z\}$
+\item There are 4 elements in set A.
+\item The power set of A contains 16 element data sets.
+\item \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \}  \]
+\item (i.e. 1 null set, 4 single element sets, 6 two -elemnts sets, 4 three lement set and one 4- element set.)
 \end{itemize}
 %------------------------------------------------%
 \newpage
 \begin{itemize}
-	\item $ p \rightarrow q$  p implies q
-	\item $p \lg q $
+\item $ p \rightarrow q$  p implies q
+\item $p \lg q $
 \end{itemize}
 %---------------------------- %
 %---------------------------------------%
@@ -1674,121 +2317,2378 @@ $\in$,
 $\notin$,
 $\cup$
 %----------------------------------------------------------- %
-\newpage
-
-\section*{Prepositional Logic}
 
 
-%-------------------------------------------------------------------------%
-\newpage
-\section{Section 3 Logic}
-\subsection{Logical Operations}
+\chapter{Session 1}
+
+\section*{Part 1 : Binary numbers}
+\subsection*{Question 1 }
+Working in base 2 and showing all your workings, compute the following.
+$(10110)_2 \times (111)_2$
+
 \begin{itemize}
-	\item $\neg p$ the negation of proposition $p$.
-	\item $p \wedge q$ Both propositions p and q are simultaneously true (Logical State AND)
-	\item $p \vee q $ One of the propositions is true, or both (Logical State : OR)
-	\item $p \otimes q$ Only one of the propositions is true (Logical State : exclusive OR (i.e XOR)
+\item Express the binary number $(1101.101)_2$ as a decimal, showing all your workings
+\item Express the decimal number $(3599)_{10}$ in base 2
 \end{itemize}
+
+
+
+\begin{itemize}
+%---------------------------%
+\item[(a)] Express the following binary numbers as decimal numbers
+\begin{itemize}
+\item[(i)] $11011$
+\item[(ii)] $100101$
+\end{itemize}
+%---------------------------%
+\item[(b)] Express the following decimal numbers as binary numbers
+\begin{itemize}
+\item[(i)] 6
+\item[(ii)] 15
+\item[(iii)] 37
+\end{itemize}
+%---------------------------%
+\item[(c)] Perform the following binary additions
+\begin{itemize}
+\item[(i)] $1011+ 1111$
+\item[(ii)] $10101  + 10011$
+\item[(iii)] $1010 + 11010$
+\end{itemize}
+%---------------------------%
+
+\end{itemize}
+% End of Subsection
+
+\subsection*{Part 1b : Hexadecimal numbers}
+%------------------------------------------------------------------------%
+\begin{itemize}
+\item[(i)] Calculate the decimal equivalent of the hexadecimal number $(A2F.D)_{16}$
+\item[(ii)] Working in base 2, compute the following binary additions, showing all you workings
+\[(1110)_2 + (11011)_2 + (1101)_2 \]
+\item[(iv)] Express the recurring decimal $0.727272\ldots$ as a rational number in its simplest form.
+\end{itemize}
+
+
+
+
+\subsection*{Part E: Miscellaneous Questions}
+\begin{itemize}
+\item[(i)] Given x is the irrational positive number $\sqrt{2}$, express $x^8$ in binary notation\\
+\item[(ii)] From part (i), is $x^8$ a rational number?
+\end{itemize}
+\newpage
+
+%-----------------------------------------------------%
+\subsection*{Part A :  Binary numbers}
+\begin{itemize}
+%---------------------------%
+\item[(a)] Express the following binary numbers as decimal numbers
+\begin{itemize}
+\item[(i)] $11011$
+\item[(ii)] $100101$
+\end{itemize}
+%---------------------------%
+\item[(b)] Express the following decimal numbers as binary numbers
+\begin{itemize}
+\item[(i)] 6
+\item[(ii)] 15
+\item[(iii)] 37
+\end{itemize}
+%---------------------------%
+\item[(c)] Perform the following binary additions
+\begin{itemize}
+\item[(i)] $1011+ 1111$
+\item[(ii)] $10101  + 10011$
+\item[(iii)] $1010 + 11010$
+\end{itemize}
+
+\end{itemize}
+% End of Subsection
+
+\section*{Part A: Number Systems - Binary Numbers}
+\begin{enumerate}
+\item Express the following decimal numbers as binary numbers.
+\begin{multicols}{4}
+\begin{itemize}
+\item[i)] $(73)_{10}$
+\item[ii)] $(15)_{10}$
+\item[iii)] $(22)_{10}$
+\end{itemize}
+\end{multicols}
+
+All three answers are among the following options.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(10110)_{2}$ %22
+\item[b)] $(1111)_{2}$ %15
+\item[c)] $(1001001)_{2}$ %73
+\item[d)] $(1000010)_{2}$ %64
+\end{itemize}
+\end{multicols}
+
+\item Express the following binary numbers as decimal numbers.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(101010)_{2}$
+\item[b)] $(10101)_{2}$
+\item[c)] $(111010)_{2}$
+\item[d)] $(11010)_{2}$
+\end{itemize}
+\end{multicols}
+\item Express the following binary numbers as decimal numbers.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(110.10101)_{2}$
+\item[b)] $(101.0111)_{2}$
+\item[c)] $(111.01)_{2}$
+\item[d)] $(110.1101)_{2}$
+\end{itemize}
+\end{multicols}
+\item Express the following decimal numbers as binary numbers.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(27.4375)_{10}$  %
+\item[b)] $(5.625)_{10}$
+\item[c)] $(13.125)_{10}$
+\item[d)] $(11.1875)_{10}$
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+\newpage
+\section*{Part B: Number Systems - Binary Arithmetic}
+%http://www.csgnetwork.com/binaddsubcalc.html
+%(See section 1.1.3 of the text)
+\begin{enumerate}
+\item Perform the following binary additions.
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(110101)_{2}$ + $(1010111)_{2}$
+\item[b)] $(1010101)_{2}$ + $(101010)_{2}$
+\item[c)] $(11001010)_{2}$ + $(10110101)_{2}$
+\item[d)] $(1011001)_{2}$ + $(111010)_{2}$
+\end{itemize}
+\end{multicols}
+
+\item Perform the following binary subtractions.
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(110101)_{2}$ - $(1010111)_{2}$
+\item[b)] $(1010101)_{2}$ - $(101010)_{2}$
+\item[c)] $(11001010)_{2}$ - $(10110101)_{2}$
+\item[d)] $(1011001)_{2}$ - $(111010)_{2}$
+\end{itemize}
+\end{multicols}
+
+
+\item Perform the following binary multiplications.
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(1001)_{2}\times( 1000)_{2}$  % 9 by 8
+\item[b)] $(101)_{2}\times(1101)_{2}$ % 5 by 11
+\item[c)] $(111)_{2}\times(1111)_{2}$ % 7 by 15
+\item[d)] $(10000)_{2}\times(11001)_{2}$    %16 by 25
+\end{itemize}
+\end{multicols}
+
+
+
+\item Perform the following binary multiplications.
+%\begin{multicols}{2}
+%\begin{itemize}
+%\item[a)] $(1001000)_{2} \div ( 1000)_{2}$
+%\item[b)] $(101101)_{2} \div (1001)_{2}$
+%\item[c)] $(1001011000)_{2} \div (101000)_{2}$
+%\item[d)] $(1100000)_{2} \div (10000)_{2}$
+%\end{itemize}
+%\end{multicols}
+
+\begin{enumerate}
+\item Which of the following binary numbers is the result of this binary division: $(10)_{2} \times ( 1101)_{2}$. % % (2) /  (13)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(11010)_{2}$ %26
+\item[b)] $(11100)_{2}$ %28
+\item[c)] $(10101)_{2}$ %21
+\item[d)] $(11011)_2$ %27
+\end{itemize}
+\end{multicols}
+\item Which of the following binary numbers is the result of this binary division: $(101010)_{2} \times( 111 )_{2}$. % (4) /  (6)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(11000)_{2}$ %24
+\item[b)] $(11001)_{2}$ %25
+\item[c)] $(10101)_{2}$ %21
+\item[d)] $(11011)_2$ %27
+\end{itemize}
+\end{multicols}
+\item Which of the following binary numbers is the result of this binary division: $(1001110)_{2}\times ( 1101 )_{2}$. % (9) /  (3)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(11000)_{2}$ %24
+\item[b)] $(11001)_{2}$ %25
+\item[c)] $(10101)_{2}$ %21
+\item[d)] $(11011)_2$ %27
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+
+%----------------------------------------------------------------%
+
+\item Perform the following binary divisions.
+%\begin{multicols}{2}
+%\begin{itemize}
+%\item[a)] $(1001000)_{2} \div ( 1000)_{2}$
+%\item[b)] $(101101)_{2} \div (1001)_{2}$
+%\item[c)] $(1001011000)_{2} \div (101000)_{2}$
+%\item[d)] $(1100000)_{2} \div (10000)_{2}$
+%\end{itemize}
+%\end{multicols}
+
+\begin{enumerate}
+\item Which of the following binary numbers is the result of this binary division: $(111001)_{2} \div ( 10011)_{2}$. % (57) /  (19)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(10)_2$ %2
+\item[b)] $(11)_{2}$ %3
+\item[c)] $(100)_{2}$ %4
+\item[d)] $(101)_{2}$ %5
+\end{itemize}
+\end{multicols}
+\item Which of the following binary numbers is the result of this binary division: $(101010)_{2} \div ( 111 )_{2}$. % (42) /  (7)
+\begin{multicols}{2}
+\begin{itemize}
+\item[a)] $(11)_2$ %3
+\item[b)] $(100)_{2}$ %4
+\item[c)] $(101)_{2}$ %5
+\item[d)] $(110)_{2}$ %6
+\end{itemize}
+\end{multicols}
+\item Which of the following binary numbers is the result of this binary division: $(1001110)_{2} \div ( 1101 )_{2}$. % (78) /  (13)
+\begin{multicols}{2}
+\begin{itemize}
+
+\item[a)] $(100)_{2}$ %4
+\item[b)] $(110)_{2}$ %6
+\item[c)] $(111)_{2}$ %7
+\item[d)] $(1001)_2$ %9
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+
+
+\end{enumerate}
+
+\newpage
+\section*{Part C: Number Bases - Hexadecimal}
+\begin{enumerate}
+
+\item Answer the following questions about the hexadecimal number systems
+\begin{itemize}
+\item[a)] How many characters are used in the hexadecimal system?
+\item[b)] What is highest hexadecimal number that can be written with two characters? \item[c)] What is the equivalent number in decimal form?
+\item[d)] What is the next highest hexadecimal number?
+\end{itemize}
+
+
+\item Which of the following are not valid hexadecimal numbers?
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $73$
+\item[b)] $A5G$
+\item[c)] $11011$
+\item[d)] $EEF$
+\end{itemize}
+\end{multicols}
+
+\item Express the following decimal numbers as a hexadecimal number.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $(73)_{10}$
+\item[b)] $(15)_{10}$
+\item[c)] $(22)_{10}$
+\item[d)] $(121)_{10}$
+\end{itemize}
+\end{multicols}
+
+
+\item Compute the following hexadecimal calculations.
+\begin{multicols}{4}
+\begin{itemize}
+\item[a)] $5D2+A30$
+\item[b)] $702+ABA$
+\item[c)] $101+111$
+\item[d)] $210+2A1$
+\end{itemize}
+\end{multicols}
+\end{enumerate}
+
+
+\newpage
+
+
+
+
+
+% \newpage
+\section*{Part D : Base 5 and Base 8 numbers}
+\begin{itemize}
+%---------------------------%
+\item[(a)] Suppose 2341 is a base-5 number
+Compute the equivalent in each of the following forms:
+\begin{itemize}
+\item[(i)] decimal number
+\item[(ii)] hexadecimal number
+\item[(iii)] binary number
+\end{itemize}
+%---------------------------%
+\item[(b)] Perform the following binary additions
+\begin{itemize}
+\item[(i)] $1011+ 1111$
+\item[(ii)] $10101  + 10011$
+\item[(iii)] $1010 + 11010$
+\end{itemize}
+%---------------------------%
+\end{itemize}
+
+\subsection*{Part C : Base 5 and Base 8 numbers}
+\begin{itemize}
+%---------------------------%
+\item[(a)] Suppose 2341 is a base-5 number
+Compute the equivalent in each of the following forms:
+\begin{itemize}
+\item[(i)] decimal number
+\item[(ii)] hexadecimal number
+\item[(iii)] binary number
+\end{itemize}
+%---------------------------%
+
+%---------------------------%
+\end{itemize}
+\section*{Part E: Natural, Rational and Real Numbers}
+\begin{framed}
+\end{framed}
+
+\begin{enumerate}
+\item State which of the following sets the following numbers belong to. 
+\begin{multicols}{4}
+\begin{itemize}
+\item[1)] $18$
+\item[2)] $8.2347\ldots$
+\item[3)] $\pi$
+\item[4)] $1.33333\ldots$
+\item[5)] $17/4$
+\item[6)] $4.25$
+\item[7)] $\sqrt{\pi}$
+\item[8)] $\sqrt{25}$
+%\item[i)]
+%\item[j)] $(15)_{10}$
+%\item[k)] $\pi$
+%\item[l)] $11.132$
+\end{itemize}
+\end{multicols}
+\bigskip
+The possible answers are
+
+\begin{itemize}
+\item[a)] Natural number : $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\item[b)] Integer : $ \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\item[c)] Rational Number : $ \mathbb{Q} \subseteq \mathbb{R}$
+\item[d)] Real Number $\mathbb{R}$
+%\item[i)]
+%\item[j)] $(15)_{10}$
+%\item[k)] $\pi$
+%\item[l)] $11.132$
+\end{itemize}
+
+\end{enumerate}
+
+\begin{itemize}
+\item $\mathbb{N}$ : natural numbers (or positive integers) $\{1,2,3,\ldots\}$
+\item $\mathbb{Z}$ : integers $\{-3,-2,-1,0,1,2,3,\ldots\}$
+\begin{itemize}
+\item[$\ast$] (The letter $\mathbb{Z}$ comes from the word \emph{Zahlen} which means ``numbers" in German.)
+\end{itemize}
+\item $\mathbb{Q}$ : rational numbers
+\item $\mathbb{R}$ : real numbers
+\item $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\begin{itemize}
+\item[$\ast$] (All natural numbers are integers. All integers are rational numbers. All rational numbers are real numbers.)
+\end{itemize}
+\end{itemize}
+
+% \item The Fibonacci sequence $f_n$ is defined recursively by the rule
+%   \begin{equation*}
+%     \begin{cases}
+%       f_0&=0\\
+%       f_1&=1\\
+%       f_n&=a_{n-1}+a_{n-2}
+%     \end{cases}
+%   \end{equation*}
+
+%   \begin{enumerate}
+%   \item
+%     Write a program to evaluate the Fibonacci sequence and hence evaluate $f_{50}$.
+%   \item
+%     Let the sequence $g_n$ be defined as the ratio
+%     \begin{equation*}
+%       g_n = \frac{f_{n+1}}{f_n}
+%     \end{equation*}
+%     Write a program to evaluate the first $50$ terms of the sequence $g_n$.
+%   \item
+%     Assumming that the sequence $g_n$ has a limit $\phi$, find this limit.
+%   \end{enumerate}
+
+
+
+% \pagebreak
+%   \begin{center}
+%     \textbf{Assignment 1}
+%     Due Tuesday Week 4 (Sept $28^th$)
+%   \end{center}
+
+
+
+
+\subsection*{Exercises Real and Rational Numbers}
+\begin{itemize}
+\item[(i)] Express the recurring decimal $0.727272\ldots$ as a rational number in its simplest form.
+\end{itemize}
+%-------------------------------------------------------- %
+\section*{Part F :  Scientific and Floating Point Notation}
+
+\begin{itemize}
+\item Abscissa 
+\item Exponent (power)
+\end{itemize}
+
+With floating point notation, the abscisa must be between 0 and 1.
+It is similar to scientific notation differing only by the fact that, with scientific notaiton, the abscissa is between 1 and 10.
+
+\begin{itemize}
+\item Floating Point Notation
+\item $pi \approx 0.31415 \times 10^1$
+\item $pi \approx 3.1415 \times 10^0$
+\end{itemize}
+%-------------------------- %
+%Section 2
+
+%-----------------------------------------%
+
+
+
+\section*{Question 1}
+
+\subsection*{Part B :  Hexadecimal numbers}
+%------------------------------------------------------------------------%
+\begin{itemize}
+\item[(i)] Calculate the decimal equivalent of the hexadecimal number $(A2F.D)_{16}$
+\item[(ii)] Working in base 2, compute the following binary additions, showing all you workings
+\[(1110)_2 + (11011)_2 + (1101)_2 \]
+\item[(iv)] Express the recurring decimal $0.727272\ldots$ as a rational number in its simplest form.
+\end{itemize}
+
+
+
+\subsection*{Part D : Real and Rational Numbers}
+\begin{itemize}
+\item[(i)] Express the recurring decimal $0.727272\ldots$ as a rational number in its simplest form.
+\end{itemize}
+%-------------------------------------------------------- %
+\begin{itemize}
+\item[(i)] Given x is the irrational positive number $\sqrt{2}$, express $x^8$ in binary notation.
+\item[(ii)] From part (i), is $x^8$ a rational number?
+\end{itemize}
+
+%----------------------------------------------------%
+\subsection*{Binary and Hex}
+\begin{itemize}
+\item[1A.1] Coverting from Binomial to Decimal
+\item[1A.2] Converting to Decimal
+\item[1A.3] Priority of Operation
+\item[1A.4] 
+\end{itemize}
+
+\subsection*{Numbers}
+\begin{itemize}
+\item[1B.1] Real Numbers
+\item[1B.2] Rational Numbers
+\item[1B.3] Floating Point Aritmetic
+\item[1B.4] 
+\end{itemize}
+%================================================================ %
+
+% %------------------------------------------------------
+\section*{Part 1. Number Systems}
+
+\subsection*{Section 1a. Binary Numbers}
+
+\begin{enumerate}
+\item $1101001_{(2)}$
+\item $1101001_{(2)}$
+\item $1101001_{(2)}$
+\end{enumerate}
+%----------------------------------------- %
+\section{Inequality Operators}
+%------------------------------------------------------------------------- %
+
+%\frametitle{Inequality Symbols}
+
+Given $x = \sqrt{2}$ determine whether the following statements are true or false:
+
+\begin{itemize}
+\item[(i)] $x \leq 2$
+\item[(ii)] $1.42 > x > 1.41$
+\item[(iii)] x is a rational number
+\item[(iv)] $\sqrt{2} = 2$
+\end{itemize}
+
+%------------------------------------------------------------------------- %
+\section{Revision Questions}
+
+
+
+\[  2^ 4 = 2 \times 2 \times 2 \times 2 = 16 \]
+
+\[  5^ 3 = 5 \times 5 \times 5 =125 \]
+
+\subsubsection{Special Cases}
+
+Anything to the power of zero is always 1
+
+\[  X^ 0 = 1 \mbox{ for all values of X} \]
+
+Sometimes the power is a negative number.
+
+\[  X^{-Y} = { 1 \over X^Y}  \]
+
+Example 
+\[  2^{-3} = { 1 \over 2^3} = { 1 \over 8}  \]
+
+
+%====================================== %
+\newpage
 \begin{center}
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		p & q & $p \vee q$ & $q \wedge p$ & $p \otimes q$ \\
-		\hline
-		0 & 0 & 0 & 0 & 0 \\
-		0 & 1 & 1 & 0 & 1\\
-		1 & 0 & 1 & 0 & 1 \\
-		1 & 1 & 1 & 1 & 0\\
-		\hline
-	\end{tabular}
+\huge{Mathematics for Computing}\\
+{\LARGE Session 2 : Set Theory}
 \end{center}
-%---------------------------------------------------------%
+
+
+% % \subfile{session02a.tex}
+
+%====================================== %
+\newpage
+\begin{center}
+\huge{Mathematics for Computing}\\
+{\LARGE Session 3 : Logic}
+\end{center}
+% %\subfile{session03a.tex}
+% % \subfile{session03d.tex}
+% % \subfile{DM0305DeMorgans.tex}
+
+%============================================ 
+\newpage
+\begin{center}
+\huge{Mathematics for Computing}\\
+\LARGE{Digraphs and Relations}
+\end{center}
+% % \subfile{session06a.tex}
+% % \subfile{session06e-antisymmetricrelations.tex}
+% % \subfile{session06f.tex}
+
+
+\subsubsection*{Question 1 : Binary numbers}
+\begin{itemize}
+%---------------------------%
+\item[(a)] Express the following binary numbers as decimal numbers
+\begin{multicols}{2}
+\begin{itemize}
+\item[(i)] $101$
+\item[(ii)] $1101$
+\item[(iii)] $11011$
+\item[(iv)] $100101$
+\end{itemize}
+\end{multicols}
+
+%---------------------------%
+\item[(b)] Express the following decimal numbers as binary numbers
+\begin{multicols}{2}
+\begin{itemize}
+\item[(i)] 6
+\item[(ii)] 15
+\item[(iii)] 37
+\item[(iv)] 77
+\end{itemize}
+\end{multicols}
+
+\end{itemize}
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 2}
+A number is expressed in base 5 as $(234)_5$. What is it as decimal number?
+Suppose you multiply $(234)_5$ by 5. what would be the answer in base 5.
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 3}
+
+Perform the following binary additions
+\begin{multicols}{2}
+\begin{itemize}
+\item[(i)] $1011+ 1111$
+\item[(ii)] $10101  + 10011$
+\item[(iii)] $1010 + 11010$
+\item[(iv)] $101010 + 10101 + 101$
+\end{itemize}
+\end{multicols}
+
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 4}
+Perform the binary additions
+
+\begin{itemize}
+\item $(10111)_2 +(111010)_2$
+
+\item $(1101)_2 + (1011)_2 + (1111)_2$
+\end{itemize}
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 5}
+
+Perform the binary subtractions using both the bit-borrowing method and the two's complement method.
+\begin{itemize}
+\item $(1001)_2 -(111)_2$
+\item $(110000)_2 -(10111)_2$
+\end{itemize}
+
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 6}
+
+Perform the binary multiplications
+\begin{itemize}
+\item $(1101)_2 \times (101)_2$
+\item $(1101)_2 \times (1101)_2$
+\end{itemize}
+
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 7}
+\begin{itemize}
+
+
+\item[(a)] What is highest Hexadecimal number that can be written with two characters, and what is it's equivalent in decimal form?
+What is the next highest hexadecimal number?
+
+% \[FF = 255\] % Remark 
+\item[(b)] Which of the following are not valid hexadecimal numbers?
+
+\begin{multicols}{2}
+\begin{itemize}
+\item[(i)] A5G 
+\item[(ii)] 73 
+\item[(iii)] EEF
+\item[(iv)] 101
+\end{itemize}
+\end{multicols}
+\end{itemize}
+
+
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 8 : Binary Substraction}
+\textbf{Exercises:}
+
+\begin{multicols}{2}
+\begin{itemize}
+\item[(i)] 110 - 10
+\item[(ii)] 101 - 11  
+\item[(iii)] 1001 - 11
+\item[(iv)] 10001 - 100 
+\item[(v)] 101001 - 1101
+\item[(vi)] 11010101-1101
+\end{itemize}
+\end{multicols}
+
+
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 9}
+
+\begin{itemize}
+%---------------------------%
+\item[(a)] Suppose 2341 is a base-5 number
+Compute the equivalent in each of the following forms:
+\begin{itemize}
+\item[(i)] decimal number
+\item[(ii)] hexadecimal number
+\item[(iii)] binary number
+\end{itemize}
+%---------------------------%
+\item[(b)] Perform the following binary additions
+\begin{itemize}
+\item[(i)] $1011+ 1111$
+\item[(ii)] $10101  + 10011$
+\item[(iii)] $1010 + 11010$
+\end{itemize}
+%---------------------------%
+\end{itemize}
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 10}
+
+Calculate working in hexadecimal
+\begin{itemize}
+\item[(i)] $(BBB)_{16} + (A56)_{16}$
+\item[(ii)] $(BBB)_{16} - (A56)_{16}$
+\end{itemize} 
+
+
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 11}
+
+Write the hex number $(EC4)_{16}$ in binary.
+Write the binary number $(11110110101|)_2$ in hex.
+%-------------%-------------%-------------%----------------
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 12}
+
+Express the decimal number 753 in binary , base 5 and hexadecimal.
+
+%-------------%-------------%-------------%----------------
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 13}
+
+Express 42900 as a product of its prime factors, using index notation for repeated factors.
+
+%-------------%-------------%-------------%----------------
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 14}
+
+Expresse the recuring decimals 
+\begin{itemize}
+\item[(i)] $0.727272\ldots$
+\item[(ii)] $0.126126126....$
+\item[(iii)] $0.7545454545...$
+\end{itemize} 
+as rational numbers in its simplest form.
+
+%-------------%-------------%-------------%----------------
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 15}
+Given that $\pi$ is an irrational number, can you say whether $\frac{\pi}{2}$ is rational or irrational.
+or is it impossible to tell?
+
+%-------------------------------------------------------- %
+\subsubsection*{Question 16}
+\begin{itemize}
+\item[(i)] Given x is the irrational positive number $\sqrt{2}$, express $x^8$ in binary notation\\
+\item[(ii)] From part (i), is $x^8$ a rational number?
+\end{itemize}
+
+%-------------%-------------%-------------%----------------
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 17}
+\begin{enumerate}
+\item[(i)] 5/7 lies between 0.714 and 0.715.
+\item[(ii)] $\sqrt(2)$ is at least 1.41.
+\item[(iii)] $\sqrt(3)$  9s at lrast 1.732 and at most 1.7322.
+\end{enumerate}
+
+
+%-------------%-------------%-------------%----------------
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 18}
+\begin{itemize}
+\item[(i)] Write down the numbers 0.0000526 in floating point form.
+\item[(ii)] How is the number 1 expressed in floating point form.
+\end{itemize}
+
+
+%-------------%-------------%-------------%----------------
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 19}
+\begin{itemize}
+\item Deduce that every composite integer $n$ has a prime factor such that $p \leq \sqrt{n}$.
+\item Decide whether 899 is a prime.
+\end{itemize}
+
+%-------------%-------------%-------------%----------------
+%-------------%-------------%-------------%----------------
+\subsubsection*{Question 20}
+
+\begin{itemize}
+\item What would be the maximum numbber of digits that a decimal fraction with denominator 13 
+could have in a recurring block in theory?
+
+\item Can you predict which other fractions with denominator 13 will have the same digits as 1/13 in their recurring block?
+\end{itemize}
+
+
+
+%----------------------------------------- %
+\section{Video 6}
+
+%\frametitle{Inequality Symbols}
+
+Convert the following statements into symbols:
+
+\begin{itemize}
+\item $\sqrt{2}$ is less than 1.5 and greater than 1.4
+\item $\sqrt{2}$ is greater than or equal to 5
+\end{itemize}
+
+
+
+%------------------------------------------------------------------------- %
+% Floating Point Notation
+\chapter{Session 2}
+% Ex 1
+%--------------------------------- %
+\section*{The Universal Set and the Empty Set}
+\begin{itemize}
+\item The first is the \textbf{\textit{universal set}}, typically denoted $U$. This set is all of the elements that we may choose from. This set may be different from one setting to the next. 
+
+\item For example one universal set may be the set of all real numbers, denoted $\mathbb{R}$, whereas for another problem the universal set may be the whole numbers $\{0, 1, 2,\ldots\}$.
+
+\item The other set that requires consideration is called the \textit{\textbf{empty set}}. The empty set is the unique set is the set with no elements. We write this as $\{ \}$ and denote this set by $\emptyset$.
+\end{itemize}
+%---------------------------------%
+\section*{Number Sets}
+The font that the following symbols are written in (i.e. $\mathbb{N}$, $\mathbb{R}$) is known as \textit{\textbf{blackboard font}}.
+\begin{itemize}
+\item $\mathbb{N}$ Natural Numbers ($1,2,3,\ldots$) 
+%\textit{(Not used in the CIS102 Syllabus)}
+\item $\mathbb{Z}$ Integers ($-3,-2,-1,0,1,2,3, \ldots$)
+\begin{itemize}
+\item[$\bullet$] $\mathbb{Z}^{+}$ Positive Integers
+\item[$\bullet$] $\mathbb{Z}^{-}$ Negative Integers
+\item[$\bullet$] 0 is not considered as either positive or negative.
+\end{itemize}
+\item $\mathbb{Q}$ Rational Numbers
+\item $\mathbb{R}$ Real Numbers
+\item $\mathbb{C}$ Complex Numbers
+\end{itemize}
+%========================================================================================= %
+\newpage
+\section*{Rules of Inclusion, Listing and Cardinality}
+For each of the following sets, a set is specified by the rules of inclusion method and listing method respectively. Also stated is the cardinality of that data set.
+\subsection*{Worked example 1}
+\begin{itemize}
+\item $\{ x : x $ is an odd integer $ 5 \leq x \leq 17 \}$
+\item $x = \{5,7,9,11,13,15,17\}$
+\item The cardinality of set $x$ is 7.
+\end{itemize}
+
+\subsection*{Worked example 2}
+\begin{itemize}
+\item $\{ y : y $ is an even integer $ 6 \leq y < 18 \}$
+\item $y = \{6,8,10,12,14,16\}$
+\item The cardinality of set $y$ is 6.
+\end{itemize}
+
+\subsection*{Worked example 3}
+A perfect square is a number that has a integer value as a
+square root. 4 and 9 are perfect squares ($\sqrt{4} = 2$,
+$\sqrt{9} = 3$).
+\begin{itemize}
+\item $\{ z : z $ is an perfect square $ 1 < z < 100 \}$
+\item $z = \{4,9,16,25,36,49,64,81\}$
+\item The cardinality of set $z$ is 8.
+\end{itemize}
+
+\newpage
+
+\subsection*{Exercises}
+For each of the following sets, write out the set using the listing method.
+Also write down the cardinality of each set.
+
+\begin{itemize} 
+\item $\{ s : s $ is an negative integer $ -10 \leq s \leq 0 \}$
+\item $\{ t : t $ is an even number $ 1 \leq t \leq 20 \}$
+\item $\{ u : u $ is a prime number $ 1 \leq u \leq 20 \}$
+\item $\{ v : v $ is a multiple of 3 $ 1 \leq v \leq 20 \}$
+\end{itemize}
+%-------------------------------------------------% 
+\newpage
+\section*{Power Sets}
+\subsection*{Worked Example}
+Consider the set $Z$:
+\[ Z = \{ a,b,c\}  \]
+\begin{itemize}
+\item[(i)] How many sets are in the power set of $Z$? 
+\item[(ii)] Write out the power set of $Z$. 
+\item[(iii)] How many elements are in each element set?
+\end{itemize}
+%----------------------------------------------%
+\subsection*{Solutions to Worked Example}
+
+\begin{itemize}
+
+
+\item[(i)] There are 3 elements in $Z$. So there is $2^3 = 8$ element sets contained in the power set.
+
+\item[(ii)] Write out the power set of $Z$.
+\[ \mathcal{P}(Z) = \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\} \} \]
+
+\item[(iii)]
+\begin{itemize}
+\item[$\bullet$] One element set is the null set - i.e. containing no
+elements \item[$\bullet$] Three element sets have only elements \item[$\bullet$]
+Three element sets have two elements \item[$\bullet$] One element set
+contains all three elements \item[$\bullet$] 1+3+3+1=8
+\end{itemize}
+\end{itemize}
+\subsection*{Exercise}
+For the set $Y = \{u,v,w,x\}$ , answer the questions from the
+previous exercise
+
+
+%------------------------------------------------------%
+
+\section*{Complement of a Set}
+%(2.3.1) 
+Consider the universal set $U$ such that
+\[U=\{2,4,6,8,10,12,15\} \]
+For each of the sets $A$,$B$,$C$ and $D$, specify the complement sets.
+{
+\LARGE
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Set &\phantom{sp} Complement \phantom{sp}\\
+\hline \phantom{sp} $A=\{4,6,12,15\}$ \phantom{sp} &
+$A^{\prime}=\{2,8,10\}$ \\ \hline $B=\{4,8,10,15\}$ & \\ \hline
+$C=\{2,6,12,15\}$ & \\ \hline $D=\{8,10,15\}$ & \\ \hline
+
+\end{tabular}
+\end{center}
+}
+%-------------------------------------%
+% Binary Operations on Sets (2.3.2)
+% Union , Intersection, Symmetric Difference
+% Set Difference
+
+%======================================================================================= %
+\newpage
+\section*{Set Operations}
+\begin{itemize}
+\item Union ($\cup$) - also known as the \textbf{OR} operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
+\item Intersection ($\cap$) - also known as the \textbf{AND} operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
+\item Complement ($A^{\prime}$ or $A^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
+\end{itemize}
+
+\subsection*{Exercise}
+Consider the universal set $U$ such that
+\[U=\{1,2,3,4,5,6,7,8,9\} \] 
+and the sets
+\[A=\{2,5,7,9\} \] 
+\[B=\{2,4,6,8,9\} \]
+
+\begin{multicols}{2}
+\begin{itemize}
+\item[(a)] $A-B$
+\item[(b)] $A \otimes B$
+\item[(c)] $A \cap B$
+\item[(d)] $A \cup B$
+\item[(e)] $A^{\prime} \cap B^{\prime}$
+\item[(f)] $A^{\prime} \cup B^{\prime}$
+\end{itemize}
+\end{multicols}
+
+%======================================================================================= %
+\newpage
+
+\section*{Venn Diagrams}
+
+Draw a Venn Diagram to represent the universal set
+$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets:\\
+$A = \{2,4,5\}$\\
+$B = \{1,4,5,6\}$\\
+
+\noindent Find each of the following
+\begin{itemize}
+\item[(a)] $A \cup B $
+\item[(b)] $A \cap B $
+\item[(c)] $A-B$
+\item[(d)] $B-A$
+\item[(e)] $A \otimes B$
+\end{itemize}
+\newpage
+
+
+
+%------------------------------------------------------------------------%
+\begin{itemize}
+\item[(i)] Describe the following set by the listing method
+\[ \{ 2r+1 : r \in Z^{+} and r \leq 5  \} \]
+\item[(ii)] Let A,B be subsets of the universal set U.
+
+
+\end{itemize}
+
+%===================================================================================== %
+\subsection*{Question 1}
+
+\begin{itemize}
+\item $\{ s :  \mbox{ s is an odd integer and } 2 \leq s \leq 10 \}$
+\item $\{ 2m :  m \in Z \mbox{ and }5 \leq m \leq 10 \}$
+\item $\{ 2^t :  t \in Z \mbox{ and } 0 \leq t \leq 5 \}$
+\end{itemize}
+
+%=======================+============================================================== %
+\subsection*{Question 2}
+
+\begin{itemize}
+\item $\{12,13,14,15,16,17\}$
+\item $\{0,5,-5,10,-10,15,-15,.....\}$
+\item $\{6,8,10,12,14,16,18\}$
+\end{itemize}
+
+\subsection*{Question 7 : Membership Tables}
+Using membership tables
+\begin{tabular}{|ccc|c|c|c|}
+\hline
+% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+A & B & C & x & y & z \\\hline
+0 & 0 & 0 & 1 & 1 & 1 \\
+0 & 0 & 1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 1 & 1 & 0 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 1 & 0 & 1 \\
+1 & 1 & 0 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0 & 1 \\
+\hline
+\end{tabular}
+\begin{itemize}
+\item[(i)] Draw a venn diagram to show three subsets A,B and C of a universal set U intersecting in
+the most general way?
+\item[(ii)] How are sets $X$ and $Z$ related?
+\item[(iii)] Can you describe each of the subsets X,Y and Z in terms  of the
+sets A,B,C using the operations union intersection and set complement.
+\end{itemize}
+%================================================================ %
+
+
+\subsection{Ellipsis}
+
+When using Ellipsis, it should be clear what the pattern is
+
+%-------------------------------------%
+
+
+%-----------Reference to section 2.2.3 Power Sets
+
+
+
+
+%-------------------------------------%
+
+%----(Reference to Section 2.2.2 Cardinality)
+
+
+
+%-------------------------------------% % Complement of a set
+
+
+%--------------------------------------%
+\subsection*{ Three Sets }
+
+%- Section 2.3.5 %- Associative Law %- Distribution Law
+
+
+
+
+
+%-------------------------------------% %- Section 3
+Propositional Logic A statement is a declarative sentence that
+is either true or false.
+\begin{itemize}
+\item $\tilde q$ not q \item $p \vee q$ \item $p \wedge \tilde
+q$
+\end{itemize}
+
+
+
+%======================================================================================= %
+
+Question 5
+
+
+Let A, B be subsets of the universal set $\mathcal{U}$.
+
+Use membership tables to prove De Morgan's Laws.
+
+
+%
+%Construct Membership tables for each of the sets
+%(A-B) - C
+%A-(B- C)
+%
+%(A-B) -C = A-(B-C)
+%A
+%
+
+
+\begin{itemize}
+\item[a.] (1 mark) Write out the sample space for the outcomes for both players A and B.
+\item[b.] (1 mark) Write out the sample space for the outcomes of C, where C is the difference of the two scores (i.e. B-A)
+\item[c.] (1 mark) Are the sample points for the sample space of C equally probable? Provide a brief justification for your answer.
+\end{itemize}
+
+%----------------------------------------------------------%
+\newpage
+\section*{Section B: Set Operations}
+\begin{itemize}
+\item[B.1] complement of A $A^{\prime}$
+\item[B.2] Union $A \cup B$
+\item[B.3] Intersection $A \cap B$
+\item[B.4] Relative Difference $A \otimes B$
+\item[A.5]
+\item[A.6]
+\item[A.7]
+\item[A.8]
+\end{itemize}
+\newpage
+
+
+\begin{itemize}
+\item Specifying Sets
+\item Listing Method
+\item Rules of Inclusion method
+\end{itemize}
+
+
+\begin{itemize}
+\item Subsets Notation of a subset
+\item Cardinality of a set
+\item Power of a set
+\end{itemize}
+
+\subsection*{Operation on Sets}
+
+\begin{itemize}
+\item The complement of Set
+\item Binary Operations
+\begin{itemize}
+\item Union
+\item Intersection
+\end{itemize}
+\item Membership tables
+\item Laws for Combining Sets
+\end{itemize}
+
+\newpage
+
+
+\subsection*{Associative Laws}
+\[ (A \cup B) \cup C =  A \cup (B \cup C)  \]
+\[ (A \cap B) \cap C =  A \cap (B \cap C)  \]
+
+\subsection*{Distributive Laws}
+\[ (A \cup B) \cap C =  (A \cup B) \cap (A \cup C)  \]
+\[ (A \cap B) \cup C =  (A \cap B) \cup (A \cap C)  \]
+
+
+\[ (A \cup B) \cap B^{\prime} \]
+%----------------------------------------------------------%
+\section*{Section C: Real and Rational Numbers}
+
+%----------------------------------------------------------%
+\newpage
+\section*{Formulae}
+\begin{itemize}
+
+
+
+
+\item Bayes' Theorem:
+\begin{equation*}
+P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
+\end{equation*}
+
+
+
+\item Binomial probability distribution:
+\begin{equation*}
+P(X = k) = ^{n}C_{k} \times p^{k} \times \left( 1-p\right) ^{n-k}\qquad \left( \text{where}\qquad
+^{n}C_{k} =\frac{n!}{k!\left(n-k\right) !}. \right)
+\end{equation*}
+
+\item Poisson probability distribution:
+\begin{equation*}
+P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
+\end{equation*}
+\end{itemize}
+
+\section{Video 1 :  Set Theory Listing Method}
+%--------------------------------------------%
+
+%\frametitle{Set Theory : Listing Method}
+\Large
+Describe the following sets using the Listing Method
+
+\begin{itemize}
+\item[(i)] $ \{ 10^m : -2 \leq m \leq 4, m \in \mathbb{Z} \} $
+\item[(ii)]  $ \{ \frac{1}{n}: 1 < n < 4, n \in \mathbb{Z} \} $
+\end{itemize}
+
+
+%--------------------------------------------%
+
+%\frametitle{Set Theory : Listing Method}
+\Large
+\vspace{-4cm}
+\textbf{Part 1:} $ \{ 10^m : -2 \leq m \leq 4, m \in \mathbb{Z} \} $
+
+
+%--------------------------------------------%
+
+%\frametitle{Set Theory : Listing Method}
+\Large
+\vspace{-4cm}
+\textbf{Part 2:} $ \{ \frac{1}{n}: 1 < n < 4, n \in \mathbb{Z} \} $
+
+
+% Ex 2
+\section{Video 2 : Set Theory}
+%--------------------------------------------%
+
+%\frametitle{Set Theory : Set Operations}
+\Large
+Given the following sets
+
+\begin{center}
+\begin{tabular}{|c|c|} \hline
+$\mathcal{U}$ & $\{1,2,3,4,5,6,7,8,9\}$ \\ \hline
+$\mathcal{A}$ & $\{1,2,5,6,8\}$ \\ \hline
+$\mathcal{B}$ & $\{3,5,7,8\}$ \\ \hline
+$\mathcal{C}$ & $\{5,6,7,8,9\}$ \\ \hline
+\end{tabular}
+\end{center}
+
+List the elements of the following
+$A^{\prime} \cap B $\\
+$A^{\prime} \cap C $\\
+
+%--------------------------------------------%
+
+\section*{Venn Diagrams}
+
+Subsets of the universal set $\mathcal{U}$, intersecting in the most general way (Essentially this means - the venn diagram allows for all possible combinations of overlap.)
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline  &  \\ 
+\hline  &  \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+%-------------------------- %
+%-------------------------- %
+%Section 3
+
+\section*{Question 2}
+HibCollWorkSheet2
+
+%Listing Method
+%Rules of Inclusion
+%Cardinality
+%Venn diagrams
+
+$\in$
+$\subset$
+
+univeral Set $\mathcal{U}$
+Laws for Binary Operations
+Membership Tables
+
+De Morgan's Law
+
+
+\[A^{\prime} \cup B^{\prime} = A \cap B\]
+
+\subsection*{Part A : Builder Method}
+The following sets have been defined using the \textbf{Building Method} of notation. Re-write them by listing \textbf{some} of the elements.
+\begin{enumerate}
+\item $\{p | p$ is a capital city, p is in Europe$\}$
+\item $\{x | x = 2n - 5,$ x and n are natural numbers$\}$
+\item $\{y | 2y^2 = 50,$ y is an integer$\}$
+\item $\{z | z = n^3,$ z and n are natural numbers$\}$
+\end{enumerate}
+\subsection*{Part B : Sets}
+U = {natural numbers}; $A = \{2, 4, 6, 8, 10\}$; $B = \{1, 3, 6, 7, 8\}$. State whether each of the following is true or false:
+\begin{itemize}
+\item[(i)] $A \subset U$
+\item[(ii)] $B \subseteq A$
+\item[(iii)] $\emptyset \subset U$
+\end{itemize}
+
+%-------------------------------------- %
+
+\section*{Question 2}
+\subsection*{Part A : Builder Method}
+The following sets have been defined using the \textbf{Building Method} of notation. Re-write them by listing \textbf{some} of the elements.
+\begin{enumerate}
+\item $\{p | p$ is a capital city, p is in Europe$\}$
+\item $\{x | x = 2n - 5,$ x and n are natural numbers$\}$
+\item $\{y | 2y^2 = 50,$ y is an integer$\}$
+\item $\{z | z = n^3,$ z and n are natural numbers$\}$
+\end{enumerate}
+\subsection*{Part B : Sets}
+U = {natural numbers}; $A = \{2, 4, 6, 8, 10\}$; $B = \{1, 3, 6, 7, 8\}$. State whether each of the following is true or false:
+\begin{itemize}
+\item[(i)] $A \subset U$
+\item[(ii)] $B \subseteq A$
+\item[(iii)] $\emptyset \subset U$
+\end{itemize}
+
+%-------------------------------------- %
+
+
+\section*{Question 2}
+Describe the following set by the rules of inclusion method.
+
+Describe the following set by the listing method
+the set of positive multiples of 3 which are less than 20.
+
+Let A and B be subsets of univerisal set U
+
+Use the membership rule to prove that
+
+\[(A^\prime  \cap B)^\prime = A \cup B^\prime\]
+
+shade the region corresponding to this set on a Venn Diagram
+
+Given the universal set $\mathcal{U} = {1,2,3,4,5,6,7,8,9}$
+and the subsets $A=\{1,3,5,7\}$
+$B = \{6,7,8,9\}$
+list the set $A^\prime \cap B)^\prime$ 
+
+
+\Large
+\begin{itemize}
+\item[(i)] $\{5,8\}$
+\item[(ii)] $\{1,2,3,4,5,6,7,8,9\}$ 
+\end{itemize}
+
+
+%Exercise 3
+\section{Set Theory}
+%--------------------------------------------%
+
+%\frametitle{Set Theory : Set Operations}
+\Large
+\begin{itemize}
+\item[\textbf{A}] $ \{ 2n : n \in \mathbb{Z^{+}} \} $
+\item[\textbf{B}] $ \{ 3,6,9,12,15,18,\ldots \} $
+\end{itemize}
+\textbf{Questions}
+\begin{itemize}
+\item[(i)] \textbf{A} is described by the rules of inclusion. Describe \textbf{A} with the listing method.
+\item[(ii)] \textbf{B} is described by the listing method. Describe \textbf{B} with the rules of inclusion. 
+\end{itemize}
+
+
+
+
+%------------------------------------%
+\section*{Question 4}
+\[ \mbox{Log}_4 64 + \mbox{Log}_5 625 + \mbox{Log}_9 3 \] 
+
+
+%------------------------------------%
+\section*{Question 5}
+\begin{enumerate}
+\item Draw two non-isomorphic graphs with the following degree sequence.
+\[ 4,3,3,2,2,2,2,1,1\]
+\item
+\end{enumerate}
+%------------------------------------%
+
+\section*{Question 7b}
+
+Compute the following summation
+
+\[ \sum^{i=100}_{i=25} i^2 + 3i -5)\]
+
+
+%------------------------------------%
+
+\section*{Section 2. Set Theory}
+
+\begin{enumerate}
+\item
+\item
+\item
+\end{enumerate}
+\subsection*{Membership Tables}
+For the following venn diagrams, complete the membership.
+
+The events $W$, $X$,$Y$ and $Z$ correspond to the shaded areas in each of the venn diagrams.
+
+%----------------------------------------- %
+%----------------------------------------- %
+\subsection{logical implication}
+
+%- http://whatis.techtarget.com/definition/logical-implication
+
+Logical implication is a type of relationship between two statements or sentences. The relation translates verbally into "logically implies" or "if/then" and is symbolized by a double-lined arrow pointing toward the right ( $\rightarrow$). If A and B represent statements, then $A\rightarrow B$ means "A implies B" or "If A, then B." The word "implies" is used in the strongest possible sense.
+
+
+As an example of logical implication, suppose the sentences A and B are assigned as follows:
+
+A = The sky is overcast.
+B = The sun is not visible.
+
+In this instance, A B is a true statement (assuming we are at the surface of the earth, below the cloud layer.) However, the statement B A is not necessarily true; it might be a clear night. Logical implication does not work both ways. However, the sense of logical implication is reversed if both statements are negated. That is,
+
+$$(A \rightarrow B)  \equiv (-B \rightarrow -A)$$
+
+Using the above sentences as examples, we can say that if the sun is visible, then the sky is not overcast. This is always true. In fact, the two statements A B and -B -A are logically equivalent.
+
+\newpage
+%---------------------------------------%
+\chapter{Session 3}
+\section*{Question 3}
+\subsection*{Part A : Propositions}
+Let p, q be the following propositions:
+\begin{itemize}
+\item p : this apple is red, 
+\item q : this apple is ripe.
+\end{itemize}
+
+\noindent Express the following statements in words as simply as you can:
+\begin{itemize}
+\item[(i)] $p \rightarrow q$
+\item[(ii)] $p \wedge \neg q$.
+\end{itemize}
+
+\noindent Express the following statements symbolically:
+\begin{itemize}
+\item[(iii)] This apple is neither red nor ripe.
+\item[(iv)] If this apple is not red it is not ripe.
+\end{itemize}
+
+\subsection*{Part B : Logical Operations}
+Let $n \in \{1,2,3,4,5,6,7,8,9\}$ and let p and q be the following propostions concerning 
+the integers $n$.
+
+\begin{itemize}
+\item[p] $n$ is event
+\item[q] $n<5$
+\end{itemize}
+
+Find the values of $n$ for which each of the following compound statement is true,
+
+\begin{itemize}
+\item[(i)] $\neg p$
+\item[(ii)] $p \wedge q$
+\item[(iii)] $\neg p \vee q$ 
+\item[(iv)] $p \oplus q$
+\end{itemize}
+
+\section*{Question 3}
+
+Let $\mathcal{S} = \{10,11,12,13,14,15,16,17,18,19,20\}$
+$n  \in \mathcal{S}$
+p : n is a multiple of two
+q : n is a multiple of five
+
+Express the following statement using logic symbols
+n is not a multiple of either 2 or 5.
+
+List the elements of S which are in the truth set for the statement in (ii).
+
+Write the contrapositive of the following statement concerning an integer $n$.
+
+If the last digit of n is 4, then n is divisible by 3
+
+% %------------------------------------------------------
 \section{Conditional Connectives}
 Construct the truth table for the proposition $p \rightarrow q$.
 
 \begin{center}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		p & q & $p \rightarrow q$ & $q \rightarrow p$ \\
-		\hline
-		0 & 0 & 1& 1 \\
-		0 & 1 & 1 & 0 \\
-		1 & 0 & 0 & 1 \\
-		1 & 1 & 1 & 1 \\
-		\hline
-	\end{tabular}
+\begin{tabular}{|c|c|c|c|}
+\hline
+p & q & $p \rightarrow q$ & $q \rightarrow p$ \\
+\hline
+0 & 0 & 1& 1 \\
+0 & 1 & 1 & 0 \\
+1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
 \end{center}
 
-% Question 1 - numbers - Started
-% Question 2 - Sets - Not Started
-% Question 3 - Logic - Not Started
-% Question 4 - Functions - Started
-% Question 5 - Graphs
-% Question 6 - Digraphs and Relations
-% Question 7 - 
-% Question 8 -
-% Question 9
-% Question 10 - Matrices - STARTED
-
-%---------------------------------------%
-\subsection*{Question 1}
-\begin{itemize}
-	\item[(b)] Express the following hexadecimal number as a decimal number: (A32.8)16.
-	[3]
-	\item[(c)]  Convert the following decimal number into base 2, showing all your working:
-	$(253)_{10}$. [2]
-	\item[(d)]  Express the recurring decimal $0.4242424\ldots$
-	as a rational number in its simplest
-	form. [2]
-\end{itemize}
-%---------------------------------------%
-\subsection*{Question 4}
-%2001 Question 4
+\section{Tautologies and Truth Tables}
+\textbf{Truth Table for the Biconditional Connective.} \bigskip
 \begin{center}
-	\includegraphics[scale=0.55]{HibCollArrow.jpg}
+\begin{tabular}{|c|c|c|}
+\hline $P$  & $Q$ & $P \leftrightarrow Q$ \\ \hline
+\hline T & T &   \\ 
+\hline T & F &    \\ 
+\hline F & T &    \\ 
+\hline \phantom{sp}F \phantom{sp} & \phantom{sp}F \phantom{sp} & \phantom{sp}T \phantom{sp} \\
+\hline 
+\end{tabular} 
 \end{center}
 
-%---------------------------------------%
-\subsection*{Question 6}
-%2002 Question 7
-Let $\mathcal{S}$ be a set and let $\mathcal{R}$ be a relation on $\mathcal{S}$
-Explain what it means to say that $\mathcal{R}$ is
+\begin{tabular}{|c|c|c|c|c|}
+\hline $P$ & $Q$ & $P \vee Q$ &  &  \\ \hline
+\hline T & T &  &  &  \\ 
+\hline T & F &  &  &  \\ 
+\hline F & T &  &  &  \\ 
+\hline \phantom{sp}F \phantom{sp} & \phantom{sp}F \phantom{sp} & \phantom{spacespa} & \phantom{spacespa}  & \phantom{spacespa} \\ 
+
+\hline 
+\end{tabular} 
+
+%-------------------------------------------------------------------------%
+\newpage
+
+
+
+\section*{Question 3}
+\subsection*{Part A : Propositions}
+Let p, q be the following propositions:
+\begin{itemize}
+\item p : this apple is red, 
+\item q : this apple is ripe.
+\end{itemize}
+
+\noindent Express the following statements in words as simply as you can:
+\begin{itemize}
+\item[(i)] $p \rightarrow q$
+\item[(ii)] $p \wedge \neg q$.
+\end{itemize}
+
+\noindent Express the following statements symbolically:
+\begin{itemize}
+\item[(iii)] This apple is neither red nor ripe.
+\item[(iv)] If this apple is not red it is not ripe.
+\end{itemize}
+
+\subsection*{Part B : Logical Operations}
+Let $n \in \{1,2,3,4,5,6,7,8,9\}$ and let p and q be the following propostions concerning 
+the integers $n$.
 
 \begin{itemize}
-	\item[(i)] reflexive
-	\item[(ii)] symmetrix
-	\item[(iii)] anti-symmetric
-	\item[(iv)] Transitive
+\item[p] $n$ is event
+\item[q] $n<5$
+\end{itemize}
+
+Find the values of $n$ for which each of the following compound statement is true,
+
+\begin{itemize}
+\item[(i)] $\neg p$
+\item[(ii)] $p \wedge q$
+\item[(iii)] $\neg p \vee q$ 
+\item[(iv)] $p \oplus q$
+\end{itemize}
+
+%------------------------------------%
+\newpage
+\section*{Question 3}
+% Logical Proofs
+
+
+
+% %------------------------------------------------------
+
+
+\section*{Question 6}
+%Relations and Digraphs
+
+%------------------------------------%
+\subsection{Question 6}
+Say with reason whether or not $\mathcal{R}$ is
+\begin{itemize}
+\item reflexive
+\item symmetric
+\item transitive
+\end{itemize}
+
+In the cases where the given property does not hold provide a counter example to justify this.
+% %------------------------------------------------------
+
+
+\subsection*{Question 6 Part A : Digraphs}
+
+Suppose $A = $$\{1,2,3,4\}$. Consider the following relation in A
+
+\[ \{  (1,1),(2,2),(2,3),(3,2),(4,2),(4,4)\} \]
+
+Draw the direct graph of $A$. Based on the Digraph of $A$ discuss whether or not a relation that could be depicted by the digraph could be described as the following, justifying your answer.
+
+
+\begin{itemize}
+\item[(i)] Symmetric
+\item[(ii)] Reflexive 
+\item[(iii)] Transitive
+\item[(iv)] Antisymmetric
+\end{itemize}
+\subsection*{Part B : Relations}
+Determine which of the following relations $ x R y$ are reflexive, transitive, symmetric, or antisymmetric on the following - there may be more than one characteristic.  if
+
+\begin{itemize} 
+\item[(i)] $x = y$
+\item[(ii)] $x < y$
+\item[(iii)] $x^2 = y^2$
+\item[(iv)] $x \geq y$
+\end{itemize}
+%---------------------------------------%
+\subsection*{Question 2}
+
+% http://staff.scem.uws.edu.au/cgi-bin/cgiwrap/zhuhan/dmath/dm_readall.cgi?page=20
+
+Let $A=\{0,1,2\}$ and $R=\{ (0,0),(0,1),(0,2),(1,1), (1,2), (2,2)\}$
+and $S=\{(0,0),(1,1),(2,2)\}$ be 2 relations on A. Show that
+
+\begin{itemize}
+\item[(i)] R is a partial order relation.
+\item[(ii)] S is an equivalence relation.
+\end{itemize}
+%------------------------------------%
+
+\subsection*{Part C : Partial Orders}
+% http://staff.scem.uws.edu.au/cgi-bin/cgiwrap/zhuhan/dmath/dm_readall.cgi?page=20
+
+Let $A=\{0,1,2\}$ and $R=\{ (0,0),(0,1),(0,2),(1,1), (1,2), (2,2)\}$
+and $S=\{(0,0),(1,1),(2,2)\}$ be 2 relations on A. Show that
+
+\begin{itemize}
+\item[(i)] R is a partial order relation.
+\item[(ii)] S is an equivalence relation.
 \end{itemize}
 
 
-\subsection*{Question 10}
 
-(a) Given the following adjacency matrices A and B where
-%A =
-%
-%1 0 1
-%0 1 2
-%1 2 0
-%
-% ,B =
-%
-%1 2 0
-%2 0 1
-%0 1 1
+%------------------------------------%
 
-%MAKE NO
+\section*{Biconnective Operators}
+
+\[ p \leftarrow \rightarrow q\]
+We could verbalize this as ``$p$ implies $q$ and $q$ implies $p$".
+
+%-------------------------- %
+%-------------------------- %
+%Section 4 Invertible Functions
+
+
+
+Maths for Computing Sprint
+
+\section*{Part 0. - Numeracy}
+\subsection{Factorials}
+Evaluate the following
+\begin{itemize}
+\item $6!$
+\item $3!$
+\item $1!$
+\item $0!$
+\end{itemize}
+Evaluate the following expressions
+\[  \frac{5!}{3!}  \mbox{   and   } \frac{6!}{2!\times 4!}  \]
+\subsection*{Laws of Logarithms}
+\begin{itemize}
+\item Addition of Logarithms
+\item Subtraction of Logaritms
+\item Powers of Logarithms
+\end{itemize}
+%----------------------------------------- %
+%----------------------------------------- %
+
+
+\section*{Section 3. Logic}
+
+\subsection*{Proofs with Truth Tables}
+
+\[ \neg(p \vee q) \wedge p \equiv q \]
+\begin{center}
+\begin{tabular}{|c|c||c|c||c|c|}
+\hline $p$ & $q$ &  &  &  &  \\ 
+\hline  &  &  &  &  &  \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+%----------------------------------------- %
+%----------------------------------------- %
+
+
+\section{Section 3 Logic}
+\subsection{Logical Operations}
+\begin{itemize}
+\item $\neg p$ the negation of proposition $p$.
+\item $p \wedge q$ Both propositions p and q are simultaneously true (Logical State AND)
+\item $p \vee q $ One of the propositions is true, or both (Logical State : OR)
+\item $p \otimes q$ Only one of the propositions is true (Logical State : exclusive OR (i.e XOR)
+\end{itemize}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+p & q & $p \vee q$ & $q \wedge p$ & $p \otimes q$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 1\\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0\\
+\hline
+\end{tabular}
+\end{center}
+%---------------------------------------------------------%
+
+
+\chapter{Session 4}
+\section*{Invertible Functions}
+
+Necessary Condtions for Invertibility of a Function
+\begin{itemize}
+\item The function must be one-to-one
+\item The fucntion must be onto.
+\end{itemize}
+
+%-------------------------- %
+%-------------------------- %
+%Section 5 Graph Theory
+
+\section*{Equivalence Relations}
+\begin{itemize}
+\item
+\item
+\item
+\end{itemize}
+
+%------------------------- %
+%-------------------------- %
+% Section Sequence and Series, with Proof By Induction
+
+
+\section{Logarithmic Functions}
+
+\subsubsection{Laws for Logarithms}
+The following laws are very useful for working with logarithms.
+\begin{enumerate}
+\item $\mbox{log}_b(X)$ + $\mbox{log}_b(Y)$ = $\mbox{log}_b(X\times Y)$
+\item $\mbox{log}_b(X)$ - $\mbox{log}_b(Y)$ = $\mbox{log}_b(X / Y)$
+\item $\mbox{log}_b(X^Y)$= $Y \mbox{log}_b(X)$
+\end{enumerate}
+
+\noindent \textbf{Question1.3} Compute the Logarithm of the following
+\begin{itemize}
+\item $\mbox{log}_2(8)$
+\item $\mbox{log}_2(\sqrt{128})$
+\item $\mbox{log}_2(64)$
+\item $\mbox{log}_5(125)$ +   $\mbox{log}_3(729)$
+\item $\mbox{log}_2(64/4)$
+\end{itemize}
+
+\Large
+\[ Log_b(x) = \frac{1}{Log_x(b)}  \]
+
+\[ Log_b(x) = \frac{Log_a(b)}{Log_a(b)}  \]
+
+\Large
+Example 1
+\[ log_3(x) + 3 log_x(3) = 4  \]
+
+\[ \left(log_3(x)\right)^2 + 3  = 4 log_3(x)  \]
+
+Example 1
+\[ log_3(x) + 3 log_x(3) = 4  \]
+
+\[ \left(log_3(x)\right)^2 - 4 log_3(x) + 3  = 0  \]
+
+\section{Digraphs and Relatiosn}
+% 2007 Q8
+Given a flock of chickens, between any two chickens one of them is
+dominant. A relation, R, is defined between chicken x and chicken y as xRy if x is
+dominant over y. This gives what is known as a pecking order to the flock. Home
+Farm has 5 chickens: Amy, Beth, Carol, Daisy and Eve, with the following relations:
+
+\begin{itemize}
+\item Amy is dominant over Beth and Carol
+\item Beth is dominant over Eve and Carol
+\item Carol is dominant over Eve and Daisy
+\item Daisy is dominant over Eve, Amy and Beth
+\item Eve is dominant over Amy.
+\end{itemize}
+
+\newpage
+
+\section*{Section 4. Functions}
+
+
+
+
+
+\section{Section 4 Functions}
+
+\subsection{Invertible Functions}
+A function is invertible if it fulfils two criteria
+\begin{itemize}
+\item The function is \textbf{\textit{onto}},
+\item The function is \textbf{\textit{one-to-one}}.
+\end{itemize}
+
+State the conditions to be satisfied by a function
+$f : X \leftarrow Y$ for it to have an inverse function
+$f^{-1} : Y \leftarrow X$.
+%---------------------------------------------------------%
+
+$\lceil \frac{x^2+1}{4} \rceil$
+where $f : A \rightarrow \textbf{Z}$
+\begin{itemize}
+\item[(i)] Find $f(4)$ and the ancestors of 3.
+\item[(ii)] Find the range of $f$.
+\item[(iii)] Is f invertible? Justify your answer
+\end{itemize}
+
+Given $f : \textbf{R} \rightarrow \textbf{R}$ where f(x) =3x-1,define fully
+the inverse of the function f ,i.e.$f^{-1}$. 
+State the value of $f^{-1}(2)$
+%---------------------------------------------------------%
+\subsection{Precision Functions}
+
+\begin{itemize}
+\item Absolute Value Function $| x |$
+\item Ceiling Function $\lceil x \rceil$
+\item Floor Function  $\lfloor x \rfloor $
+\end{itemize}
+%\[ \lfloorx\rfloor\]
+
+\noindent \textbf{Question1.2}: State the range and domain of the following function
+\[ F(x) = \lfloor x-1 \rfloor \]
+%---------------------------------------------------------%
+\subsection{Powers}
+
+\[  2^ 4 = 2 \times 2 \times 2 \times 2 = 16 \]
+
+\[  5^ 3 = 5 \times 5 \times 5 =125 \]
+
+\subsubsection{Special Cases}
+
+Anything to the power of zero is always 1
+
+\[  X^ 0 = 1 \mbox{ for all values of X} \]
+
+Sometimes the power is a negative number.
+
+\[  X^{-Y} = { 1 \over X^Y}  \]
+
+Example 
+\[  2^{-3} = { 1 \over 2^3} = { 1 \over 8}  \]
+
+
+
+%---------------------------------------------------------%
+\subsection{Exponentials Functions}
+
+\[ e^a \times e^b = e^{a+b}\]
+
+\[ (e^a )^b = e^{ab}\]
+%---------------------------------------------------------%
+\subsection{Logarithmic Functions}
+
+\subsubsection{Laws for Logarithms}
+The following laws are very useful for working with logarithms.
+\begin{enumerate}
+\item $\mbox{log}_b(X)$ + $\mbox{log}_b(Y)$ = $\mbox{log}_b(X\times Y)$
+\item $\mbox{log}_b(X)$ - $\mbox{log}_b(Y)$ = $\mbox{log}_b(X / Y)$
+\item $\mbox{log}_b(X^Y)$= $Y \mbox{log}_b(X)$
+\end{enumerate}
+
+\noindent \textbf{Question1.3} Compute the Logarithm of the following
+\begin{itemize}
+\item $\mbox{log}_2(8)$
+\item $\mbox{log}_2(\sqrt{128})$
+\item $\mbox{log}_2(64)$
+\item $\mbox{log}_5(125)$ +   $\mbox{log}_3(729)$
+\item $\mbox{log}_2(64/4)$
+\end{itemize}
+\section*{Question 4}
+
+
+
+\subsection*{Session 04:Functions}
+\begin{itemize}
+\item Definitions
+\end{itemize}
+
+\begin{itemize}
+\item[Domain]
+\item[Co-domain]
+\item[Image]
+\item[Ancestor]
+\item[Range]
+\end{itemize}
+
+\subsection*{Part A : Functions}
+Given a real number $x$, say how the floor of x  $\lfloor x \rfloor$ is defined.
+\begin{itemize}
+\item[(i)] Find the values of $\lfloor 2.97 \rfloor$ and $\lfloor -2.97 \rfloor$.
+\item[(ii)] Find an example of a real number $x$ such that $\lfloor 2x \rfloor  \neq 2\lfloor x \rfloor$, justifying your answer.
+\end{itemize}
+
+
+
+%------------------------------------%
+\subsection*{Part B : Logarithms}
+Evaluate the following expression.
+\[ \mbox{Log}_4 64 + \mbox{Log}_5 625 + \mbox{Log}_9 3 \] 
+
+\[ \mbox{Log}_4 64 + \mbox{Log}_5 625 + \mbox{Log}_9 3 \] 
+
+%------------------------------------%
+\newpage
+
+
+\subsection*{Absolute Value Function (4.1.3)}
+
+
+\begin{itemize}
+\item The absolute value of some real number $x$ is denoted $|x|$.
+\item If the number is positive, the asbolute value is the same number.
+\item If the number is negative, the asbolute value is the number without the minus sign.
+\item $|2|=2$
+\item $|-2| = 2$
+\end{itemize}
+\subsection*{Floor and Ceiling Function (4.1.4)}
+\subsection*{Polynomial Functions (4.1.5)}
+
+\begin{itemize}
+\item[Constants] $(P_0)$
+\item[Linear Functions] $(P_1)$
+\item[Quadratic Functions] $(P_2)$
+\item[Cubic Functions] $(P_3)$
+\end{itemize}
+
+
+\subsection*{Equality of Functions (4.1.6)}
+\[f(x) = g(x) \]
+
+
+\subsection*{Encoding and Decoding Functions (4.2)}
+
+
+\subsection*{Onto Functions (4.2.2)}
+
+\subsection*{One-to-One Functions (4.2.3)}
+$f(x)$, must be \emph{One-to-One} and \emph{Onto}
+
+
+
+\subsection*{Exponential and Logarithmic Functions (4.3)}
+
+The Laws of Logarithms
+\begin{itemize}
+\item
+\item $log_b(x^y) = y \times log_b(x)$
+\item
+\item
+\end{itemize}
+%================================================================== %
+
+\subsection*{Big O-notation}
+Comparing the size of Functions (4.4)
+%----------------------------------------- %
+%----------------------------------------- %
+
+
+Using O-notations
+
+\subsection*{Power Notation (4.4.2)}
+
+
+
+%=====================================================================%%------------------------------------%
+
+\section*{Question 4}
+
+A function f: X-> Y , where $X = \{p,q,r,s\}$ and $Y =\{1,2,3,4,5\}$
+is given by the subset of $X \times Y$
+
+
+\begin{itemize}
+\item Show f as an arrow diagram
+\item state the domain, the co-domain, and the range of f
+\item Say why f does not have the one-to-one property and why f does 
+not have the "onto" property, giving a specific counter example in each case.
+\end{itemize}
+% %------------------------------------------------------
+
+
+\section{Section 4 Functions}
+
+\subsection{Invertible Functions}
+A function is invertible if it fulfils two criteria
+\begin{itemize}
+\item The function is \textbf{\textit{onto}},
+\item The function is \textbf{\textit{one-to-one}}.
+\end{itemize}
+
+State the conditions to be satisfied by a function
+$f : X \leftarrow Y$ for it to have an inverse function
+$f^{-1} : Y \leftarrow X$.
+%---------------------------------------------------------%
+
+$\lceil \frac{x^2+1}{4} \rceil$
+where $f : A \rightarrow \textbf{Z}$
+\begin{itemize}
+\item[(i)] Find $f(4)$ and the ancestors of 3.
+\item[(ii)] Find the range of $f$.
+\item[(iii)] Is f invertible? Justify your answer
+\end{itemize}
+
+Given $f : \textbf{R} \rightarrow \textbf{R}$ where f(x) =3x-1,define fully
+the inverse of the function f ,i.e.$f^{-1}$. 
+State the value of $f^{-1}(2)$
+%---------------------------------------------------------%
+\subsection{Precision Functions}
+
+\begin{itemize}
+\item Absolute Value Function $| x |$
+\item Ceiling Function $\lceil x \rceil$
+\item Floor Function  $\lfloor x \rfloor $
+\end{itemize}
+%\[ \lfloorx\rfloor\]
+
+\noindent \textbf{Question1.2}: State the range and domain of the following function
+\[ F(x) = \lfloor x-1 \rfloor \]
+%---------------------------------------------------------%
+\subsection{Powers}
+
+\[  2^ 4 = 2 \times 2 \times 2 \times 2 = 16 \]
+
+\[  5^ 3 = 5 \times 5 \times 5 =125 \]
+
+\subsubsection{Special Cases}
+
+Anything to the power of zero is always 1
+
+\[  X^ 0 = 1 \mbox{ for all values of X} \]
+
+Sometimes the power is a negative number.
+
+\[  X^{-Y} = { 1 \over X^Y}  \]
+
+Example 
+\[  2^{-3} = { 1 \over 2^3} = { 1 \over 8}  \]
+
+
+
+%---------------------------------------------------------%
+\subsection{Exponentials Functions}
+
+\[ e^a \times e^b = e^{a+b}\]
+
+\[ (e^a )^b = e^{ab}\]
+%---------------------------------------------------------%
+
+
+\section*{Functions}
+\begin{itemize}
+\item Domain of a Function
+\item Range of a function
+\item Inverse of a function
+\end{itemize}
+\begin{itemize}
+\item one-one (surjective)
+\item onto (bijective)
+\end{itemize}
+%------------------------------------------------%
+
+
+\section*{Functions}
+\begin{itemize}
+\item Domain of a Function
+\item Range of a function
+\item Inverse of a function
+\end{itemize}
+\begin{itemize}
+\item one-one (surjective)
+\item onto (bijective)
+\end{itemize}
+
+\chapter{Session 5}
+\section{Video 4 : Graph Theory}
+
+%\frametitle{Graph Theory}
+
+Draw the graph \textbf{G}, which has the vertices $v_1$,$v_2$,$v_3$,$\ldots$,$v_7$, and the adjacency list:
+
+\begin{itemize}
+\item[$v_1$]: $v_2$,$v_4$
+\item[$v_2$]: $v_1$,$v_3$
+\item[$v_3$]: $v_2$,$v_4$
+\item[$v_4$]: $v_1$,$v_3$,$v_5$
+\item[$v_5$]: $v_4$,$v_6$
+\item[$v_6$]: $v_5$,$v_7$
+\item[$v_7$]: $v_5$,$v_6$
+\end{itemize}
+%Draw the graph \textbf{G}.
+
+%------------------------------------------------------------------------- %
+\section{ Graph Theory - Isomorphic Graphs}
+
+% http://www3.ul.ie/cemtl/pdf%20files/cm2/IsomorphicGraph.pdf
+%\frametitle{Isomorphic Graphs}
+\begin{itemize}
+\item If the graphs are not simple, we need more sophisticated methods to check for when two graphs are isomorphic. 
+\item However, it is often straightforward to show that two graphs are not isomorphic. 
+\item You can do this by showing any of the following seven conditions are true.
+\end{itemize}
+
+%-------------------------------------------------------------------------- %
+[fragile]
+%\frametitle{Isomorphic Graphs}
+
+\begin{enumerate}
+\item The two graphs have different numbers of vertices.
+\item The two graphs have different numbers of edges.
+\item One graph has parallel edges and the other does not.
+\item One graph has a loop and the other does not.
+\item One graph has a vertice of degree k (for example) and the other does not.
+\item One graph is connected and the other is not.
+\item One graph has a cycle and the other has not.
+\end{enumerate}
+
+
+% Ex 8 
+
+
+\section{Video 7 : Numbers}
+
+
+\begin{description}
+\item[mantissa]
+\item[abscissa]
+\item[radix point]
+\end{description}
+
+\begin{itemize}
+\item Number Systems
+\item Set Theory
+\item Function
+\item 
+\item Graph Theory
+\end{itemize}
+
+
+
+\begin{itemize}
+\item Digraphs
+\item Set Theory
+\item Function
+\item Probability
+\item MAtrices
+\end{itemize}
+
+
+
+%\frametitle{(1.4.1) Decimal to Binary Conversion}
+\begin{itemize}
+\item Continuously divide the decimal number by 2.
+\item Keep record of the remainder, either 0 or 1.
+\item The sequence of remainders is the binary number required.
+\end{itemize}
+
+%------------------------------------------%
+
+%\frametitle{Hexadecimal Numbers}
+\begin{itemize}
+\item Hex Characters $\{0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\}$
+\item 
+\end{itemize}
+
+%-------------------------------------%
+
+%\frametitle{Relatiional Operators}
+\begin{itemize}
+\item $\neq$ Not Equal
+\item < Less than
+\item > greater than
+\item $\geq$ greater than or equal to
+\item $\leq$ Not Equal to
+\end{itemize}
+
+%------------------------------------------%
+
+%\frametitle{Frame Name}
+\begin{itemize}
+\item Natural Numbers $\{1,2,3,4, \ldots\}$
+\item Integers $\{\ldots,-2,-1,0,1,2,3,\ldots\}$
+\item Rational Numbers e.g $4/7$ , $11/25$
+\item Real Numbers Any number e.g. $3.1415$
+\end{itemize}
+
+
+
+%------------------------------------------%
+
+`
+Floating Point Noation
+
+Section 1
+Section 1.2
+Section 1.3
+Section 14
+%----------------------------------------------%
+
+\begin{itemize}
+\item Decmal Number Systesm
+\begin{itemize}
+\item Base 10
+\end{itemize}
+
+\item Binary Number Systems
+\begin{itemize}
+\item Base 2
+\item allowable characters are {0.1} only
+\end{itemize}
+\item Base 16 Hexadecimal
+\begin{itemize}
+\item Use all of the decimal digits, in addition to 6 more A,B~,D,D,E,F
+\end{itemize}
+(where might you see this  - specifying colours RGB Numbers
+\end{itemize}
+
+%============================================================= %
+For example FF in hexadecimal is is 255 in decimal 
+
+
+Rational Numbers
+
+Natural Numbers indies
+Integers Z
+
 
 %--------------------------------------------%
 
-(i) Say whether or not the graphs they represent are isomorphic.
-(ii) Calculate A2 and A4 and say what information each gives about the graph
-corresponding to A. [6]
-(b) (i) Write down the augmented matrix for the following system of equations.
+Computing a binary number
 
-\[2x + y - z = 2\]
-\[x - y + z = 4\]
-\[x + 2y + 2z = 10\]
-(ii) Use Gaussian elimination to solve the system. [4]
+Useful
+{
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline $2^0 = 1 $ & $2^4 = 16  $ \\ 
+\hline $2^1 = 2 $ & $2^5 = 32$ \\ 
+\hline $2^2 = 4 $ & $2^6 = 64$ \\ 
+\hline $2^3 = 8 $ & $ 2^7 = 128$ \\ 
+\hline 
+\end{tabular} 
+\end{center}
+}
+
+
+%============================================================= %
+\newpage
+
+
+
+
+Firslly determine the highest power
+
+Suppose the number we wish to convert is 58
+
+Hwhat is the highest power of two that deivides
+
+
+
+
+
+
+\section{graph theory }
+Given the following definitions for simple, connected graphs:
+\begin{itemize}
+\item $K_n$ is a graph on $n$ vertices where each pair of vertices is connected by an edge;
+\item $C_n$ is the graph with vertices $v_1, v_2, v_3, \dots, v_n$ and edges $\{v_1,v_2\}, \{v_2,v_3\}, \dots\{v_n, v_1\}$;
+\item $W_n$ is the graph obtained from $C_n$ by adding an extra vertex,$v_{n+1}$, and edges
+from this to each of the original vertices in $C_n$.
+\end{itemize}
+(a) Draw $K_4$, $C_4$, and $W_4$. 
+%----------------------------------------------------------------%
+\newpage
+\section*{Session 05:Graphs}
+\begin{itemize}
+\item[5A.1] What is a Graph?
+\item[5A.2] Paths Cycles and Connectivity
+\item[5A.3] Isomorphisms of a graph
+\item[5A.4] Adjacency Matrices and Adjacency Lists
+\end{itemize}
+
+
+\subsection*{Isomorphism}
+\begin{itemize}
+\item They have a different number of connected components
+\item They have a different number of vertices
+\item They have different degrees sequences
+\item They have a different number of paths of any given length
+\item They have a different number of cycles of any length.
+\end{itemize}
+
+\subsection*{Adjacency Lists}
+\begin{itemize}
+\item[u]: $\{v\}$
+\item[v]: $\{w,x\}$
+\item[w]: $\{v,x\}$
+\item[z]: $\{v,w\}$
+\end{itemize}
+
+
+
+
+\begin{itemize}
+\item Spanning Subgraphs of G.
+
+\item a vertex is said to be an \textbf{emph{ isolated vertex}} if it has a degree of zero.
+\item a vertex is said to be an \textbf{emph{ end-vertex}} if it has a degree of one.
+\item a vertex is said to be an \textbf{emph{ even vertex}} if it has a degree of an even number.
+\item a vertex is said to be an \textbf{emph{ odd vertex}} if it has a degree of an odd number.
+
+
+\item A graph is said to be \textbf{emph{k-regular}} if the degree of each vertex is $k$. 
+\item Every Graph has an even number of odd vertices.
+\item A cubic graph is a graph where every vertex has degree three.
+\end{itemize}
+%-----------------------------------------------------%
+\section*{Section 5. Graph Theory}
+
+\subsection*{Adjacency Lists}
+\begin{enumerate}
+\item
+\item
+\item
+\item
+\end{enumerate}
+%----------------------------------------- %
+%----------------------------------------- %
+
+
+
+
+
+%-----------------------------------------------------%
+\section*{Question 5}
+\begin{enumerate}
+\item Draw two non-isomorphic graphs with the following degree sequence.
+\[ 4,3,3,2,2,2,2,1,1\]
+\item Write out the degree sequence of the following graph.
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[width=0.5\linewidth]{./graph2.jpg}
+%%\caption{}
+%\label{fig:graph2}
+%\end{figure}
+\item State the vertices that comprise a cycle of length 5 in both of the following graphs.
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[width=0.7\linewidth]{./graph20.jpg}
+%
+%\label{fig:graph20}
+%\end{figure}
+\end{enumerate}
 
 
 
@@ -1796,6 +4696,358 @@ corresponding to A. [6]
 
 
 
+
+%------------------------------------%
+
+\section*{Session 05 Graph Theory}
+\begin{itemize}
+\item Eulerian Path
+\item Isomorphism
+\item Adjacency matrices
+\end{itemize}
+Adjacency Matrices
+\[ \left( \begin{matrix}
+o & 1 & 0 & 1 & 1 \\ 
+1 & 0 & 1 & 0 & 1 \\ 
+1 & 1 & 0 & 1 & 1 \\ 
+0 & 1 & 1 & 1 & 1 \\ 
+1 & 1 & 0 & 1 & 0
+\end{matrix} \right) \]
+
+
+\section*{Session 05 Graph Theory}
+\begin{itemize}
+\item Eulerian Path
+\item Isomorphism
+\item Adjacency matrices
+\end{itemize}
+Adjacency Matrices
+\[ \left( \begin{matrix}
+o & 1 & 0 & 1 & 1 \\ 
+1 & 0 & 1 & 0 & 1 \\ 
+1 & 1 & 0 & 1 & 1 \\ 
+0 & 1 & 1 & 1 & 1 \\ 
+1 & 1 & 0 & 1 & 0
+\end{matrix} \right) \]
+
+\section{graph theory }
+Given the following definitions for simple, connected graphs:
+\begin{itemize}
+\item $K_n$ is a graph on $n$ vertices where each pair of vertices is connected by an edge;
+\item $C_n$ is the graph with vertices $v_1, v_2, v_3, \dots, v_n$ and edges $\{v_1,v_2\}, \{v_2,v_3\}, \dots\{v_n, v_1\}$;
+\item $W_n$ is the graph obtained from $C_n$ by adding an extra vertex,$v_{n+1}$, and edges
+from this to each of the original vertices in $C_n$.
+\end{itemize}
+(a) Draw $K_4$, $C_4$, and $W_4$. 
+%----------------------------------------------------------------%
+\newpage
+\section*{Condtions for Isomorphism}
+\begin{itemize}
+\item
+\item
+\item
+\end{itemize}
+
+%--------------------------- %
+\section*{Question 5}
+Given the following definitions for simple, connected graphs:
+\begin{itemize}
+	\item $K_n$ is a graph on $n$ vertices where each pair of vertices is connected by an edge;
+	\item $C_n$ is the graph with vertices $v_1, v_2, v_3, \dots, v_n$ and edges $\{v_1,v_2\}, \{v_2,v_3\}, \dots\{v_n, v_1\}$;
+	\item $W_n$ is the graph obtained from $C_n$ by adding an extra vertex,$v_{n+1}$, and edges
+	from this to each of the original vertices in $C_n$.
+\end{itemize}
+(a) Draw $K_4$, $C_4$, and $W_4$. 
+
+%----------------------------- %
+% 2006 
+a) (i) A simple, connected graph has 7 vertices, all having the same degree d.
+State the possible values of d and for each value also give the number of edges
+in the corresponding graph.
+(ii) Another simple, connected graph has 6 vertices, all having the same degree,
+n. Draw such a graph when n = 3 and state the other possible values of n.
+[4]
+
+\newpage
+
+
+\begin{center}
+	\textbf{Tutorial Sheet for Session 1}
+\end{center}
+\section*{Part A: Number Systems - Binary Numbers}
+\begin{enumerate}
+	\item Express the following decimal numbers as binary numbers.
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[i)] $(73)_{10}$
+			\item[ii)] $(15)_{10}$
+			\item[iii)] $(22)_{10}$
+		\end{itemize}
+	\end{multicols}
+	
+	All three answers are among the following options.
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[a)] $(10110)_{2}$ %22
+			\item[b)] $(1111)_{2}$ %15
+			\item[c)] $(1001001)_{2}$ %73
+			\item[d)] $(1000010)_{2}$ %64
+		\end{itemize}
+	\end{multicols}
+	
+	\item Express the following binary numbers as decimal numbers.
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[a)] $(101010)_{2}$
+			\item[b)] $(10101)_{2}$
+			\item[c)] $(111010)_{2}$
+			\item[d)] $(11010)_{2}$
+		\end{itemize}
+	\end{multicols}
+	\item Express the following binary numbers as decimal numbers.
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[a)] $(110.10101)_{2}$
+			\item[b)] $(101.0111)_{2}$
+			\item[c)] $(111.01)_{2}$
+			\item[d)] $(110.1101)_{2}$
+		\end{itemize}
+	\end{multicols}
+	\item Express the following decimal numbers as binary numbers.
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[a)] $(27.4375)_{10}$  %
+			\item[b)] $(5.625)_{10}$
+			\item[c)] $(13.125)_{10}$
+			\item[d)] $(11.1875)_{10}$
+		\end{itemize}
+	\end{multicols}
+\end{enumerate}
+
+\section*{Part B: Number Systems - Binary Arithmetic}
+%http://www.csgnetwork.com/binaddsubcalc.html
+(See section 1.1.3 of the text)
+\begin{enumerate}
+	\item Perform the following binary additions.
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item[a)] $(110101)_{2}$ + $(1010111)_{2}$
+			\item[b)] $(1010101)_{2}$ + $(101010)_{2}$
+			\item[c)] $(11001010)_{2}$ + $(10110101)_{2}$
+			\item[d)] $(1011001)_{2}$ + $(111010)_{2}$
+		\end{itemize}
+	\end{multicols}
+	
+	\item Perform the following binary subtractions.
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item[a)] $(110101)_{2}$ - $(1010111)_{2}$
+			\item[b)] $(1010101)_{2}$ - $(101010)_{2}$
+			\item[c)] $(11001010)_{2}$ - $(10110101)_{2}$
+			\item[d)] $(1011001)_{2}$ - $(111010)_{2}$
+		\end{itemize}
+	\end{multicols}
+	
+	
+	\item Perform the following binary multiplications.
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item[a)] $(1001)_{2}\times( 1000)_{2}$  % 9 by 8
+			\item[b)] $(101)_{2}\times(1101)_{2}$ % 5 by 11
+			\item[c)] $(111)_{2}\times(1111)_{2}$ % 7 by 15
+			\item[d)] $(10000)_{2}\times(11001)_{2}$    %16 by 25
+		\end{itemize}
+	\end{multicols}
+	
+	\newpage
+	
+	\item Perform the following binary multiplications.
+	%\begin{multicols}{2}
+	%\begin{itemize}
+	%\item[a)] $(1001000)_{2} \div ( 1000)_{2}$
+	%\item[b)] $(101101)_{2} \div (1001)_{2}$
+	%\item[c)] $(1001011000)_{2} \div (101000)_{2}$
+	%\item[d)] $(1100000)_{2} \div (10000)_{2}$
+	%\end{itemize}
+	%\end{multicols}
+	
+	\begin{enumerate}
+		\item Which of the following binary numbers is the result of this binary division: $(10)_{2} \times ( 1101)_{2}$. % % (2) /  (13)
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item[a)] $(11010)_{2}$ %26
+				\item[b)] $(11100)_{2}$ %28
+				\item[c)] $(10101)_{2}$ %21
+				\item[d)] $(11011)_2$ %27
+			\end{itemize}
+		\end{multicols}
+		\item Which of the following binary numbers is the result of this binary division: $(101010)_{2} \times( 111 )_{2}$. % (4) /  (6)
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item[a)] $(11000)_{2}$ %24
+				\item[b)] $(11001)_{2}$ %25
+				\item[c)] $(10101)_{2}$ %21
+				\item[d)] $(11011)_2$ %27
+			\end{itemize}
+		\end{multicols}
+		\item Which of the following binary numbers is the result of this binary division: $(1001110)_{2}\times ( 1101 )_{2}$. % (9) /  (3)
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item[a)] $(11000)_{2}$ %24
+				\item[b)] $(11001)_{2}$ %25
+				\item[c)] $(10101)_{2}$ %21
+				\item[d)] $(11011)_2$ %27
+			\end{itemize}
+		\end{multicols}
+	\end{enumerate}
+	
+	%----------------------------------------------------------------%
+	
+	\item Perform the following binary divisions.
+	%\begin{multicols}{2}
+	%\begin{itemize}
+	%\item[a)] $(1001000)_{2} \div ( 1000)_{2}$
+	%\item[b)] $(101101)_{2} \div (1001)_{2}$
+	%\item[c)] $(1001011000)_{2} \div (101000)_{2}$
+	%\item[d)] $(1100000)_{2} \div (10000)_{2}$
+	%\end{itemize}
+	%\end{multicols}
+	
+	\begin{enumerate}
+		\item Which of the following binary numbers is the result of this binary division: $(111001)_{2} \div ( 10011)_{2}$. % (57) /  (19)
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item[a)] $(10)_2$ %2
+				\item[b)] $(11)_{2}$ %3
+				\item[c)] $(100)_{2}$ %4
+				\item[d)] $(101)_{2}$ %5
+			\end{itemize}
+		\end{multicols}
+		\item Which of the following binary numbers is the result of this binary division: $(101010)_{2} \div ( 111 )_{2}$. % (42) /  (7)
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item[a)] $(11)_2$ %3
+				\item[b)] $(100)_{2}$ %4
+				\item[c)] $(101)_{2}$ %5
+				\item[d)] $(110)_{2}$ %6
+			\end{itemize}
+		\end{multicols}
+		\item Which of the following binary numbers is the result of this binary division: $(1001110)_{2} \div ( 1101 )_{2}$. % (78) /  (13)
+		\begin{multicols}{2}
+			\begin{itemize}
+				
+				\item[a)] $(100)_{2}$ %4
+				\item[b)] $(110)_{2}$ %6
+				\item[c)] $(111)_{2}$ %7
+				\item[d)] $(1001)_2$ %9
+			\end{itemize}
+		\end{multicols}
+	\end{enumerate}
+	
+	
+\end{enumerate}
+
+
+\section*{Part C: Number Bases - Hexadecimal}
+\begin{enumerate}
+	
+	\item Answer the following questions about the hexadecimal number systems
+	\begin{itemize}
+		\item[a)] How many characters are used in the hexadecimal system?
+		\item[b)] What is highest hexadecimal number that can be written with two characters? \item[c)] What is the equivalent number in decimal form?
+		\item[d)] What is the next highest hexadecimal number?
+	\end{itemize}
+	
+	
+	\item Which of the following are not valid hexadecimal numbers?
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[a)] $73$
+			\item[b)] $A5G$
+			\item[c)] $11011$
+			\item[d)] $EEF	$
+		\end{itemize}
+	\end{multicols}
+	
+	\item Express the following decimal numbers as a hexadecimal number.
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[a)] $(73)_{10}$
+			\item[b)] $(15)_{10}$
+			\item[c)] $(22)_{10}$
+			\item[d)] $(121)_{10}$
+		\end{itemize}
+	\end{multicols}
+	
+	
+	\item Compute the following hexadecimal calculations.
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[a)] $5D2+A30$
+			\item[b)] $702+ABA$
+			\item[c)] $101+111$
+			\item[d)] $210+2A1$
+		\end{itemize}
+	\end{multicols}
+\end{enumerate}
+
+
+
+
+
+
+
+
+% \newpage
+\section*{Part D: Natural, Rational and Real Numbers}
+\begin{itemize}
+	\item $\mathbb{N}$ : natural numbers (or positive integers) $\{1,2,3,\ldots\}$
+	\item $\mathbb{Z}$ : integers $\{-3,-2,-1,0,1,2,3,\ldots\}$
+	\begin{itemize}
+		\item (The letter $\mathbb{Z}$ comes from the word \emph{Zahlen} which means ``numbers" in German.)
+	\end{itemize}
+	\item $\mathbb{Q}$ : rational numbers
+	\item $\mathbb{R}$ : real numbers
+	\item $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+	\begin{itemize}
+		\item (All natural numbers are integers. All integers are rational numbers. All rational numbers are real numbers.)
+	\end{itemize}
+\end{itemize}
+\newpage
+
+
+\begin{enumerate}
+	\item State which of the following sets the following numbers belong to. 
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[1)] $18$
+			\item[2)] $8.2347\ldots$
+			\item[3)] $\pi$
+			\item[4)] $1.33333\ldots$
+			\item[5)] $17/4$
+			\item[6)] $4.25$
+			\item[7)] $\sqrt{\pi}$
+			\item[8)] $\sqrt{25}$
+			%\item[i)]
+			%\item[j)] $(15)_{10}$
+			%\item[k)] $\pi$
+			%\item[l)] $11.132$
+		\end{itemize}
+	\end{multicols}The possible answers are
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item[a)] Natural number : $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+			\item[b)] Integer : $ \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+			\item[c)] Rational Number : $ \mathbb{Q} \subseteq \mathbb{R}$
+			\item[d)] Real Number $\mathbb{R}$
+			
+			%\item[i)]
+			%\item[j)] $(15)_{10}$
+			%\item[k)] $\pi$
+			%\item[l)] $11.132$
+		\end{itemize}
+	\end{multicols}
+\end{enumerate}
 
 
 
