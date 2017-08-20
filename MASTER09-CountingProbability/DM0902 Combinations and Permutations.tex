@@ -33,6 +33,117 @@
 
 % http://www.mathsisfun.com/combinatorics/combinations-permutations.html
 
+
+%-----------------------------------------------------%
+\section*{Session 09: Probability}
+\begin{itemize}
+\item[9A.1] Counting Methods
+\item[9A.2] Counting using Sets
+\item[9A.3] Probability
+\item[9A.4] Independent Events
+\end{itemize}
+\begin{itemize}
+\item[9B.1] Permutation
+
+\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
+
+
+\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
+
+
+\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
+\end{itemize}
+
+%\begin{multicol}{2}
+\begin{itemize}
+\item ${6 \choose 2} = 15$
+\item ${5 \choose 2} = 10$  
+\item ${4 \choose 0} = 1$  
+\item ${4 \choose 3} = 4$  
+\end{itemize}
+%\end{multicol}
+
+\begin{itemize}
+\item pairwise disjoint sets
+\item The addition principle
+\end{itemize}
+\subsection*{Theorem}
+\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
+
+\subsection*{Probability}
+\begin{itemize}
+\item[9B.2] The sample space of an experiment ($S$)
+\item[9B.3] The size of a sample space
+\item[9B.4] Indepedent Events (9.3.1)
+\end{itemize}
+
+
+\section*{Combinations}
+
+\subsection*{Formula}
+\[ \binom nk  = \frac{n!}{k!(n-k)!} = \frac{n(n-1)\ldots(n-k+1)}{k(k-1)\dots 1},\]
+which can be written using factorials as  whenever $k\leq n$
+
+\subsection*{Example 1}
+
+\[ \binom 5 2  = \frac{5!}{2!(5-2)!} = \frac{5.4.3!}{2! .3!} = \frac{5.4}{2.1} = 10\]
+
+\subsection*{Example 2}
+
+\[ \binom 5 0  = \frac{5!}{0!(5-0)!} = \frac{5!}{0! .5!} = \frac{5!}{2!} = 1\]
+Recall $0! =1$
+
+\section{Permutations}
+
+\begin{itemize}
+\item The notion of permutation relates to the act of permuting (rearranging) objects or values. 
+\item Informally, a permutation of a set of objects is an arrangement of those objects into a particular order. 
+
+\item For example, there are six permutations of the set $\{1,2,3\}$, namely (1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,1,2), and (3,2,1). 
+\item As another example, an anagram of a word is a permutation of its letters. 
+
+\end{itemize}
+
+
+%-----------------------------------------------------%
+
+
+
+\begin{itemize}
+\item Permutations where repetition is allowed: 
+\[ n! \]
+\item Permutations where repetition is not allowed
+\[ \frac{n!}{(n-k)!} \]
+\end{itemize}
+
+
+%-----------------------------------------------------%
+
+%------------------------------------------------%
+\section*{Session 9 Probability}
+\subsection*{Binomial Coefficients}
+\begin{itemize}
+\item factorials 
+\[ n! = (n)\times (n-1)\times(n-2) \times \ldots \times 1 \]
+\begin{itemize}
+\item $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 $
+\item $3! = 3 \times 2 \times 1$
+\end{itemize}
+\item Zero factorial
+\[ 0! =  1 \]
+\end{itemize}
+%---------------------------------------------- %
+
+% \[P(A |B = \frac{P(A \cap B)}{P(B)})\]
+
+The complement rule in Probability
+
+$P(C^{\prime}) = 1- P(C)$
+
+ 
+
+If the probability of C is $70 \%$ then the probability of $C^{\prime}$ is $30\%$
+
 \section*{Combinations and Permutations }
 \subsection*{The factorial function}
 The factorial function (symbol: !) just means to multiply a series of descending natural numbers. Examples:
@@ -222,6 +333,23 @@ Given a set of distinct numbers, $\{1, 2, 3, 4 \}$, find all permutations contai
 
 
 
-\end{document}
+
+%-----------------------------------------------------------------------------%
+
+
+\section{Permutations}
+{
+\begin{itemize}
+
+\item Suppose we have a set of \textbf{n} items.
+\item From that set, we create a subset of \textbf{k} items.
+\item The \textbf{order} in which items are selected is recorded. (The ordering of selected items is very important.) 
+\item The total number of \textbf{ordered subsets} of \textbf{k} items chosen from a set of \textbf{n} items is
+
+\[\frac{n!}{n-k!}\]
+\end{itemize}
+}
+%-----------------------------------------------------------------------------%
+
 
 \end{document}

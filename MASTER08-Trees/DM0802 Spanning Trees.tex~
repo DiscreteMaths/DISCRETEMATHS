@@ -1,0 +1,19 @@
+\documentclass[12pt]{report}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{framed}
+
+
+\begin{document}
+
+\section*{Trees}
+
+\subsection*{Spanning Trees}
+A spanning tree T of a connected, undirected graph G is a tree composed of all the vertices and some (or perhaps all) of the edges of G. Informally, a spanning tree of G is a selection of edges of G that form a tree spanning every vertex.
+
+
+ That is, every vertex lies in the tree, but no cycles (or loops) are formed. On the other hand, every bridge of G must belong to T.
+ 
+ \end{document}

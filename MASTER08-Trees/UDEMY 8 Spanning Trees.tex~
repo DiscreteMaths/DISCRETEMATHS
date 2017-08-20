@@ -1,0 +1,10 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{graphicx}
+
+\begin{document}
+%--------------------------------------------------------------------------%
+\end{document}

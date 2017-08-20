@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multicol}
+
+\begin{document}
+
+%-----------------------------------------------------%
+\section*{Session 09: Probability}
+\begin{itemize}
+\item[9A.1] Counting Methods
+\item[9A.2] Counting using Sets
+\item[9A.3] Probability
+\item[9A.4] Independent Events
+\end{itemize}
+\begin{itemize}
+\item[9B.1] Permutation
+
+\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
+
+
+\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
+
+
+\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
+\end{itemize}
+
+%\begin{multicol}{2}
+\begin{itemize}
+\item ${6 \choose 2} = 15$
+\item ${5 \choose 2} = 10$  
+\item ${4 \choose 0} = 1$  
+\item ${4 \choose 3} = 4$  
+\end{itemize}
+%\end{multicol}
+
+\begin{itemize}
+\item pairwise disjoint sets
+\item The addition principle
+\end{itemize}
+\subsection*{Theorem}
+\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
+
+\subsection*{Probability}
+\begin{itemize}
+\item[9B.2] The sample space of an experiment ($S$)
+\item[9B.3] The size of a sample space
+\item[9B.4] Indepedent Evcents (9.3.1)
+\end{itemize}
+%------------------------------------------------%
+\section*{Session 9 Probability}
+\subsection*{Binomial Coefficients}
+\begin{itemize}
+\item factorials 
+\[ n! = (n)\times (n-1)\times(n-2) \times \ldots \times 1 \]
+\begin{itemize}
+\item $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 $
+\item $3! = 3 \times 2 \times 1$
+\end{itemize}
+\item Zero factorial
+\[ 0! =  1 \]
+\end{itemize}
+%---------------------------------------------- %
+
+% \[P(A |B = \frac{P(A \cap B)}{P(B)})\]
+
+The complement rule in Probability
+
+$P(C^{\prime}) = 1- P(C)$
+
+ 
+
+If the probability of C is $70 \%$ then the probability of $C^{\prime}$ is $30\%$
+
+
+
+\end{document}
+
