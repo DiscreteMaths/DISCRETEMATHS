@@ -33,7 +33,7 @@
 \begin{document}
 
 
-
+\begin{frame}
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{./Image3}
@@ -43,19 +43,19 @@
 \Large{Mathematics for Computing: Induction Day}
 \end{center}
 
-
-
+\end{frame}
+\begin{frame}
 \titlepage
+\end{frame}
 
-
-
+\begin{frame}
 \Large{\alert{Important Question } - Do you like Maths?}
 
-
+\end{frame}
 
 %--------------------------------------------------- %
-
-\subsection{Mathematical Notation}
+\begin{frame}
+\frametitle{Mathematical Notation}
 \Large{\begin{itemize}
 \item Long form and short form notation
 \item Variable names (examples : x and y)
@@ -64,11 +64,11 @@
 \item Gates (AND, OR, XOR)
 \item Different branches of mathematics has different conventions.
 \end{itemize}}
-
+\end{frame}
 
 %--------------------------------------------------- %
 \frame{
-\subsection{Overview of Module}
+\frametitle{Overview of Module}
 \begin{enumerate}
 \item Number Systems
 \item Set Theory
@@ -87,17 +87,17 @@
 
 %-------------------------------------------------------%
 \frame{
-\subsection{Session 1: Number Systems}
+\frametitle{Session 1: Number Systems}
 \Large{
 
-
+\end{frame}
 \end{document}
 
 
 
 
-
-\subsection{Relational Operators}
+\begin{frame}
+\frametitle{Relational Operators}
 \begin{itemize}
 \item = Equal to
 \item $\neq$  Not Equal to
@@ -106,7 +106,7 @@
 \item $\[\]geq$ greater than or equal to
 \item $\leq$ Not Equal to
 \end{itemize}
-
+\end{frame}
 %------------------------------------------%
 
 
@@ -116,44 +116,73 @@
 
 
 %------------------------------------------%
-
-\subsection{Floating Point Notation}
+\begin{frame}
+\frametitle{Floating Point Notation}
 \begin{enumerate}
 \item thing
 \item thing
 \end{enumerate}
-
+\end{frame}
 %-------------------------------------%
 
 \end{document}
 
 %------------------------------------------%
-
-\subsection{Frame Name}
+\begin{frame}
+\frametitle{Frame Name}
 \begin{enumerate}
 \item
 \item
 \end{enumerate}
-
+\end{frame}
 %------------------------------------------%
-
-\subsection{Frame Name}
+\begin{frame}
+\frametitle{Frame Name}
 \begin{itemize}
 \item
 \item
 \end{itemize}
-
+\end{frame}
 %------------------------------------------%
-
-\subsection{Frame Name}
+\begin{frame}
+\frametitle{Frame Name}
 \begin{itemize}
 \item
 \item
 \end{itemize}
-
+\end{frame}
 %------------------------------------------%
-
-
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+\frametitle{Frame Name}
+\begin{enumerate}
+\item
+\item
+\end{enumerate}
+\end{frame}
 %------------------------------------------%
 
 `
@@ -220,11 +249,11 @@ Hwhat is the highest power of two that deivides
 
 %-----------------------------------------%
 
-
+\begin{frame}
 \begin{itemize}
 \end{itemize}
 
-
+\end{frame}
 
 %-----------------------------------------%
 
