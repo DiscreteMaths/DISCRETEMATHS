@@ -1,13 +1,89 @@
-\documentclass[]{article}
 
-%opening
-\title{}
-\author{}
-
-\begin{document}
 
 %-----------------------------------------------------------------------------%
-
+%----------------------------------------------------------------------------------------------%
+\begin{frame}
+	\frametitle{Sigma Notation}
+	\Large
+	\vspace{-1cm}
+	Let $s_n = 1 + 3 + 5 + \ldots + (2n-1)$ for $n \in Z^{+}$.\\
+	\bigskip
+	\begin{itemize}
+		\item[1.] Express $s_n$ using $\sigma$ notation. \\
+		\bigskip
+		\item[2.] Calculate $s_1$ , $s_2$ and $s_3$. \\
+		\bigskip
+		\item[3.] Find a recurrence relation which expresses $s_{n+1}$ in terms of $s_n$.
+	\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------------------%
+\begin{frame}
+	\frametitle{Sigma Notation}
+	\Large
+	\vspace{-2.3cm}
+	\textbf{Part 1}: Express $s_n$ using $\sum$ notation.
+	\[s_n = 1 + 3 + 5 + \ldots + (2n-1) \mbox{   for }n \in Z^{+}\]
+	
+	
+	
+\end{frame}
+%----------------------------------------------------------------------------------------------%
+\begin{frame}
+	\frametitle{Sigma Notation}
+	\Large
+	\vspace{-1cm}
+	\textbf{Part 1}: Express $s_n$ using $\sum$ notation.
+	\[s_n = 1 + 3 + 5 + \ldots + (2n-1) \mbox{   for }n \in Z^{+}\]
+	
+	{
+		\LARGE
+		\[  \sum^{k=n}_{k=1} (2k-1) \]
+	}
+\end{frame}
+%----------------------------------------------------------------------------------------------%
+\begin{frame}
+	\frametitle{Sigma Notation}
+	\Large
+	\vspace{-2.3cm}
+	\textbf{Part 2}: Calculate $s_1$, $s_2$ and $s_3$.
+	
+	{
+		\LARGE
+		\[  \sum^{k=n}_{k=1} (2k-1) \]
+	}
+	
+	
+	
+\end{frame}
+%----------------------------------------------------------------------------------------------%
+\begin{frame}
+	\frametitle{Sigma Notation}
+	\Large
+	\vspace{-2.3cm}
+	\textbf{Part 2}: Calculate $s_1$, $s_2$ and $s_3$.
+	
+	{
+		\LARGE
+		\[  \sum^{k=n}_{k=1} (2k-1) \]
+	}
+	
+	\begin{itemize}
+		\item[$s_1$]
+		\item[$s_2$]
+		\item[$s_3$]
+	\end{itemize}
+	
+\end{frame}
+%----------------------------------------------------------------------------------------------%
+\begin{frame}
+	\frametitle{Sigma Notation}
+	\Large
+	\vspace{-2.3cm}
+	\textbf{Part 3}: Find a recurrence relation which expresses $s_{n+1}$ in terms of $s_n$.
+	
+	
+\end{frame}
+%----------------------------------------------------------------------------------------------%
 \section{Recurrence Relation}
 
 
@@ -21,6 +97,82 @@ However, "difference equation" is frequently used to refer to any recurrence rel
 
 
 %------------------------------------------------------------------------------%
+
+\documentclass{beamer}
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+\begin{document}
+	
+	%--------------------------------------------------%
+	\begin{frame}
+		\frametitle{Recurrence Relations}
+		\textit{CIS102 2004 Question 7 2 Marks}
+		\Large
+		
+		\begin{itemize}
+			\item Consider the sequence given by \[ 1, 4, 7, 10, 13, \ldots\]
+			\item State a recurrence relation which expresses the nth term, $u_n$
+			, in terms of the$(n - 1)$th term, $u_{n-1}$, 
+			\item State a recurrence relation which expresses the nth term, $u_n$
+			, in terms of the first term $u_1$.
+		\end{itemize}
+		
+	\end{frame}
+	%--------------------------------------------------%
+	\begin{frame}
+		\frametitle{Recurrence Relations}
+		\Large
+		\begin{itemize}
+			\item $u_1$ = 1 , $u_2$ = 4, $u_3$ = 7 etc 
+			\item Difference in successive terms is 3.
+			\item Therefore we can say 
+			\[ u_n = u_{n-1} + 3 \]
+		\end{itemize}
+	\end{frame}
+	%--------------------------------------------------%
+	\begin{frame}
+		\frametitle{Recurrence Relations}
+		\large
+		\begin{itemize}
+			\item Difference between $u_2$ and $u_1$ is 3 (i.e. $1 \times 3$).
+			\item Difference between $u_3$ and $u_1$ is 6 (i.e. $2 \times 3$)
+			\item Difference between $u_4$ and $u_1$ is 9 (i.e. $3 \times 3$)
+			\item In general the difference between $u_n$ and $u_1$ is $(n-1)\times 3$.
+			\[ u_{n} = u_1 + 3 \times (n-1) \]
+			\[ u_{n} = 1 + (3n-3) = 3n-2\]
+			\item Equivalently
+			\[ u_{n+1} = u_1 + 3n = 3n+1\]
+		\end{itemize}
+		
+		\frametitle{Recurrence Relations}
+		
+		\begin{itemize}
+			\item Another sequence is defined by the recurrence relation 
+			\[ u_n = u_{n-1} + 2n-1 \] and
+			$u_1$ = 1.
+			\item Calculate $u_2$ , $u_3$ , $u_4$  and $u_5$ .
+			\item (Answers 1,4,9,16,25)
+		\end{itemize}
+		
+		\[\begin{array}{|c|c|c|c|}
+		$n$    & $u_{n-1}$ & 2n-1 & $u_n$ \\ \hline
+		2      & 1         &  3   & $u_2$ = 4 \\ \hline
+		3      & 4         &  5   & $u_3$ = 9 \\ \hline
+		4      & 9         &  7   & $u_4$ = 16 \\ \hline
+		5      & 16        &  9   & $u_5$ = 25 \\ \hline
+		\end{array}\]
+		
+		
+		
+
 \section{Proof By Induction}
 In Step 1, you are trying to show it is true for specific values. You are free to do this test with just one value or fifty values of your choice or more.
 

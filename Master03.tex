@@ -1,0 +1,670 @@
+\documentclass[]{report}
+
+\voffset=-1.5cm
+\oddsidemargin=0.0cm
+\textwidth = 480pt
+
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage{newlfont}
+\usepackage{eurosym}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\begin{document}
+
+
+
+\chapter{Logic}
+
+\section{Chapter 3: Logic}
+
+\textbf{2003 Question 3}\\
+Let p, q be the following propositions:
+\begin{itemize}
+	\item p : this apple is red, 
+	\item q : this apple is ripe.
+\end{itemize}
+
+Express the following statements in words as simply as you can:
+\begin{itemize}
+	\item (i) $p \rightarrow q$
+	\item (ii) $p \wedge \neg q$.
+\end{itemize}
+
+
+Express the following statements symbolically:
+\begin{itemize}
+	\item (iii) This apple is neither red nor ripe.
+	\item (iv) If this apple is not red it is not ripe.
+\end{itemize}
+
+
+
+\subsection{Logical Operations}
+
+\begin{itemize}
+	\item Logical "AND" ($\wedge$)
+	\item Logical "OR" ($\vee$)
+	\item Logical "NOT" 
+\end{itemize}
+%--------------table
+%\begin{tabular}{cccc}\hline
+%p & q& P \vee q& p \wedge q  \\
+%0& 0& 0& 0\\ 
+%0& 1& 0& 1 \\ 
+%1& 0& 0& 1 \\ 
+%1& 1&1 &1  \\  \hline
+%\end{tabular}
+\newpage
+
+%--------------------------------------------%
+\subsection*{Logic Networks}
+\begin{itemize}
+	\item AND Gates
+	\item OR Gates
+	\item NOT Gates
+\end{itemize}
+
+\newpage
+
+%--------------------------------------------%
+
+\chapter{Session 3}
+
+
+\subsection*{Part B : Logical Operations}
+Let $n \in \{1,2,3,4,5,6,7,8,9\}$ and let p and q be the following propostions concerning 
+the integers $n$.
+
+\begin{itemize}
+	\item[p] $n$ is event
+	\item[q] $n<5$
+\end{itemize}
+
+Find the values of $n$ for which each of the following compound statement is true,
+
+\begin{itemize}
+	\item[(i)] $\neg p$
+	\item[(ii)] $p \wedge q$
+	\item[(iii)] $\neg p \vee q$ 
+	\item[(iv)] $p \oplus q$
+\end{itemize}
+
+\section*{Question 3}
+
+Let $\mathcal{S} = \{10,11,12,13,14,15,16,17,18,19,20\}$
+$n  \in \mathcal{S}$
+p : n is a multiple of two
+q : n is a multiple of five
+
+Express the following statement using logic symbols
+n is not a multiple of either 2 or 5.
+
+List the elements of S which are in the truth set for the statement in (ii).
+
+Write the contrapositive of the following statement concerning an integer $n$.
+
+If the last digit of n is 4, then n is divisible by 3
+
+% %------------------------------------------------------
+\section{Conditional Connectives}
+Construct the truth table for the proposition $p \rightarrow q$.
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		p & q & $p \rightarrow q$ & $q \rightarrow p$ \\
+		\hline
+		0 & 0 & 1& 1 \\
+		0 & 1 & 1 & 0 \\
+		1 & 0 & 0 & 1 \\
+		1 & 1 & 1 & 1 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\section{Tautologies and Truth Tables}
+\textbf{Truth Table for the Biconditional Connective.} \bigskip
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline $P$  & $Q$ & $P \leftrightarrow Q$ \\ \hline
+		\hline T & T &   \\ 
+		\hline T & F &    \\ 
+		\hline F & T &    \\ 
+		\hline \phantom{sp}F \phantom{sp} & \phantom{sp}F \phantom{sp} & \phantom{sp}T \phantom{sp} \\
+		\hline 
+	\end{tabular} 
+\end{center}
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline $P$ & $Q$ & $P \vee Q$ &  &  \\ \hline
+	\hline T & T &  &  &  \\ 
+	\hline T & F &  &  &  \\ 
+	\hline F & T &  &  &  \\ 
+	\hline \phantom{sp}F \phantom{sp} & \phantom{sp}F \phantom{sp} & \phantom{spacespa} & \phantom{spacespa}  & \phantom{spacespa} \\ 
+	
+	\hline 
+\end{tabular} 
+
+%-------------------------------------------------------------------------%
+\newpage
+
+
+
+\section*{Question 3}
+\subsection*{Part A : Propositions}
+Let p, q be the following propositions:
+\begin{itemize}
+	\item p : this apple is red, 
+	\item q : this apple is ripe.
+\end{itemize}
+
+\noindent Express the following statements in words as simply as you can:
+\begin{itemize}
+	\item[(i)] $p \rightarrow q$
+	\item[(ii)] $p \wedge \neg q$.
+\end{itemize}
+
+\noindent Express the following statements symbolically:
+\begin{itemize}
+	\item[(iii)] This apple is neither red nor ripe.
+	\item[(iv)] If this apple is not red it is not ripe.
+\end{itemize}
+
+
+
+%------------------------------------%
+\newpage
+\section*{Question 3}
+% Logical Proofs
+
+
+
+% %------------------------------------------------------
+
+
+\section*{Question 6}
+%Relations and Digraphs
+
+%------------------------------------%
+\subsection{Question 6}
+Say with reason whether or not $\mathcal{R}$ is
+\begin{itemize}
+	\item reflexive
+	\item symmetric
+	\item transitive
+\end{itemize}
+
+In the cases where the given property does not hold provide a counter example to justify this.
+% %------------------------------------------------------
+
+
+\subsection*{Question 6 Part A : Digraphs}
+
+Suppose $A = $$\{1,2,3,4\}$. Consider the following relation in A
+
+\[ \{  (1,1),(2,2),(2,3),(3,2),(4,2),(4,4)\} \]
+
+Draw the direct graph of $A$. Based on the Digraph of $A$ discuss whether or not a relation that could be depicted by the digraph could be described as the following, justifying your answer.
+
+
+\begin{itemize}
+	\item[(i)] Symmetric
+	\item[(ii)] Reflexive 
+	\item[(iii)] Transitive
+	\item[(iv)] Antisymmetric
+\end{itemize}
+
+\subsection*{Part B : Relations}
+Determine which of the following relations $ x R y$ are reflexive, transitive, symmetric, or antisymmetric on the following - there may be more than one characteristic.  if
+
+\begin{itemize} 
+	\item[(i)] $x = y$
+	\item[(ii)] $x < y$
+	\item[(iii)] $x^2 = y^2$
+	\item[(iv)] $x \geq y$
+\end{itemize}
+%---------------------------------------%
+\subsection*{Question 2}
+
+% http://staff.scem.uws.edu.au/cgi-bin/cgiwrap/zhuhan/dmath/dm_readall.cgi?page=20
+
+Let $A=\{0,1,2\}$ and $R=\{ (0,0),(0,1),(0,2),(1,1), (1,2), (2,2)\}$
+and $S=\{(0,0),(1,1),(2,2)\}$ be 2 relations on A. Show that
+
+\begin{itemize}
+	\item[(i)] R is a partial order relation.
+	\item[(ii)] S is an equivalence relation.
+\end{itemize}
+%------------------------------------%
+
+\subsection*{Part C : Partial Orders}
+% http://staff.scem.uws.edu.au/cgi-bin/cgiwrap/zhuhan/dmath/dm_readall.cgi?page=20
+
+Let $A=\{0,1,2\}$ and $R=\{ (0,0),(0,1),(0,2),(1,1), (1,2), (2,2)\}$
+and $S=\{(0,0),(1,1),(2,2)\}$ be 2 relations on A. Show that
+
+\begin{itemize}
+	\item[(i)] R is a partial order relation.
+	\item[(ii)] S is an equivalence relation.
+\end{itemize}
+
+
+
+%------------------------------------%
+
+\section*{Biconnective Operators}
+
+\[ p \leftarrow \rightarrow q\]
+We could verbalize this as ``$p$ implies $q$ and $q$ implies $p$".
+
+%-------------------------- %
+%-------------------------- %
+%Section 4 Invertible Functions
+
+
+
+Maths for Computing Sprint
+
+\section*{Part 0. - Numeracy}
+\subsection{Factorials}
+Evaluate the following
+\begin{itemize}
+	\item $6!$
+	\item $3!$
+	\item $1!$
+	\item $0!$
+\end{itemize}
+Evaluate the following expressions
+\[  \frac{5!}{3!}  \mbox{   and   } \frac{6!}{2!\times 4!}  \]
+\subsection*{Laws of Logarithms}
+\begin{itemize}
+	\item Addition of Logarithms
+	\item Subtraction of Logaritms
+	\item Powers of Logarithms
+\end{itemize}
+%----------------------------------------- %
+%----------------------------------------- %
+
+
+\section*{Section 3. Logic}
+
+\subsection*{Proofs with Truth Tables}
+
+\[ \neg(p \vee q) \wedge p \equiv q \]
+\begin{center}
+	\begin{tabular}{|c|c||c|c||c|c|}
+		\hline $p$ & $q$ &  &  &  &  \\ 
+		\hline  &  &  &  &  &  \\ 
+		\hline 
+	\end{tabular} 
+\end{center}
+
+%----------------------------------------- %
+%----------------------------------------- %
+
+
+\section{Section 3 Logic}
+\subsection{Logical Operations}
+\begin{itemize}
+	\item $\neg p$ the negation of proposition $p$.
+	\item $p \wedge q$ Both propositions p and q are simultaneously true (Logical State AND)
+	\item $p \vee q $ One of the propositions is true, or both (Logical State : OR)
+	\item $p \otimes q$ Only one of the propositions is true (Logical State : exclusive OR (i.e XOR)
+\end{itemize}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		p & q & $p \vee q$ & $q \wedge p$ & $p \otimes q$ \\
+		\hline
+		0 & 0 & 0 & 0 & 0 \\
+		0 & 1 & 1 & 0 & 1\\
+		1 & 0 & 1 & 0 & 1 \\
+		1 & 1 & 1 & 1 & 0\\
+		\hline
+	\end{tabular}
+\end{center}
+%---------------------------------------------------------%
+
+
+%--------------------------------------%
+
+\section{Logic Proposition}
+Let $p$, $Q$ and $r$ be the following propositions concerning integers $n$:
+
+\begin{itemize}
+\item $p$ : n is a factor of 36 (2)
+\item $q$ : n is a factor of 4 (2)
+\item $r$ : n is a factor of 9 (3)
+\end{itemize}
+
+{
+
+\begin{center}
+\begin{tabular}{|c||c|c|c|}
+\hline 
+\phantom{spa} \textbf{n} \phantom{spa}& \phantom{spa}\textbf{p} \phantom{spa}& \phantom{spa}\textbf{q} \phantom{spa}& \phantom{spa}\textbf{r} \phantom{spa}\\ \hline \hline
+1&1&1&1\\ \hline
+2&1&0&1\\ \hline
+3&0&1&1\\ \hline
+4&1&0&1\\ \hline
+6&0&0&1\\ \hline
+9&0&1&1\\ \hline
+12&0&0&1\\ \hline
+18&0&0&1\\ \hline
+36&0&0&1\\
+\hline 
+\end{tabular} 
+\end{center}
+}
+For each of the following compound statements, express it using the propositions P q and r, andng logical symbols, then given the truth table for it,
+
+\begin{itemize}
+\item[1)] If n is a factor of 36, then n is a factor of 4 or n is a factor of 9
+\item[2)] If n is a factor of 4 or n is a factor of 9 then  n is a factor of 36
+\end{itemize}
+
+%------------------------------------------------%
+\newpage
+\begin{itemize}
+	\item $ p \rightarrow q$  p implies q
+	\item $p \lg q $
+\end{itemize}
+\newpage
+\section*{Part 1 : Logic}
+
+
+\subsection*{1.1 2010 Question 3}
+Let $S = \{10,11,12,13,14,15,16,17,18,19\}$ and let p, q be the following propositions concerning the integer $n \in S$.
+
+\begin{itemize}
+\item p: n is a multiple of two. (i.,18e. $\{10,12,14,16,18\}$)
+\item q: n is a multiple of three. {i.e. $\{12,15,18\}$}
+\end{itemize}
+
+For each of the following compound statements find the sets of values n for which it is true. 
+
+\begin{itemize}
+\item $p \vee q$ : (p or q :  10 12 14 15 16 18) 
+\item $p \wedge q$: (p and q: 12 18)
+\item $ \neg p \oplus q$: (not-p or q, but not both)
+\begin{itemize}
+\item $\neg p $ not-p = $\{ 11 13 15 17 19\}$
+\item $\neg p \vee q$ not-p or q $\{11 12 13 15 17 18 19\}$
+\item $\neg p \wedge q$ not-p and q $\{15\} $
+\item $ \neg p \oplus q$ = $\{11, 12, 13, 17, 18, 19\}$
+\end{itemize}
+\end{itemize}
+
+%--------------------------------------------------- %
+
+%--------------------------------------------------- %
+\subsection*{1.2 2010 Question 3}
+
+Let p and q be propositions. Use Truth Tables to prove that
+
+\[ p \rightarrow q \equiv \neg q \rightarrow \neg\]
+\textbf{Important} Remember to make a comment at the end to say why the table proves that the two statements are logically equivalent. e.g. \emph{‘since the columns are identical both sides of the equation are equivalent’}.
+{ 
+\begin{tabular}{|c|c||c|}
+\hline  p&  q& $p \rightarrow q$ \\ 
+\hline  0&  0&  1\\ 
+\hline  0&  1&  1\\ 
+\hline  1&  0&  0\\ 
+\hline  1&  1&  1\\ 
+\hline 
+\end{tabular} \hspace{0.5cm} \begin{tabular}{|c|c||c|c|c|}
+\hline  p&  q& $\neg q$ & $\neg p$ & $\neg q \rightarrow \neg p$ \\ 
+\hline  0&  0& 1& 1& 1\\ 
+\hline  0&  1& 0& 1& 1\\ 
+\hline  1&  0& 1& 0& 0\\ 
+\hline  1&  1& 0& 0& 1\\ 
+\hline 
+\end{tabular}
+} 
+(Key ``difference" is first and last rows)
+%--------------------------------------------------- %
+%--------------------------------------------------- %
+\subsection*{1.3 Membership Tables for Laws}
+\emph{Page 44 (Volume 1) Q8.
+Also see Section 3.3 Laws of Logic.}\\
+
+Construct a truth table for each of the following compound statement and hence find simpler propositions to which it is equivalent.
+
+
+\begin{itemize}
+\item $p \vee F$
+\item $p \wedge T$
+\end{itemize}
+\textbf{Solutions}
+\begin{center}
+{
+\begin{tabular}{|c|c||c|c|}
+\hline  p & T & $p \vee T$ & $ p \wedge T$ \\ \hline
+\hline  0 & 1 & 1 & 0 \\ 
+\hline  1 &  1 & 1 & 1 \\ 
+\hline 
+\end{tabular} 
+}
+\end{center}
+\begin{itemize}
+\item Logical OR: $p \vee T = T $
+\item Logical AND: $p \wedge T = p  $
+\end{itemize}
+
+%-------------------------------------%
+\begin{center}
+{
+\begin{tabular}{|c|c||c|c|}
+\hline  p & F & $p \vee F$ & $ p \wedge F$ \\ \hline
+\hline  0 & 0 & 0 & 0 \\ 
+\hline  1 &  0 & 1 & 0 \\ 
+\hline 
+\end{tabular} 
+}
+\end{center}
+\begin{itemize}
+\item Logical OR:  $p \vee F = p $
+\item Logical AND: $p \wedge F = F $
+\end{itemize}
+%--------------------------------------------------- %
+%--------------------------------------------------- %
+\subsection*{1.4 Propositions}
+\textbf{Page 67 Question 9}
+Write the contrapositive of each of the following statements:
+
+\begin{itemize}
+\item If n= 12, then n is divisible by 3.
+\item If n=5, then n is positive.
+\item If the quadrilateral is square, then four sides are equal.
+\end{itemize}
+
+\textbf{Solutions}
+\begin{itemize}
+\item If n is not divisible by 3, then n is not equal to 12.
+\item If n is not positive, then n is not equal to 5.
+\item If the four sides are not equal, then the quadrilateral is not a square.
+\end{itemize}
+
+\section*{Prepositional Logic}
+
+\subsection{five basic connectives}
+
+
+%--------------------------------------------------%
+Reflexive, Symmetric and Transitive
+
+\begin{itemize} 
+	\item Reflexive
+	\item Symmetric
+	\item Transitive
+\end{itemize}
+
+%--------------------------------------------------%
+\subsection{Logarithms}
+
+
+Here we
+assume x and y are positive real numbers.
+1. $loga(xy) = loga(x) + loga(y)$
+2. $loga(x/y)= loga(x) - loga(y)$
+3. $loga (x^r) = r loga(x)$ for any real number r.
+%--------------------------------------------------%
+Invertible Functions
+
+%--------------------------------------------------%
+\subsection{Proof by Induction}
+
+Another sequence is defined by the recurrence relation un = un-1+2n-1 and
+u1 = 1.
+(i) Calculate u2, u3, u4 and u5.
+1,4,9,16,25
+
+(ii) Prove by induction that $u_n = n^2$ for all $n \geq 1$
+
+%--------------------------------------------------%
+Exponentials
+% http://www.mathsisfun.com/algebra/exponent-laws.html
+%----------------------------------------------------------- %
+\newpage
+
+\section*{Prepositional Logic}
+
+
+%-------------------------------------------------------------- %
+\begin{itemize}
+	\item $p \wedge q$
+	\item $p \vee q$
+	\item $p \rightarrow q$
+\end{itemize}
+\newpage
+%--------------------------------------------------- %
+%--------------------------------------------------- %
+\subsection*{1.5 Truth Sets}
+\textbf{2009} 
+
+Let $n = \{1, 2,3,4, 5,6,7, 8, 9\}$ and let p, q be the following propositions concerning the integer $n$.
+\begin{itemize}
+\item p: n is even, 
+\item q: $n\geq 5$.
+\end{itemize}
+By drawing up the appropriate truth table ﬁnd the truth set for each of the
+propositions $p \vee \neg q$ and $ \neg q \rightarrow p$
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline n & p & q & $\neg q$ & $p \vee \neg q$ \\ 
+\hline 1 & 0 & 0 & 1 & 1\\ 
+\hline 2 & 1 & 0 & 1 & 0\\ 
+\hline 3 & 0 & 0 & 1 & 1\\ 
+\hline 4 & 1 & 0 & 1 & 0\\ 
+\hline 5 & 0 & 1 & 0 & 1\\ 
+\hline 6 & 1 & 1 & 0 & 1\\ 
+\hline 7 & 0 & 1 & 0 & 1\\ 
+\hline 8 & 1 & 1 & 0 & 1\\ 
+\hline 9 & 0 & 1 & 0 & 1\\ 
+\hline 
+\end{tabular} 
+\[\mbox{Truth Set} = \{1,3,5,6,7,8,9\}\]
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline n & p & q & $  q \rightarrow p$ & $  q \rightarrow p$ \\ 
+\hline 1 & 0 & 0 & 1 & 0\\ 
+\hline 2 & 1 & 0 & 1 & 0\\ 
+\hline 3 & 0 & 0 & 1 & 0\\ 
+\hline 4 & 1 & 0 & 1 & 0\\ 
+\hline 5 & 0 & 1 & 0 & 1\\ 
+\hline 6 & 1 & 1 & 1 & 0\\ 
+\hline 7 & 0 & 1 & 0 & 1\\ 
+\hline 8 & 1 & 1 & 1 & 0\\ 
+\hline 9 & 0 & 1 & 0 & 1\\ 
+\hline 
+\end{tabular} 
+\[\mbox{Truth Set} = \{5,7,9\}\]
+%---------------------------------------
+%--------------------------------------------------- %
+%--------------------------------------------------- %
+\newpage
+\subsection*{1.6 Biconditional}
+\emph{See Section 3.2.1}.\\
+Use truth tables to prove that $ \neg p \leftrightarrow \neg q $ is equivalent to  $ p \leftrightarrow q $
+
+\begin{tabular}{|c|c|c|}
+\hline  p& q & $p \leftrightarrow q$ \\ 
+\hline  0& 0 &  1\\ 
+\hline  0& 1 &  0\\ 
+\hline  1& 0 &  0\\ 
+\hline  1& 1 &  1\\ 
+\hline 
+\end{tabular} 
+
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline  p& q & $\neg p$ & $\neg q$ & $p \leftrightarrow q$ \\ 
+\hline  0& 0 & 1& 1 & 1\\ 
+\hline  0& 1 &  1& 0& 0\\ 
+\hline  1& 0 &  0& 1& 0\\ 
+\hline  1& 1 &  0 & 0& 1\\ 
+\hline 
+\end{tabular} 
+\newpage
+%--------------------------------------------------- %
+%--------------------------------------------------- %
+\subsection*{1.7 2008 Q3b Logic Networks }
+
+Construct a logic network that accepts as input p and q, which may independently have the value 0 or 1, and
+gives as final input $\neg(p \wedge \not q)$ (i.e. $\equiv p \rightarrow q$).\\
+\bigskip
+
+\textbf{Logic Gates}
+\begin{itemize}
+\item AND
+\item OR
+\item NOT
+\end{itemize}
+\bigskip
+
+\emph{\textbf{Examiner's Comments:}Many
+diagrams were carefully and clearly drawn and well labelled, gaining full
+marks. The logic table was also well done by most, but there were a few marks
+lost in the final part by failing to deduce that ‘since the columns of the table are
+identical the expressions are equivalent’.}
+
+%--------------------------------------------------- %
+\subsection{logical implication}
+
+%- http://whatis.techtarget.com/definition/logical-implication
+
+Logical implication is a type of relationship between two statements or sentences. The relation translates verbally into "logically implies" or "if/then" and is symbolized by a double-lined arrow pointing toward the right ( $\rightarrow$). If A and B represent statements, then $A\rightarrow B$ means "A implies B" or "If A, then B." The word "implies" is used in the strongest possible sense.
+
+
+As an example of logical implication, suppose the sentences A and B are assigned as follows:
+
+A = The sky is overcast.
+B = The sun is not visible.
+
+In this instance, A B is a true statement (assuming we are at the surface of the earth, below the cloud layer.) However, the statement B A is not necessarily true; it might be a clear night. Logical implication does not work both ways. However, the sense of logical implication is reversed if both statements are negated. That is,
+
+$$(A \rightarrow B)  \equiv (-B \rightarrow -A)$$
+
+Using the above sentences as examples, we can say that if the sun is visible, then the sky is not overcast. This is always true. In fact, the two statements A B and -B -A are logically equivalent.
+
+\newpage
+%---------------------------------------%
+%--------------------------------------------------- %
+\subsection*{1.8 2008 Q3b Logic Networks }
+Construct a logic network that accepts as input p and q, which may independently have the value 0 or 1, and
+gives as final input $(p \wedge  q) \vee \neg q$ (i.e. $\equiv p \rightarrow q$).
+
+
+
+\textbf{Important} Label each of the gates appropriately and label the diagram with a symblic expression for the output after each gate.
+
+%----------------------------------------------------------- %
+\end{document}
