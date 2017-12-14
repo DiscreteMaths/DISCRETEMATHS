@@ -942,6 +942,28 @@ De Morgan's Law
 \begin{itemize}
 \item $ A \otimes B$
 \end{itemize}
+%--------------------------------------------------------%
+\section{Power Sets}
+\begin{itemize}
+\item Consider the set A where $ A = \{w,x,y,z\}$
+\item There are 4 elements in set A.
+\item The power set of A contains 16 element data sets.
+\item \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \}  \]
+\item (i.e. 1 null set, 4 single element sets, 6 two -elemnts sets, 4 three lement set and one 4- element set.)
+\end{itemize}
+%------------------------------------------------%
+
+
+%---------------------------- %
+%---------------------------------------%
+\subsubsection*{Power Sets}
+\begin{itemize}
+\item Consider the set A where $ A = \{w,x,y,z\}$
+\item There are 4 elements in set A.
+\item The power set of A contains 16 element data sets.
+\item \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \}  \]
+\item (i.e. 1 null set, 4 single element sets, 6 two -elemnts sets, 4 three lement set and one 4- element set.)
+\end{itemize}
 
 
 %--------------------------------------------------------%
