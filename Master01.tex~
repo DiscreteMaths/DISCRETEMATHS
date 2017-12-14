@@ -372,6 +372,60 @@ Compute the equivalent in each of the following forms:
 \end{itemize}
 %---------------------------%
 
+%---------------------------%
+\end{itemize}
+\section*{Part E: Natural, Rational and Real Numbers}
+\begin{framed}
+\end{framed}
+
+\begin{enumerate}
+\item State which of the following sets the following numbers belong to. 
+\begin{multicols}{4}
+\begin{itemize}
+\item[1)] $18$
+\item[2)] $8.2347\ldots$
+\item[3)] $\pi$
+\item[4)] $1.33333\ldots$
+\item[5)] $17/4$
+\item[6)] $4.25$
+\item[7)] $\sqrt{\pi}$
+\item[8)] $\sqrt{25}$
+%\item[i)]
+%\item[j)] $(15)_{10}$
+%\item[k)] $\pi$
+%\item[l)] $11.132$
+\end{itemize}
+\end{multicols}
+\bigskip
+The possible answers are
+
+\begin{itemize}
+\item[a)] Natural number : $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\item[b)] Integer : $ \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\item[c)] Rational Number : $ \mathbb{Q} \subseteq \mathbb{R}$
+\item[d)] Real Number $\mathbb{R}$
+%\item[i)]
+%\item[j)] $(15)_{10}$
+%\item[k)] $\pi$
+%\item[l)] $11.132$
+\end{itemize}
+
+\end{enumerate}
+
+\begin{itemize}
+\item $\mathbb{N}$ : natural numbers (or positive integers) $\{1,2,3,\ldots\}$
+\item $\mathbb{Z}$ : integers $\{-3,-2,-1,0,1,2,3,\ldots\}$
+\begin{itemize}
+\item[$\ast$] (The letter $\mathbb{Z}$ comes from the word \emph{Zahlen} which means ``numbers" in German.)
+\end{itemize}
+\item $\mathbb{Q}$ : rational numbers
+\item $\mathbb{R}$ : real numbers
+\item $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\begin{itemize}
+\item[$\ast$] (All natural numbers are integers. All integers are rational numbers. All rational numbers are real numbers.)
+\end{itemize}
+\end{itemize}
+
 % \item The Fibonacci sequence $f_n$ is defined recursively by the rule
 %   \begin{equation*}
 %     \begin{cases}
@@ -463,6 +517,22 @@ It is similar to scientific notation differing only by the fact that, with scien
 	
 	
 \end{enumerate}
+
+\section*{Part D: Natural, Rational and Real Numbers}
+\begin{itemize}
+	\item $\mathbb{N}$ : natural numbers (or positive integers) $\{1,2,3,\ldots\}$
+	\item $\mathbb{Z}$ : integers $\{-3,-2,-1,0,1,2,3,\ldots\}$
+	\begin{itemize}
+		\item (The letter $\mathbb{Z}$ comes from the word \emph{Zahlen} which means ``numbers" in German.)
+	\end{itemize}
+	\item $\mathbb{Q}$ : rational numbers
+	\item $\mathbb{R}$ : real numbers
+	\item $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+	\begin{itemize}
+		\item (All natural numbers are integers. All integers are rational numbers. All rational numbers are real numbers.)
+	\end{itemize}
+\end{itemize}
+\newpage
 
 
 \begin{enumerate}
@@ -1471,6 +1541,59 @@ could have in a recurring block in theory?
 
 
 
+% \newpage
+\section*{Part D: Natural, Rational and Real Numbers}
+\begin{framed}
+	\begin{itemize}
+		\item $\mb{N}$ : natural numbers (or positive integers) $\{1,2,3,\ldots\}$
+		\item $\mb{Z}$ : integers $\{-3,-2,-1,0,1,2,3,\ldots\}$
+		\begin{itemize}
+			\item[$\ast$] (The letter $\mb{Z}$ comes from the word \emph{Zahlen} which means ``numbers" in German.)
+		\end{itemize}
+		\item $\mb{Q}$ : rational numbers
+		\item $\mb{R}$ : real numbers
+		\item $\mb{N} \subseteq \mb{Z } \subseteq \mb{Q} \subseteq \mb{R}$
+		\begin{itemize}
+			\item[$\ast$] (All natural numbers are integers. All integers are rational numbers. All rational numbers are real numbers.)
+		\end{itemize}
+	\end{itemize}
+\end{framed}
+
+\begin{enumerate}
+	\item State which of the following sets the following numbers belong to. 
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[1)] $18$
+			\item[2)] $8.2347\ldots$
+			\item[3)] $\pi$
+			\item[4)] $1.33333\ldots$
+			\item[5)] $17/4$
+			\item[6)] $4.25$
+			\item[7)] $\sqrt{\pi}$
+			\item[8)] $\sqrt{25}$
+			%\item[i)]
+			%\item[j)] $(15)_{10}$
+			%\item[k)] $\pi$
+			%\item[l)] $11.132$
+		\end{itemize}
+	\end{multicols}
+	\bigskip
+	The possible answers are
+	
+	\begin{itemize}
+		\item[a)] Natural number : $\mb{N} \subseteq \mb{Z } \subseteq \mb{Q} \subseteq \mb{R}$
+		\item[b)] Integer : $ \mb{Z } \subseteq \mb{Q} \subseteq \mb{R}$
+		\item[c)] Rational Number : $ \mb{Q} \subseteq \mb{R}$
+		\item[d)] Real Number $\mb{R}$
+		
+		%\item[i)]
+		%\item[j)] $(15)_{10}$
+		%\item[k)] $\pi$
+		%\item[l)] $11.132$
+	\end{itemize}
+	
+\end{enumerate}
+
 
 
 \end{document}
@@ -1513,7 +1636,15 @@ could have in a recurring block in theory?
 % endfunction
 % \end{lstlisting}
 
+% In particular, the function must be able to compute the square roots of your UL ID number, (i.e numbers of the form 10234567), as well as 0.01,0.1,10,100 and 1000 times this number; so test the function on these and many other numbers before submitting.
 
+% Note that the stopping condition shown in the lectures will not suffice as a general stopping condition\footnote{If Octave hangs during calculation, use ``Ctrl-C'' to try to cancel the operation and return to the prompt.}. You must develop and program an alternative strategy for detecting when Heron's method has converged.
+
+% Note also that the square of the number $X$ returned by your function must be as close to D as is possible for $X^2$ to be; that is, $X$ must be as close as it possibly can be to the true value of $\sqrt{D}$.
+
+% Save your solutions source code in a file called ``sqr\_root.m''. To submit the assigment, you must email this solution from your UL student email to the address \emph{niall.ryan@ul.ie}. The email subject line must be ``MA4402 ASSIGNMENT SOLUTION'' and the file ``sqr\_root.m'' must be an attachment to this email.
+
+% The email must be sent \textbf{from your UL student address}. \emph{Emails from other addresses will not be accepted}.
 
 
 

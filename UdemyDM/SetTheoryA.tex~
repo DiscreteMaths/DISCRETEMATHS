@@ -43,6 +43,16 @@ written as \textbf{U}.
 %UNIVERSAL SET
 \smallskip 
 
+\frametitle{The Empty Set}
+
+Another set which has a special letter to denote it is the set containing no elements. This is called
+the empty or null set and denoted by the symbol (D. _
+Example 2.6 The set of integers m such that m2 = 5 is the empty set. We could write
+{mEZ:m2=5}:@.
+\smallskip 
+%----------------------------------------- %
+
+
 
 Example 2.2 Referring to the sets D and B deﬁned in Example 2.1, we can say that $5 \in D$, but
 5 63 B. E1
@@ -72,6 +82,26 @@ ln a similar way, we can express the set of positive odd integers as
 %NATURAL NUMBERS
 %INTEGERS
 
+\section{Special sets of numbers}
+\smallskip 
+It is convenient to denote certain key sets of numbers by a standard letter.
+Deﬁnition 2.2 
+The symbol Z is used to denote the set of integers," 
+ denotes the set of positive integers; 
+ R denotes the set of real numbers;
+Q denotes the set of rational numbers {the letter Q stands for “quotient”).
+\smallskip 
+%-------------------------------------- %
+\smallskip 
+Of these sets, we can specify the set of positive integers and the set of integers by the listing method
+using elipses, as follows:
+\[Z^{+} = {1,2,s,...}\]
+\[2 = {o,1,-1,2,-2,3,-2,...}\]
+Note that Z includes 0 and the negative whole numbers as well as the positive ones. Similarly,
+\mathbb{R} contains O and the negative reals and Q contains 0 and the negative rationals, as well as the
+positive ones.
+
+%----------------------------------------- %
 \smallskip 
 \frametitle{}
 %CHAPTER 2. SETS AND BINARY OPERATIONS 20
@@ -157,6 +187,52 @@ the set which satisfy a given condition. When we do this, we are picking a subse
 Of course, if all the objects in the original set satisfy the condition, the subset will contain the
 same members as the original set. 
 
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{eurosym}
+\usepackage{vmargin}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2570}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{LastRevised=Wednesday, February 23, 2011 13:24:34}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+\pagestyle{fancy}
+\setmarginsrb{20mm}{0mm}{20mm}{25mm}{12mm}{11mm}{0mm}{11mm}
+\lhead{MathsResource.com} \rhead{Tutorial Sheet 1}
+\chead{Set Theory  }
+%\input{tcilatex}
+
+\begin{document}
+\Large
+
+%---------------------------------%
+\section*{Number Sets}
+The font that the following symbols are written in (i.e. $\mathbb{N}$, $\mathbb{R}$) is known as \textit{\textbf{blackboard font}}.
+\begin{itemize}
+	\item $\mathbb{N}$ Natural Numbers ($1,2,3,\ldots$) 
+%	\textit{(Not used in the CIS102 Syllabus)}
+	\item $\mathbb{Z}$ Integers ($-3,-2,-1,0,1,2,3, \ldots$)
+	\begin{itemize}
+		\item[$\bullet$] $\mathbb{Z}^{+}$ Positive Integers
+		\item[$\bullet$] $\mathbb{Z}^{-}$ Negative Integers
+		\item[$\bullet$] 0 is not considered as either positive or negative.
+	\end{itemize}
+	\item $\mathbb{Q}$ Rational Numbers
+	\item $\mathbb{R}$ Real Numbers
+	\item $\mathbb{C}$ Complex Numbers
+\end{itemize}
+
 
 \subsection*{Exercises}
 For each of the following sets, write out the set using the listing method.
@@ -175,6 +251,12 @@ Also write down the cardinality of each set.
  % Binary Operations on Sets (2.3.2)
  % Union , Intersection, Symmetric Difference
  % Set Difference
+
+
+
+
+
+   
 
 
 

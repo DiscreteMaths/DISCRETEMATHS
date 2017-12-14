@@ -177,6 +177,58 @@ which the number of digits before and after the decimal point is set, called fix
 %\end{multicols}
 
 
+% \newpage
+\section*{Part D: Natural, Rational and Real Numbers}
+\begin{framed}
+\begin{itemize}
+\item $\mathbb{N}$ : natural numbers (or positive integers) $\{1,2,3,\ldots\}$
+\item $\mathbb{Z}$ : integers $\{-3,-2,-1,0,1,2,3,\ldots\}$
+\begin{itemize}
+\item[$\ast$] (The letter $\mathbb{Z}$ comes from the word \emph{Zahlen} which means ``numbers" in German.)
+\end{itemize}
+\item $\mathbb{Q}$ : rational numbers
+\item $\mathbb{R}$ : real numbers
+\item $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+\begin{itemize}
+\item[$\ast$] (All natural numbers are integers. All integers are rational numbers. All rational numbers are real numbers.)
+\end{itemize}
+\end{itemize}
+\end{framed}
+
+\begin{enumerate}
+\item State which of the following sets the following numbers belong to. 
+  \begin{multicols}{4}
+    \begin{itemize}
+    \item[1)] $18$
+    \item[2)] $8.2347\ldots$
+    \item[3)] $\pi$
+    \item[4)] $1.33333\ldots$
+    \item[5)] $17/4$
+    \item[6)] $4.25$
+    \item[7)] $\sqrt{\pi}$
+    \item[8)] $\sqrt{25}$
+    %\item[i)]
+    %\item[j)] $(15)_{10}$
+    %\item[k)] $\pi$
+    %\item[l)] $11.132$
+    \end{itemize}
+  \end{multicols}
+  \bigskip
+  The possible answers are
+
+    \begin{itemize}
+    \item[a)] Natural number : $\mathbb{N} \subseteq \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+    \item[b)] Integer : $ \mathbb{Z } \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+    \item[c)] Rational Number : $ \mathbb{Q} \subseteq \mathbb{R}$
+    \item[d)] Real Number $\mathbb{R}$
+
+    %\item[i)]
+    %\item[j)] $(15)_{10}$
+    %\item[k)] $\pi$
+    %\item[l)] $11.132$
+    \end{itemize}
+
+\end{enumerate}
 
 
 % \item The Fibonacci sequence $f_n$ is defined recursively by the rule
@@ -351,6 +403,132 @@ Given the universal set $U$ and subsets $A$ and $B$, list the set $(A \cup B^{\p
 
 
 
+%----------------------------------------------------------------%
+
+\subsection{Number Sets}
+
+%% %% - \vspace{-1cm}
+\textbf{Blackboard Bold Typeface}
+
+\begin{itemize}
+\item Conventionally the symbols for numbers sets are written in a special typeface, known as \textbf{blackboard bold}.
+\item Examples : $\mathbb{N}$, $\mathbb{Z}$ and $\mathbb{R}$.
+
+\end{itemize}
+
+
+%% %% - \vspace{-1cm}
+\textbf{Natural Numbers} ($\mathbb{N}$)
+\begin{itemize}
+\item The whole numbers from 1 upwards. 
+
+\item The set of natural numbers is 
+\[\{1,2,3,4,5,6,\ldots\} \]
+\item In some branches of mathematics, $0$ might be counted as a natural number.
+\[\{0,1,2,3,4,5,6,\ldots\} \]
+\end{itemize}
+
+%----------------------------------------------------------------%
+
+
+\subsection{Number Sets}
+
+
+%% %% - \vspace{-0.5cm}
+\textbf{Integers} ($\mathbb{Z}$)
+\begin{itemize}
+\item The integers are all the whole numbers, all the negative whole numbers and zero.
+
+\item The set of integers is 
+\[\{\ldots,-4,-3,-2,-1,\;0,\;1,\;2,\;3,\ldots\} \]
+\item The notation $\mathbb{Z}$ is from the German word for numbers: \textit{Zahlen}. 
+\item All natural numbers are integers.
+\[ \mathbb{Q}  \subset \mathbb{Z}\]
+\end{itemize}
+
+%----------------------------------------------------------------%
+
+
+\subsection{Number Sets}
+
+%% %% - \vspace{-1.8cm}
+\textbf{Integers} ($\mathbb{Z}$)
+\begin{itemize}
+\item Natural numbers may also be referred to as positive integers, denoted $\mathbb{Z}^{+}$. \\(note the superscript)
+\item Negative integers are denoted $\mathbb{Z}^{-}$.
+\[\{\ldots,-4,-3,-2,-1\}\]
+\end{itemize}
+
+%----------------------------------------------------------------%
+
+
+\subsection{Number Sets}
+
+%% %% - \vspace{-1.8cm}
+\textbf{Integers} ($\mathbb{Z}$)
+\begin{itemize}
+\item 0 is neither positive nor negative. The following set of non-negative numbers \[\{0,1,2,3,4,5,6,\ldots\} \] might be denoted $0 \cup \mathbb{Z}^{+}$
+\item $\cup$ is the mathematical symbol for \textbf{union}.
+\end{itemize}
+
+
+
+\subsection{Number Sets}
+
+%% %% - \vspace{-1cm}
+\textbf{Rational Numbers} ($\mathbb{Q}$)
+\begin{itemize}
+\item Rational numbers, also known as quotients, are numbers you can make by dividing one integer by another (but not dividing by zero). 
+\item If a number can be expressed as one integer divided by another, it is a rational number.
+\[ \mathbb{Q} = \left\{\; \frac{p}{q} \;\bigg| p \in \mathbb{Z},\; q \in \mathbb{Z},\; q \neq 0  \;   \right\}   \]
+\end{itemize}
+
+%-------------------------------------------------------------- %   
+
+\subsection{Number Sets}
+
+%% %% - \vspace{-1cm}
+\textbf{Rational Numbers} ($\mathbb{Q}$)
+\begin{itemize}
+\item All integers are rational numbers 
+\[ \mathbb{Z}  \subset \mathbb{Q}\]
+(and by extension all natural numbers are rational numbers too)
+\item Examples of rational numbers
+\[ 9500,\;7,\; \frac{1}{2} ,\; \frac{3}{7},\; -2.6 ,\; 0.001\] 
+\end{itemize}
+
+%-------------------------------------------------------------- %   
+
+\subsection{Number Sets}
+
+%% %% - \vspace{-1cm}
+\textbf{Irrational Numbers} 
+\begin{itemize}
+\item A number that can not be written as the ratio of two integers is known as an irrational number.
+\item Two famous examples of irrational numbers are $\pi$ and $\sqrt{2}$. 
+\[\pi = 3.141592\ldots\]
+\[\sqrt{2} = 1.41421\ldots\]
+\end{itemize}
+
+
+%% %% - \vspace{-1cm}
+\textbf{Real Numbers} ($\mathbb{R}$)
+\begin{itemize}
+\item Irrational numbers are types of real numbers.
+\item Rational numbers are real numbers too.
+\[ \mathbb{Q}  \subset \mathbb{R}\]
+
+\item A real number is simply any point anywhere on the number line.
+\end{itemize}
+
+
+%% %% - \vspace{-1cm}
+\textbf{Real Numbers} ($\mathbb{R}$)
+\begin{itemize}
+\item There are numbers that are not real numbers, for example \textbf{imaginary numbers}, but we will not cover them in this presentation.
+\end{itemize}
+
+
 %------------------------------------------$
 2010 Zone B Q 1
 
@@ -474,6 +652,64 @@ Evaluate $f(-6)$
 
 
 
+
+% http://www.textbooksonline.tn.nic.in/books/12/std12-bm-em-1.pdf
+
+
+\subsection{Discrete Maths : Relations}
+
+\begin{itemize}
+\item A relation $R$ from a set A to a set B is a subset of the
+\textbf{cartesian product} A x B. 
+\item Thus R is a set of \textbf{ordered pairs} where
+the first element comes from A and the second element comes
+from B i.e. $(a, b)$
+\end{itemize}
+
+%-----------------------------------%
+
+\subsection{Discrete Maths : Relations}
+
+\begin{itemize}
+
+\item  If $(a, b) \in R$ we say that $a$ is related to $b$ and write $aRb$.
+\item If $(a, b) \notin R$, we say that $a$ is not related to $b$ and write $aRb$. CHECK
+\item If
+$R$ is a relation from a set $A$ to itself then we say that ``$R$ is a relation
+on $A$".
+\end{itemize}
+
+%-----------------------------------%
+
+\subsection{Discrete Maths : Relations}
+
+%% %% - \vspace{-2cm}
+\textbf{Example}
+\begin{itemize}
+\item Let $A = \{2, 3, 4, 6\}$ and $B = \{4, 6, 9\}$
+\item Let R be the relation from A to B defined by \textit{\textbf{xRy}} if $x$
+divides $y$ exactly.
+\end{itemize}
+
+
+%-----------------------------------%
+
+\subsection{Discrete Maths : Relations}
+
+%% %% - \vspace{-0.7cm}
+\textbf{Example}
+\begin{itemize}
+
+\item Let $A = \{2, 3, 4, 6\}$ and $B = \{4, 6, 9\}$
+\item Let R be the relation from A to B defined by \textit{\textbf{xRy}} if $x$
+divides $y$ exactly.
+\item  Then
+\[R = {(2, 4), (2, 6), (3, 6), (3, 9), (4, 4), (6, 6)}\]
+\end{itemize}
+
+
+
+%------------------------------------------------------------------------%
 \section{Arrow Diagrams}
 
 \begin{itemize}
@@ -625,6 +861,15 @@ State the value of $f^{-1}(2)$
 
 \subsection{five basic connectives}
 
+
+%--------------------------------------------------%
+Reflexive, Symmetric and Transitive
+
+\begin{itemize} 
+\item Reflexive
+\item Symmetric
+\item Transitive
+\end{itemize}
 
 %--------------------------------------------------%
 \subsection{Logarithms}
@@ -832,6 +1077,19 @@ p & q & $p \rightarrow q$ & $q \rightarrow p$ \\
 \begin{center}
 \includegraphics[scale=0.55]{HibCollArrow.jpg}
 \end{center}
+
+%---------------------------------------%
+\subsection*{Question 6}
+%2002 Question 7
+Let $\mathcal{S}$ be a set and let $\mathcal{R}$ be a relation on $\mathcal{S}$
+Explain what it means to say that $\mathcal{R}$ is
+
+\begin{itemize}
+\item[(i)] reflexive
+\item[(ii)] symmetrix
+\item[(iii)] anti-symmetric
+\item[(iv)] Transitive
+\end{itemize}
 
 
 \subsection*{Question 10}
