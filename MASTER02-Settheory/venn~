@@ -1,0 +1,21 @@
+
+%======================================================================================= %
+\newpage
+
+\section*{Venn Diagrams}
+
+Draw a Venn Diagram to represent the universal set
+$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets:\\
+$A = \{2,4,5\}$\\
+$B = \{1,4,5,6\}$\\
+
+\noindent Find each of the following
+\begin{itemize}
+\item[(a)] $A \cup B $
+\item[(b)] $A \cap B $
+\item[(c)] $A-B$
+\item[(d)] $B-A$
+\item[(e)] $A \otimes B$
+\end{itemize}
+\newpage
+

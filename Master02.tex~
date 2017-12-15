@@ -78,137 +78,6 @@ The font that the symbols are written in (i.e. $\mathbb{N}$, $\mathbb{R}$) is kn
 \item $\mathbb{R}$ Real Numbers
 \end{itemize}
 
-%---------------------------------------------------- %
-
-{Cardinality of a Set}
-\Large
-\vspace{-1cm}
-\begin{itemize}
-\item The cardinality of a set A is the number of elements in A, which is written as $|A|$.
-\item An element of a set is any one of the \textbf{distinct} objects that make up that set.
-
-\end{itemize}
-
-%---------------------------------------------------- %
-%---------------------------------------------------- %
-
-{Cardinality of a Set}
-\Large
-\vspace{-1cm}
-\begin{itemize}
-
-\item Note that this vertical-bar notation looks the same as absolute value notation, 
-but the meaning of cardinality is different from absolute value.
-
-\item In particular, absolute value operates on numbers (e.g., $|-4| = 4$) 
-while cardinality operates on sets (e.g., $|\{-4\}| = 1$).
-\end{itemize}
-
-%---------------------------------------------------- %
-%---------------------------------------------------- %
-
-{Examples of cardinality}
-\LARGE
-\vspace{-1cm}
-\textbf{Examples}
-\begin{itemize}
-\item[(i)] $|\{2,6,7\}|$
-\item[(ii)] $|\{5,6,5,2,2,6,5,1,1,1\}|$
-\item[(iii)] $|\{ \;\}| = 0$. %The empty set has no elements.
-\item[(iv)] $|\{\{1,2\},\{3,4\}\}| = 2$. 
-%In this case the two elements of $\{\{1,2\},\{3,4\}\}$ are themselves sets: $\{1,2\}$ and $\{3,4\}$.
-\end{itemize}
-
-
-%---------------------------------------------------- %
-%---------------------------------------------------- %
-
-{Examples of cardinality}
-\LARGE
-\vspace{-1cm}
-\textbf{Examples}
-\begin{itemize}
-\item[(i)] $|\{2,6,7\}| $
-\vspace{2cm}
-\item[(ii)] $|\{5,6,5,2,2,6,5,1,1,1\}| $
-\end{itemize}
-
-
-%---------------------------------------------------- %
-%---------------------------------------------------- %
-
-{Examples of cardinality}
-\LARGE
-\vspace{-1cm}
-\textbf{Examples}
-\begin{itemize}
-\item[(i)] $|\{2,6,7\}| = 3 $
-\vspace{2cm}
-\item[(ii)] $|\{5,6,5,2,2,6,5,1,1,1\}| = |\{1,2,5,6\}| $
-\end{itemize}
-
-
-%---------------------------------------------------- %
-%---------------------------------------------------- %
-
-{Examples of cardinality}
-\LARGE
-\vspace{-1cm}
-\textbf{Examples}
-\begin{itemize}
-\item[(i)] $|\{2,6,7\}| $
-\vspace{2cm}
-\item[(ii)] $|\{5,6,5,2,2,6,5,1,1,1\}| = |\{1,2,5,6\}| $
-\end{itemize}
-
-
-%---------------------------------------------------- %
-%---------------------------------------------------- %
-
-{Examples of cardinality}
-\LARGE
-\vspace{-1cm}
-\textbf{Examples}
-\begin{itemize}
-\item[(i)] $|\{2,6,7\}| = 3$
-\vspace{2cm}
-\item[(ii)] $|\{5,6,5,2,2,6,5,1,1,1\}| = |\{1,2,5,6\}| = 4$
-\end{itemize}
-
-%---------------------------------------------------- %
-%---------------------------------------------------- %
-
-{Examples of cardinality}
-\LARGE
-\vspace{-1cm}
-\textbf{Examples}
-\begin{itemize}
-\item[(iii)] $|\{ \; \}| $
-\vspace{2cm}
-\item[(iv)] $|\{\{1,2\},\{3,4\}\}| $.
-\end{itemize}
-
-
-%---------------------------------------------------- %
-%---------------------------------------------------- %
-
-{Examples of cardinality}
-=
-\textbf{Examples}
-\begin{itemize}
-\item[(iii)] $|\{ \; \}| = 0$. \\ The empty set has no elements.
-\vspace{0.4cm} 
-\item[(iv)] $|\{\{1,2\},\{3,4\}\}| = 2$. \\ \vspace{0.4cm} In this case the two elements of $\{\{1,2\},\{3,4\}\}$ are themselves sets: $\{1,2\}$ and $\{3,4\}$.
-\end{itemize}
-
-\subsection{Cardinality}
-
-The cardinality $\|X\|$ of X is, roughly speaking, its size. The empty set has size 0, while B = $\{red, green, blue\}$ has size 3. 
-
-This method of expressing cardinality works for finite sets but is not helpful for infinite ones. A more useful notion is that of two sets having the same size: if a direct one-to-one correspondence can be found between the elements of X and those of Y, they have the same size. 
-
-Consider the sets, both infinite, of positive integers $\{1,2,3,4, \ldots\}$ and of even positive integers $\{2,4,6,8, \ldots\}$. One is a subset of the other. Nevertheless they have the same cardinality, as is shown by the correspondence mapping n in the former set to 2n in the latter. We can express this by writing $\|X\|$ = $\|Y\|$, or by saying that X and Y are "equinumerous".
-
 \subsection{Power set}
 
 The power set of X, $P(X)$, is the set whose elements are all the subsets of X. Thus \[P(A) = \{ \{\}, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\}, \{1,2,3\}\}\]. The power set of the empty set $P(\{\})$ = $\{\{\}\}$. 
@@ -218,43 +87,7 @@ Note that in both cases the cardinality of the power set is strictly greater tha
 %Cantor proved that this in fact holds for any set (Cantor's Theorem). This is obvious for a finite set, but Cantor's ingenious proof made no reference to the set being finite; the theorem holds even for infinite sets. This was a powerful generalisation of his previous discovery that different sizes of infinity exist.
 
 
-\section*{Rules of Inclusion, Listing and Cardinality}
-For each of the following sets, a set is specified by the rules of inclusion method and listing method respectively. Also stated is the cardinality of that data set.
-\subsection*{Worked example 1}
-\begin{itemize}
-\item $\{ x : x $ is an odd integer $ 5 \leq x \leq 17 \}$
-\item $x = \{5,7,9,11,13,15,17\}$
-\item The cardinality of set $x$ is 7.
-\end{itemize}
 
-\subsection*{Worked example 2}
-\begin{itemize}
-\item $\{ y : y $ is an even integer $ 6 \leq y < 18 \}$
-\item $y = \{6,8,10,12,14,16\}$
-\item The cardinality of set $y$ is 6.
-\end{itemize}
-
-\subsection*{Worked example 3}
-A perfect square is a number that has a integer value as a
-square root. 4 and 9 are perfect squares ($\sqrt{4} = 2$,
-$\sqrt{9} = 3$).
-\begin{itemize}
-\item $\{ z : z $ is an perfect square $ 1 < z < 100 \}$
-\item $z = \{4,9,16,25,36,49,64,81\}$
-\item The cardinality of set $z$ is 8.
-\end{itemize}
-
-
-\subsection*{Exercises}
-For each of the following sets, write out the set using the listing method.
-Also write down the cardinality of each set.
-
-\begin{itemize} 
-\item $\{ s : s $ is an negative integer $ -10 \leq s \leq 0 \}$
-\item $\{ t : t $ is an even number $ 1 \leq t \leq 20 \}$
-\item $\{ u : u $ is a prime number $ 1 \leq u \leq 20 \}$
-\item $\{ v : v $ is a multiple of 3 $ 1 \leq v \leq 20 \}$
-\end{itemize}
 
 %-------------------------------------%
 % Binary Operations on Sets (2.3.2)
@@ -263,38 +96,9 @@ Also write down the cardinality of each set.
 
 
 
-\section*{Set Operations}
-Consider the universal set $U$ such that
-\[U=\{1,2,3,4,5,6,7,8,9\} \] 
-and the sets
-\[A=\{2,5,7,9\} \] 
-\[B=\{2,4,6,8,9\} \]
-
-\begin{itemize}
-\item[(a)] $A-B$
-\item[(b)] $A \otimes B$
-\item[(c)] $A \cap B$
-\item[(d)] $A \cup B$
-\item[(e)] $A^{\prime} \cap B^{\prime}$
-\item[(f)] $A^{\prime} \cup B^{\prime}$
-\end{itemize}
 
 
-\section*{Venn Diagrams}
 
-Draw a Venn Diagram to represent the universal set
-$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets:\\
-$A = \{2,4,5\}$\\
-$B = \{1,4,5,6\}$\\
-
-\noindent Find each of the following
-\begin{itemize}
-\item[(a)] $A \cup B $
-\item[(b)] $A \cap B $
-\item[(c)] $A-B$
-\item[(d)] $B-A$
-\item[(e)] $A \otimes B$
-\end{itemize}
 
 \end{document}
 
@@ -407,19 +211,6 @@ A
 \newpage
 
 
-\begin{itemize}
-\item Specifying Sets
-\item Listing Method
-\item Rules of Inclusion method
-\end{itemize}
-
-
-\begin{itemize}
-\item Subsets Notation of a subset
-\item Cardinality of a set
-\item Power of a set
-\end{itemize}
-
 \subsection*{Operation on Sets}
 
 \begin{itemize}
@@ -450,20 +241,6 @@ A & B & C & x & y & z \\\hline
 \hline
 \end{tabular}
 
-%----------------------------------------------------------%
-\section*{Section B: Hexadecimal Numbers}
-\begin{itemize}
-\item[B.1]
-\item[B.2]
-\item[B.3]
-\item[B.4]
-\item[B.5]
-\item[B.6]
-\item[B.7]
-\item[B.8]
-\end{itemize}
-\newpage
-
 
 \subsection*{Associative Laws}
 \[ (A \cup B) \cup C =  A \cup (B \cup C)  \]
@@ -476,18 +253,7 @@ A & B & C & x & y & z \\\hline
 
 \[ (A \cup B) \cap B^{\prime} \]
 %----------------------------------------------------------%
-\section*{Section C: Real and Rational Numbers}
-\begin{itemize}
-\item[C.1]
-\item[C.2]
-\item[C.3]
-\item[C.4]
-\item[C.5]
-\item[C.6]
-\item[C.7]
-\item[C.8]
-\end{itemize}
-\newpage
+
 %----------------------------------------------------------%
 \newpage
 \section*{Formulae}
@@ -515,35 +281,9 @@ P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
 \end{equation*}
 \end{itemize}
 
-%--------------------------------- %
-\section*{The Universal Set and the Empty Set}
-\begin{itemize}
-\item The first is the \textbf{\textit{universal set}}, typically denoted $U$. This set is all of the elements that we may choose from. This set may be different from one setting to the next. 
-
-\item For example one universal set may be the set of all real numbers, denoted $\mathbb{R}$, whereas for another problem the universal set may be the whole numbers $\{0, 1, 2,\ldots\}$.
-
-\item The other set that requires consideration is called the \textit{\textbf{empty set}}. The empty set is the unique set is the set with no elements. We write this as $\{ \}$ and denote this set by $\emptyset$.
-\end{itemize}
 
 
-\section*{Complement of a Set}
-%(2.3.1) 
-Consider the universal set $U$ such that
-\[U=\{2,4,6,8,10,12,15\} \]
-For each of the sets $A$,$B$,$C$ and $D$, specify the complement sets.
-{
 
-\begin{center}
-\begin{tabular}{|c|c|}
-\hline
-Set &\phantom{sp} Complement \phantom{sp}\\
-\hline \phantom{sp} $A=\{4,6,12,15\}$ \phantom{sp} &
-$A^{\prime}=\{2,8,10\}$ \\ \hline $B=\{4,8,10,15\}$ & \\ \hline
-$C=\{2,6,12,15\}$ & \\ \hline $D=\{8,10,15\}$ & \\ \hline
-
-\end{tabular}
-\end{center}
-}
 %-------------------------------------%
 % Binary Operations on Sets (2.3.2)
 % Union , Intersection, Symmetric Difference
@@ -682,22 +422,6 @@ P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
 \section{Video 1 :  Set Theory Listing Method}
 %--------------------------------------------%
 
-%--------------------------------------------%
-
-\section{Set Theory : Listing Method}
-
-Describe the following sets using the Listing Method
-
-\begin{itemize}
-\item[(i)] $ \{ 10^m : -2 \leq m \leq 4, m \in \mathbb{Z} \} $
-\item[(ii)]  $ \{ \frac{1}{n}: 1 < n < 4, n \in \mathbb{Z} \} $
-\end{itemize}
-
-
-
-
-
-\textbf{Part 1:} $ \{ 10^m : -2 \leq m \leq 4, m \in \mathbb{Z} \} $
 
 
 %--------------------------------------------%
@@ -723,15 +447,6 @@ Describe the following sets using the Listing Method
 %-----------------------------------------------------%
 
 
-
-\section{Set Theory Operations}
-\begin{enumerate}
-\item The Universal Set $\mathcal{U}$
-\item Union
-\item Intersection
-\item Set Difference
-\item Relative Difference
-\end{enumerate}
 
 
 
@@ -866,38 +581,8 @@ Describe the set A using the rules of inclusion method
 \end{itemize}
 
 
-\subsection{The Cartesian Product}
-Exercises
 
 
-Discrete Maths
-
-A binary relation on a set A is the collection of ordered pairs of elements of A. In other words, it is the subset of the cartesian product A2= AA
-
-Cartesian Product
-
-This is a direct product pf 2 sets
-
-XY = {(x,y)| xXandyY }
-
-4 suits of cards and 13 Ranks, therefore 52 element cartesian prodcut.
-
-N.B         AB BA
-A=A =
-
-Cartesian product is not associative
-\subsection*{Worked Example}
-
-Suppose that the Universal Set $\mathcal{U}$ is the set of integers from 1 to 9.
-\[ \mathcal{U} = \{1,2,3,4,5,6,7,8,9\}, \]
-
-and that the set $\mathcal{A}$ contains the prime numbers between 1 to 9 inclusive.
-
-\[ \mathcal{A} = \{1,2,3,5,7\}, \]
-
-and that the set $\mathcal{B}$ contains the even numbers between 1 to 9 inclusive.
-
-\[ \mathcal{B} = \{2,4,6,8\}. \]
 
 \subsection*{Subsets}
 
@@ -932,41 +617,6 @@ De Morgan's Law
 
 
 %--------------------------------------------------------%
-\subsubsection*{Relative Difference}
-\begin{itemize}
-\item $ A \otimes B$
-\end{itemize}
-%--------------------------------------------------------%
-
-\subsubsection*{Relative Difference}
-\begin{itemize}
-\item $ A \otimes B$
-\end{itemize}
-%--------------------------------------------------------%
-\section{Power Sets}
-\begin{itemize}
-\item Consider the set A where $ A = \{w,x,y,z\}$
-\item There are 4 elements in set A.
-\item The power set of A contains 16 element data sets.
-\item \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \}  \]
-\item (i.e. 1 null set, 4 single element sets, 6 two -elemnts sets, 4 three lement set and one 4- element set.)
-\end{itemize}
-%------------------------------------------------%
-
-
-%---------------------------- %
-%---------------------------------------%
-\subsubsection*{Power Sets}
-\begin{itemize}
-\item Consider the set A where $ A = \{w,x,y,z\}$
-\item There are 4 elements in set A.
-\item The power set of A contains 16 element data sets.
-\item \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \}  \]
-\item (i.e. 1 null set, 4 single element sets, 6 two -elemnts sets, 4 three lement set and one 4- element set.)
-\end{itemize}
-
-
-%--------------------------------------------------------%
 \subsection*{Dice Rolls}
 Consider rolls of a die. What is the universal set?
 
@@ -986,43 +636,6 @@ and that the set $\mathcal{B}$ contains the even numbers between 1 to 9 inclusiv
 
 \[ \mathcal{B} = \{2,4,6,8\}. \]
 
-%--------------------------------------------------------%
-\subsubsection*{Complements}
-\begin{itemize}
-
-\item The Complements of A and B are the elements of the universal set not contained in A and B.
-
-\item The complements are denoted $\mathcal{A}^{\prime}$ and $\mathcal{B}^{\prime}$
-\[ \mathcal{A}^{\prime} = \{4,6,8,9\}, \]
-\[ \mathcal{B}^{\prime} = \{1,3,5,7,9\}, \]
-
-\end{itemize}
-
-
-%--------------------------------------------------------%
-
-\subsubsection*{Intersection}
-\begin{itemize}
-
-\item Intersection of two sets describes the elements that are members of both the specified Sets
-
-\item The intersection is denoted $\mathcal{A\cap B}$ 
-\[ \mathcal{A\cap B} = \{2\}\]
-
-\item only one element is a member of both A and B.
-\end{itemize}
-%--------------------------------------------------------%
-
-\subsubsection*{Set Difference}
-\begin{itemize}
-
-\item The Set Difference of A with regard to B are list of elements of A not contained by B.
-
-\item The complements are denoted $\mathcal{A-B}$ and $\mathcal{B-A}$
-\[ \mathcal{A-B} = \{1,3,5,7\}, \]
-
-\[ \mathcal{B-A} = \{4,6,8\}, \]
-\end{itemize}
 
 
 %------------------------------------------$
@@ -1052,51 +665,10 @@ Describe the set A using the rules of inclusion method
 \item So by the listing method $B= \{2,5,8,11,14,17,\ldots\}$
 \end{itemize}
 
-\section{Cartesian Product}
-
-\begin{itemize}
-\item Let $X$ and $Y$ be sets.
-\item The \textbf{cartesian product} $X \times Y$ is the set whose elements are \textbf{all} of 
-the ordered pairs of elements $(x,y)$ where $x \in X$ and $y \in Y$.
-\end{itemize}
-
-\begin{itemize}
-\item Let $X = \{a,b,c\}$
-\item Let $Y = \{0,1\}$ 
-\item The cartesian product $X \times Y$ is therefore:
-\end{itemize}
-
-\begin{itemize}
-\item Importantly $X \times Y \neq Y \times X$
-\item Recall: Let $X = \{a,b,c\}$ and let $Y = \{0,1\}$ 
-\item The cartesian product $Y \times X$ is therefore:
-\end{itemize}
 
 
 
 
-
-
-\subsection{The Cartesian Product}
-Exercises
-
-
- Discrete Maths
- 
-A binary relation on a set A is the collection of ordered pairs of elements of A. In other words, it is the subset of the cartesian product A2= AA
-
-Cartesian Product
- 
-This is a direct product pf 2 sets
- 
-XY = {(x,y)| xXandyY }
- 
-4 suits of cards and 13 Ranks, therefore 52 element cartesian prodcut.
- 
-N.B         AB BA
-              A=A =
- 
-Cartesian product is not associative
 \subsection*{Worked Example}
 
 Suppose that the Universal Set $\mathcal{U}$ is the set of integers from 1 to 9.
@@ -1176,13 +748,6 @@ list the set $A^\prime \cap B)^\prime$
 \item[(ii)] $\{1,2,3,4,5,6,7,8,9\}$ 
 \end{itemize}
 
-\section*{Set Operations}
-\begin{itemize}
-\item Union ($\cup$) - also known as the \textbf{OR} operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
-\item Intersection ($\cap$) - also known as the \textbf{AND} operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
-\item Complement ($A^{\prime}$ or $A^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
-\end{itemize}
-
 \subsection*{Exercise}
 Consider the universal set $U$ such that
 \[U=\{1,2,3,4,5,6,7,8,9\} \] 
@@ -1201,79 +766,10 @@ and the sets
 \end{itemize}
 \end{multicols}
 
-%======================================================================================= %
-\newpage
-
-\section*{Venn Diagrams}
-
-Draw a Venn Diagram to represent the universal set
-$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets:\\
-$A = \{2,4,5\}$\\
-$B = \{1,4,5,6\}$\\
-
-\noindent Find each of the following
-\begin{itemize}
-\item[(a)] $A \cup B $
-\item[(b)] $A \cap B $
-\item[(c)] $A-B$
-\item[(d)] $B-A$
-\item[(e)] $A \otimes B$
-\end{itemize}
-\newpage
 
 
 
-%------------------------------------------------------------------------%
-\begin{itemize}
-\item[(i)] Describe the following set by the listing method
-\[ \{ 2r+1 : r \in Z^{+} and r \leq 5  \} \]
-\item[(ii)] Let A,B be subsets of the universal set U.
 
-
-\end{itemize}
-
-%===================================================================================== %
-\subsection*{Question 1}
-
-\begin{itemize}
-\item $\{ s :  \mbox{ s is an odd integer and } 2 \leq s \leq 10 \}$
-\item $\{ 2m :  m \in Z \mbox{ and }5 \leq m \leq 10 \}$
-\item $\{ 2^t :  t \in Z \mbox{ and } 0 \leq t \leq 5 \}$
-\end{itemize}
-
-%=======================+============================================================== %
-\subsection*{Question 2}
-
-\begin{itemize}
-\item $\{12,13,14,15,16,17\}$
-\item $\{0,5,-5,10,-10,15,-15,.....\}$
-\item $\{6,8,10,12,14,16,18\}$
-\end{itemize}
-
-\subsection*{Question 7 : Membership Tables}
-Using membership tables
-\begin{tabular}{|ccc|c|c|c|}
-\hline
-% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-A & B & C & x & y & z \\\hline
-0 & 0 & 0 & 1 & 1 & 1 \\
-0 & 0 & 1 & 0 & 0 & 1 \\
-0 & 1 & 0 & 0 & 0 & 1 \\
-0 & 1 & 1 & 0 & 0 & 1 \\
-1 & 0 & 0 & 1 & 0 & 1 \\
-1 & 0 & 1 & 1 & 0 & 1 \\
-1 & 1 & 0 & 0 & 0 & 1 \\
-1 & 1 & 1 & 1 & 0 & 1 \\
-\hline
-\end{tabular}
-\begin{itemize}
-\item[(i)] Draw a venn diagram to show three subsets A,B and C of a universal set U intersecting in
-the most general way?
-\item[(ii)] How are sets $X$ and $Z$ related?
-\item[(iii)] Can you describe each of the subsets X,Y and Z in terms  of the
-sets A,B,C using the operations union intersection and set complement.
-\end{itemize}
-%================================================================ %
 \section*{Question 4}
 \[ \mbox{Log}_4 64 + \mbox{Log}_5 625 + \mbox{Log}_9 3 \] 
 
@@ -1313,14 +809,6 @@ Cardinality of a Set
 Power Set
 
 
-%------------------------------------------------------------------------%
-
-\section{Set operations (2.3)}
-
-complement
-union 
-intersection
-set difference
 
 
 \section*{Venn Diagrams}
@@ -1354,28 +842,6 @@ Subsets of the universal set $\mathcal{U}$, intersecting in the most general way
 
 venn diagrams
 8 Disjoint Regions
-
-%------------------------------------------------------------------------%
-\subsection{Cartesian Product}
-{
-\begin{itemize}
-\item Let $X$ and $Y$ be sets.
-\item The \textbf{cartesian product} $X \times Y$ is the set whose elements are \textbf{all} of 
-the ordered pairs of elements $(x,y)$ where $x \in X$ and $y \in Y$.
-\end{itemize}
-
-\begin{itemize}
-\item Let $X = \{a,b,c\}$
-\item Let $Y = \{0,1\}$ 
-\item The cartesian product $X \times Y$ is therefore:
-\end{itemize}
-
-\begin{itemize}
-\item Importantly $X \times Y \neq Y \times X$
-\item Recall: Let $X = \{a,b,c\}$ and let $Y = \{0,1\}$ 
-\item The cartesian product $Y \times X$ is therefore:
-\end{itemize}
-}
 
 
 
