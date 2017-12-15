@@ -501,7 +501,23 @@ A
 \item Membership tables
 \item Laws for Combining Sets
 \end{itemize}
-
+%----------------------------------------------------------%
+\subsection*{Membership Tables}
+Using membership tables
+\begin{tabular}{|ccc|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  A & B & C & x & y & z \\\hline
+  0 & 0 & 0 & 1 & 1 & 1 \\
+  0 & 0 & 1 & 0 & 0 & 1 \\
+  0 & 1 & 0 & 0 & 0 & 1 \\
+  0 & 1 & 1 & 0 & 0 & 1 \\
+  1 & 0 & 0 & 1 & 0 & 1 \\
+  1 & 0 & 1 & 1 & 0 & 1 \\
+  1 & 1 & 0 & 0 & 0 & 1 \\
+  1 & 1 & 1 & 1 & 0 & 1 \\
+  \hline
+\end{tabular}
 
 %----------------------------------------------------------%
 \section*{Section C: Real and Rational Numbers}

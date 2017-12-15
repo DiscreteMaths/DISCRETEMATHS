@@ -46,6 +46,24 @@ Evaluate the following expression.
 \[ \mbox{Log}_4 64 + \mbox{Log}_5 625 + \mbox{Log}_9 3 \] 
 
 
+\newpage
+
+%-------------------------------------------------------------------------%
+
+
+\section{Exponential and Logarithms}
+\subsection*{Laws of Logarithms}
+
+\begin{itemize}
+\item Law 1 : Multiplcation of Logarithms
+\[ Log(a) \times Log(b) = Log(a+b) \]
+\item Law 2 : Division of Logarithms
+\[ \frac{Log(a)}{Log(b)} = Log(a-b) \]
+\item Law 3 : Powers of Logarithms
+\[ Log(a^b) = b \times Log(a) \]
+\end{itemize}
+
+
 \subsubsection{Laws for Logarithms}
 The following laws are very useful for working with logarithms.
 \begin{enumerate}
