@@ -1,4 +1,11 @@
+\documentclass[12pt]{beamer} % use larger type; default would be 10pt
 
+
+\usepackage{graphicx} 
+\usepackage{framed}
+
+\begin{document}
+\begin{frame}
 
 
 \begin{center}
@@ -14,4 +21,5 @@ p & q & $p \vee q$ & $q \wedge p$ & $p \otimes q$ \\
 \end{tabular}
 \end{center}
 
-
+\end{frame}
+\end{document}

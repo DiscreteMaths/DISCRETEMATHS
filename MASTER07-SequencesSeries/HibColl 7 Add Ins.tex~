@@ -1,0 +1,208 @@
+
+
+%-----------------------------------------------------------------------------%
+%----------------------------------------------------------------------------------------------%
+
+	\frametitle{Sigma Notation}
+	
+	\vspace{-1cm}
+	Let $s_n = 1 + 3 + 5 + \ldots + (2n-1)$ for $n \in Z^{+}$.\\
+	\bigskip
+	\begin{itemize}
+		\item[1.] Express $s_n$ using $\sigma$ notation. \\
+		\bigskip
+		\item[2.] Calculate $s_1$ , $s_2$ and $s_3$. \\
+		\bigskip
+		\item[3.] Find a recurrence relation which expresses $s_{n+1}$ in terms of $s_n$.
+	\end{itemize}
+
+%----------------------------------------------------------------------------------------------%
+
+	\frametitle{Sigma Notation}
+	
+	\vspace{-2.3cm}
+	\textbf{Part 1}: Express $s_n$ using $\sum$ notation.
+	\[s_n = 1 + 3 + 5 + \ldots + (2n-1) \mbox{   for }n \in Z^{+}\]
+	
+	
+	
+
+%----------------------------------------------------------------------------------------------%
+
+	\frametitle{Sigma Notation}
+	
+	\vspace{-1cm}
+	\textbf{Part 1}: Express $s_n$ using $\sum$ notation.
+	\[s_n = 1 + 3 + 5 + \ldots + (2n-1) \mbox{   for }n \in Z^{+}\]
+	
+	{
+		
+		\[  \sum^{k=n}_{k=1} (2k-1) \]
+	}
+
+%----------------------------------------------------------------------------------------------%
+
+	\frametitle{Sigma Notation}
+	
+	\vspace{-2.3cm}
+	\textbf{Part 2}: Calculate $s_1$, $s_2$ and $s_3$.
+	
+	{
+		
+		\[  \sum^{k=n}_{k=1} (2k-1) \]
+	}
+	
+	
+	
+
+%----------------------------------------------------------------------------------------------%
+
+	\frametitle{Sigma Notation}
+	
+	\vspace{-2.3cm}
+	\textbf{Part 2}: Calculate $s_1$, $s_2$ and $s_3$.
+	
+	{
+		
+		\[  \sum^{k=n}_{k=1} (2k-1) \]
+	}
+	
+	\begin{itemize}
+		\item[$s_1$]
+		\item[$s_2$]
+		\item[$s_3$]
+	\end{itemize}
+	
+
+%----------------------------------------------------------------------------------------------%
+
+	\frametitle{Sigma Notation}
+	
+	\vspace{-2.3cm}
+	\textbf{Part 3}: Find a recurrence relation which expresses $s_{n+1}$ in terms of $s_n$.
+	
+	
+
+%----------------------------------------------------------------------------------------------%
+\section{Recurrence Relation}
+
+
+A recurrence relation is an equation that recursively defines a sequence, once one or more initial terms are given: 
+
+each further term of the sequence is defined as a function of the preceding terms.
+The term difference equation sometimes refers to a specific type of recurrence relation. 
+
+However, "difference equation" is frequently used to refer to any recurrence relation.
+
+
+
+%------------------------------------------------------------------------------%
+
+\documentclass{beamer}
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+\begin{document}
+	
+	%--------------------------------------------------%
+	
+		\frametitle{Recurrence Relations}
+		\textit{CIS102 2004 Question 7 2 Marks}
+		
+		
+		\begin{itemize}
+			\item Consider the sequence given by \[ 1, 4, 7, 10, 13, \ldots\]
+			\item State a recurrence relation which expresses the nth term, $u_n$
+			, in terms of the$(n - 1)$th term, $u_{n-1}$, 
+			\item State a recurrence relation which expresses the nth term, $u_n$
+			, in terms of the first term $u_1$.
+		\end{itemize}
+		
+	
+	%--------------------------------------------------%
+	
+		\frametitle{Recurrence Relations}
+		
+		\begin{itemize}
+			\item $u_1$ = 1 , $u_2$ = 4, $u_3$ = 7 etc 
+			\item Difference in successive terms is 3.
+			\item Therefore we can say 
+			\[ u_n = u_{n-1} + 3 \]
+		\end{itemize}
+	
+	%--------------------------------------------------%
+	
+		\frametitle{Recurrence Relations}
+		
+		\begin{itemize}
+			\item Difference between $u_2$ and $u_1$ is 3 (i.e. $1 \times 3$).
+			\item Difference between $u_3$ and $u_1$ is 6 (i.e. $2 \times 3$)
+			\item Difference between $u_4$ and $u_1$ is 9 (i.e. $3 \times 3$)
+			\item In general the difference between $u_n$ and $u_1$ is $(n-1)\times 3$.
+			\[ u_{n} = u_1 + 3 \times (n-1) \]
+			\[ u_{n} = 1 + (3n-3) = 3n-2\]
+			\item Equivalently
+			\[ u_{n+1} = u_1 + 3n = 3n+1\]
+		\end{itemize}
+		
+		\frametitle{Recurrence Relations}
+		
+		\begin{itemize}
+			\item Another sequence is defined by the recurrence relation 
+			\[ u_n = u_{n-1} + 2n-1 \] and
+			$u_1$ = 1.
+			\item Calculate $u_2$ , $u_3$ , $u_4$  and $u_5$ .
+			\item (Answers 1,4,9,16,25)
+		\end{itemize}
+		
+		\[\begin{array}{|c|c|c|c|}
+		$n$    & $u_{n-1}$ & 2n-1 & $u_n$ \\ \hline
+		2      & 1         &  3   & $u_2$ = 4 \\ \hline
+		3      & 4         &  5   & $u_3$ = 9 \\ \hline
+		4      & 9         &  7   & $u_4$ = 16 \\ \hline
+		5      & 16        &  9   & $u_5$ = 25 \\ \hline
+		\end{array}\]
+		
+		
+		
+
+\section{Proof By Induction}
+In Step 1, you are trying to show it is true for specific values. You are free to do this test with just one value or fifty values of your choice or more.
+
+However, showing it is true for one million values or more still does not prove it will be true for all values. This is a very important observation!
+
+In Step 2, since you have already shown that it is true for one or more values, it is logical to suppose or assume it is true for n =k or generally speaking.
+
+We usually use the asumption that we make here to complete or prove Step  3
+
+In Step 3, you finally show it is true for any values. Notice that step 2 did not show it is true for any values
+
+\section{Spanning Trees}
+A spanning tree \textbf{T} of a connected, undirected graph \textbf{G} is a tree composed of all the vertices and some (or perhaps all) of the edges of \textbf{G}. 
+
+Informally, a spanning tree of \textbf{G} is a selection of edges of \textbf{G} that form a tree spanning every vertex. That is, every vertex lies in the tree, but no cycles (or loops) are formed. On the other hand, every bridge of \textbf{G} must belong to \textbf{T}.
+
+A spanning tree of a connected graph \textbf{G} can also be defined as a maximal set of edges of \textbf{G} that contains no cycle, or as a minimal set of edges that connect all vertices.
+
+
+\section{Binary search tree (BST)}
+a binary search tree (BST), sometimes also called an ordered or sorted binary tree, is a node-based binary tree data structure which has the following properties:
+
+\begin{itemize}
+\item The left subtree of a node contains only nodes with keys less than the node's key.
+\item The right subtree of a node contains only nodes with keys greater than the node's key.
+\item The left and right subtree must each also be a binary search tree.
+\item There must be no duplicate nodes.
+\end{itemize}
+
+\section{Cartesian Product}
+ A \textbf{Cartesian product} is a mathematical operation which returns a set (or product set) from multiple sets. That is, for sets A and B, the Cartesian product $A \times B$ is the set of all ordered pairs $(a, b)$ where $a \in A$ and $b \in B$.
+
+\end{document}
