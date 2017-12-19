@@ -227,8 +227,7 @@ Right hand side of expression : \textit{not-q} \textit{implies} \textit{not-p}
 \end{tabular}
 \end{center}
 
-\frametitle{Proof With Truth Tables}
-\Large
+
 Side by Side
 \[ p \rightarrow q \equiv \neg q \rightarrow \neg p\]
 \bigskip
