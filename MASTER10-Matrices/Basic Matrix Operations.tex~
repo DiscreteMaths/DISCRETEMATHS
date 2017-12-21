@@ -21,7 +21,17 @@
 %-----------------------------------------------------------------------------%
 \begin{frame}
 
+\frametitle{Permutations}
+{\Large
+\begin{itemize}
 
+\item Suppose we have a set of \textbf{n} items.
+\item From that set, we select \textbf{k} items.
+\item The number of \textbf{ordered} lists of \textbf{k} items chosen from a set of \textbf{n} items is
+
+\[\frac{n!}{n-k!}\]
+\end{itemize}
+}
 %-----------------------------------------------------------------------------%
 \end{frame}
 \end{document}

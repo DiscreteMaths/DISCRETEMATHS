@@ -1,0 +1,91 @@
+
+\section*{Proof By Induction}
+
+\begin{itemize}
+\item \textbf{Base Step}
+\item \textbf{Induction Step}
+\item \textbf{Some Step}
+\end{itemize}
+
+%------------------------- %
+%-------------------------- %
+
+
+
+\section{Proof By Induction}
+
+Prove by Induction the following expression
+\[ \sum_{r=1}^{r=n} r^2 = \frac{n(n+1)(2n+1)}{6} \]
+for all $n \in N_0$.
+
+
+\begin{itemize}
+	\item \textbf{Step 1} : Is the proposition true for $n = 1$?
+	\item \textbf{Step 2} : Show that if the proposition is true for $n=k$, then it is also true for $n=k+1$.
+	\item \textbf{Step 3} : Conclude that the proposition is true for all natural numbers greater than or equal to one.
+\end{itemize}
+
+%------------------------------------------------ %
+
+\subsection{Proof By Induction}
+
+Prove by induction the following expression
+\[ \sum_{r=1}^{r=n} r^2 = \frac{n(n+1)(2n+1)}{6} \]
+for all $n \in N_0$.
+\begin{itemize}
+	\item \textbf{Step 1} : Is the proposition true for $n = 1$? 
+\end{itemize}
+\textbf{Left-hand side}
+\[ \sum_{r=1}^{r=1} r^2 = 1^2 = 1 \]
+
+
+
+\textbf{Left-hand side}
+\[ \sum_{r=1}^{r=1} r^2 = 1^2 = \boldsymbol{1} \]
+\textbf{Right-hand side}
+
+\[ \frac{n(n+1)(2n+1)}{6}  = \frac{1(1+1)(2\cdot 1+1)}{6} \]
+\[  = \frac{1\times 2 \times 3}{6} = \frac{6}{6}=\boldsymbol{1} \]
+
+%------------------------------------------------ %
+
+
+\begin{itemize}
+	\item \textbf{Step 1} : Is the proposition true for $n = 1$? 
+\end{itemize}
+\bigskip
+Yes: The left-hand side and right-hand side of the equation yield the same value.
+
+\begin{itemize}
+	\item \textbf{Step 2} : Show that if the proposition is true for $n=k$, then it is also true for $n=k+1$.
+\end{itemize}
+Given: \[ \sum_{r=1}^{r=k} r^2 = \frac{k(k+1)(2k+1)}{6} \]
+
+To Prove: \[ \sum_{r=1}^{r=k+1} r^2 = \frac{(k+1)(k+2)(2k+3)}{6} \]
+
+
+%------------------------------------------------ %
+
+\subsection{Proof By Induction}
+%% - \vspace{-1cm}
+
+
+
+\[ \sum_{r=1}^{r=k+1} r^2 = 1^2 + 2^2 + 3^2 + \ldots + k^2 + (k+1)^2 \]
+
+
+
+
+
+
+\[ \sum_{r=1}^{r=k+1} r^2 = 1^2 + 2^2 + 3^2 + \ldots + k^2 + (k+1)^2 \]
+
+\[ \sum_{r=1}^{r=k+1} r^2 = \boldsymbol{\sum_{r=1}^{r=k} r^2} + (k+1)^2 \]
+
+
+
+\[ \sum_{r=1}^{r=k+1} r^2 = \boldsymbol{\sum_{r=1}^{r=k} r^2} + (k+1)^2 \]
+
+\[ \sum_{r=1}^{r=k+1} r^2 = \frac{k(k+1(2k+1
+	))}{6} + (k+1)^2 \]
+
