@@ -52,6 +52,36 @@ $(253)_{10}$. \newline [2 Marks]
  as a rational number in its simplest
 form.\newline [2 Marks]
 \end{itemize}
+%---------------------------------------%
+\subsection*{Question 2}
+% 2002 Question 2
+\begin{itemize}
+\item[(a)] Let $S= \{w,x,y,z\}$. Describe briefly how the subsets of $S$ can each be represented by a unique 4-bit binary string. [2 Marks]
+\item[(b)] Make a list of all 4-bit binary strings which have 1 as their first bit. Use this list to find all the subsets of $S$ containing the element $w$. [3 Marks]
+\item[(c)] What is the total number of subsets of $S$? [1 Mark]
+\item[(d)] Draw a Venn Diagram to show the three subsets A,B and C of a universal set $\mathcal{U}$
+intersecting in the most general way. Shade the regions contained in the subset $X$ defined
+by the membership table below. [2 Marks]\\ 
+\begin{center}
+\begin{tabular}{|ccc|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  A & B & C & X \\\hline
+  0 & 0 & 0 & 0 \\
+  0 & 0 & 1 & 1 \\
+  0 & 1 & 0 & 0 \\
+  0 & 1 & 1 & 1 \\
+  0 & 0 & 0 & 0 \\
+  0 & 0 & 1 & 1 \\
+  0 & 1 & 0 & 1 \\
+  0 & 1 & 1 & 1 \\
+  \hline
+\end{tabular}
+\end{center}
+\item[(e)] Describe the subset X in terms of the sets A,B,C using the appropriate set operations. \newline [2 Marks]
+\end{itemize}
+\newpage
+
 
 
 
