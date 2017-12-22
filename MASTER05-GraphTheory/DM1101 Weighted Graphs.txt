@@ -1,3 +1,5 @@
+
+\section*{Weighted Graphs}
 Let G be a weighted graph.
 The maximum spanning tree for G is a spanning tree for G which has a maximum total weight.
 

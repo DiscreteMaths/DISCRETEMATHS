@@ -1,11 +1,11 @@
-\documentclass{beamer}
+﻿\documentclass{beamer}
 
 \usepackage{amsmath}
 
 \begin{document}
-\begin{frame}
+
 \tableofcontents
-\end{frame}
+
 \section{Counting methods and probability}
 
 
@@ -14,8 +14,8 @@
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 81
 % Section 5Udemy 10.2 Matrix algebra
-\begin{frame}
-\frametitle{Matrix algebra}
+
+{Matrix algebra}
 Learning objectives for this section
 \begin{itemize}
 \ item  Writing a system of linear equations as a matrix equation
@@ -25,67 +25,80 @@ Learning objectives for this section
 \ item The identity matrices In and their properties
 \ item Interpreting powers of the adiacency matrix of a graph/digraph
 \end{itemize}
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 80
-\begin{frame}
-Definition 5.7 Let A and B be two $m \times n$ matrices. Then A = B ifand
-only ifeach entry 0fA is equal to the corresponding entry of B.
+
+%=======================%
+\subsection{Definition 5.7} 
+Let A and B be two $m \times n$ matrices. Then A = B if and
+only if each entry of A is equal to the corresponding entry of B.
 Moreformally ifA = (am) and B = (bw), then A = B ifa,-J = bid
 forall1§1l§mand1 §j §n.
-5.2.1 Addition and subtraction of matrices
-Definition 5.8 Let A and B be two m >< n matrices. Then A + B is the
-m. >< n matrix obtained by adding each entry of A to the corresponding
+%=======================%
+\section{5.2.1 Addition and subtraction of matrices}
+%=======================%
+\subsection{Definition 5.8} Let A and B be two m >< n matrices. Then A + B is the
+$m \times  n$ matrix obtained by adding each entry of A to the corresponding
 entry of B.
 Moreformally ifA = (am) and B = (hm), then A + B is the m >< n.
 matrix given by A + B = (c, where cw = aw -i- b,,_, for all
 lgigmandlgjgn.
 Note that in order to add together two matrices they must have the
 same size.
-Examp|e5.8LetA=(; Z 7é)andB=(g 7} §).Then
+
+\subsection{Example 5.8}
+LetA=(; Z 7é)andB=(g 7} §).Then
 n-I
 IN
 A+B:( —1)+(0—14):(1 13)
 3 4 0 23 53‘
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 80
-\begin{frame}
-\frametitle{Subtracting Matrices}
+
+\subsection{Subtracting Matrices}
 Subtraction of matrices is deﬁned in a similar manner and can also
 be performed only when the two matrices are of the same size.
-Examp|e5.9LetA=(; 2 ’é)andB=(g *1 :>.Then
+\subsection{Example 5.9}
+LetA=(; 2 ’é)andB=(g *1 :>.Then
 A_B_ _1_ o—14>_ 1 35)
 ‘340 23-1-3‘
 >-I
 -IQ
 80
 
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 81
-\begin{frame}
+
 
 5.2.2
 5.2.3
 Multiplication of a matrix by a constant
-Definition 5.9 Let A be an m >< 7L matrix and r 6 R. Then TA is the
-m >< n matrix obtained by multiplying each entry in A by r.
+%==========================%
+\subsection{Definition 5.9} 
+Let A be an m >< 7L matrix and r 6 R. Then TA is the
+$m \times n$ matrix obtained by multiplying each entry in A by r.
 Equivalently, ifA = (aw-) then TA = (cw) where cm = ram for all
 lgigmandlgjgn.
-Example 5.10 LetA = ( é Z T3) ) and 7‘ = e2. Then
+%==========================%
+\subsection{Example 5.10} LetA = ( é Z T3) ) and 7‘ = e2. Then
 —2 e4 2
 *2A‘(—e —s 0)‘
 
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 81
-\begin{frame}
-\frametitle{Multiplication of two matrices}
+
+\subsection{Multiplication of two matrices}
 
 We next deﬁne a rule for multiplying two matrices together. To
 motivate this deﬁnition, we consider the system of equations
 1L'1+2.’L'2 = 1
 3.’E1’.'I7g = 2.
+
+%==================%
+
 We can write this system of equations as a matrix equation involving
 two 2 >< 1 matrices:
 LIJ1 + 21'; _
@@ -107,8 +120,10 @@ A _ 3 *1 , x - at and b _
 To do this we need to deﬁne matrix multiplication in such a way that
 _ _ _ 1 2 901 _ 1r1+2ac2
 )~'~*>~(3 »1)(a)~(3W)e
-Definition 5.10 Let A = (am) be an m >< n matrix and B = (bu) be an
-n >< p matrix. Then the matrix product AB = (rm) is the m >< p
+
+\subsection{Definition 5.10} 
+Let A = (am) be an m >< n matrix and B = (bu) be an
+$n \times p$ matrix. Then the matrix product AB = (rm) is the m >< p
 matrix defined by
 /_\
 l\J>—\
@@ -118,10 +133,10 @@ k-=1
 f0rall1§i§mand1§j§p.
 Note that in order to construct the product AB we need the number
 of columns of A to be equal to the number of rows of B.
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 82
-\begin{frame}
+
 Example 5.11 A matrix multiplication
 LetA= 1 andB= 5 1 .
 2 2 3
@@ -129,16 +144,17 @@ The product AB is deﬁned as A has 2 columns and B has 2 rows.
 The resulting matrix will be a 3 >< 2-matrix as A has 3 rows and B
 O>I=>~
 IQ
-Matrix algebra
-81
+
+%%-- Matrix algebra
+%%-- 81
 
 
 
 5.2.4
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 82
-\begin{frame}
+
 (1><5)+(2><2) (l><1)+(2><3)
 AB: (4><5)+(1><2) (4><1)+(1><3) =
 has 2 columns:
@@ -151,18 +167,22 @@ C'\\1Q
 L)
 The product BA is not deﬁned in this example as B has 2 columns
 while A has 3 rows.
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 82
-\begin{frame}
-To obtain the entry in the ith row and jth column of AB we
+
+\begin{itemize}
+\item To obtain the entry in the ith row and jth column of AB we
 multiply together the corresponding terms in the ith row of A and
 the jth column of B, and then add together the resulting products.
 Powers of square matrices
+\item 
 A matrix is said to be square if it has the same number of rows as it
 has columns. Square matrices are special in that they are the only
 matrices which can be multiplied by themselves.
 Example 5.12 A square matrix multiplied by itself
+\end{itemize}
+5==================%
 Consider the 2 >< 2-matrix
 2 0
 i_(_13)
@@ -172,12 +192,14 @@ Note that the size of AA is the same as the size of A. In fact, if A
 and B are two square matrices of the same size, the size of AB is
 the same as the size of A (and the size of B). We can thus deﬁne
 powers of square matrices:
-Definition 5.11 Let n and lc be two positive integers and suppose that A
+
+\subsection*{Definition 5.11} Let n and lc be two positive integers and suppose that A
 is a square n >< n-THGITDC. We deﬁne
 A1 := A,
 and for k Z 2 we deﬁne
 Ak 1: AA*"1.
-Example 5.13 The powers of a square matrix
+%==========================%
+\subsection{Example 5.13} The powers of a square matrix
 Consider the 2 >< 2-matrix
 A=(~?3)
 from Example 5.12 above. We have
@@ -204,10 +226,10 @@ edges,
 ’U1'l)gU3 , . . Uk,
 as there is a maximum ofone edge between any pair of vertices in a
 simple graph.
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 83
-\begin{frame}
+
 If you compare this deﬁnition to the deﬁnition of a path in Section
 5.2.1 of Volume 1, you will see that a path in a graph is a walk in
 which all vertices (and all edges) are distinct.
@@ -216,19 +238,19 @@ sequence of vertices and arcs of the form
 1'1@1'v2@2@'3 - - - €k—1'Uk»
 where e, is an are from vi to vm. The vertices and arcs in the directed
 walk are not necessarily distinct.
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 83
-\begin{frame}
+
 A directed path in a digraph is a directed walk in which all vertices
 (and all arcs) are distinct.
 Definition 5.14 The length of a walk in a graph is the number of edges
 in it. The length of a directed walk in a digraph is the number of
 arcs in it.
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 83
-\begin{frame}
+
 Suppose you want to ﬁnd the number of walks of length 1 between
 two vertices vi and vj in a simple (di) graph G with vertices
 1:1,i1;, . . . ,u,,. Such a walk is of the form 1116177] where e is an edge
@@ -247,7 +269,7 @@ Matrix algebra
 
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 84
-\begin{frame}
+
 The graph G has adjacency matrix
 O0»->-\O
 >-\O>~Q>-I
@@ -276,10 +298,10 @@ O»-\>-\o;>-\
 ©>—*®>—-\>—\
 >-\o>-low
 
-\end{frame}
+
 %-----------------------------------------------------------------------------------------------------------------------------%
 % Page 84
-\begin{frame}
+
 Looking at the picture of G, there is precisely 1 walk of length 2
 between v1 and 1/2, namely the path 1:1 1131/2; we note that entry
 A2(1, 2) = 1.
@@ -301,12 +323,16 @@ um. Hence the number of walks of length 2 from v, to vj is
 A(i,1)A(1,j) + Mi, 2)A(2,j) + . .. + A(i_5)A(5.j),
 and comparing this sum with Deﬁnition 5.10, this is exactly the
 entry in the ith row and jth column of A2, that is A2(i,j).
+
+%================================%
 It is possible to generalise the result of Example 5.14 to walks of any
 length by using induction. You can ﬁnd this proof in Section 11.3 in
 Epp. You will not be asked to prove the result in the examination,
 but you must know how to compute the number of walks between
 any pair of vertices in a simple graph:
-Theorem 5.1 Let G be a simple graph with vertices 01,112, . . . gun, and let
+
+\section{Theorem 5.1}
+ Let G be a simple graph with vertices 01,112, . . . gun, and let
 A be the adjacency matrix of G with respect to the natural ordering of
 the vertices, then for all positive integers k, the number of walks of
 length k in Gfrom 11,- to 1:] is A"‘(1',j).
@@ -317,16 +343,20 @@ length k in Gfrom 11,- to 1:] is A"‘(1',j).
 If a graph is simple, it has no loops, hence a walk of length 2
 between two distinct vertices will be a path of length 2. Thus we get
 the following result:
-Corollary 5.2 Let G be a simple graph with vertices 1/'1, 2:2, . . . , um and
+
+%=======================%
+\subsection{Corollary 5.2} Let G be a simple graph with vertices 1/'1, 2:2, . . . , um and
 let A be the adjacency matrix of G with respect to the natural ordering
 of the vertices, then the number of paths of length 2 in G from vi to vi
 where i 9‘ j is A2(i,_j).
 The result for digraphs is similar:
-Theorem 5.3 Let D be a digraph with vertices 1/1, 1:2, . . . gun, and let A
+%=======================%
+\subsection{Theorem 5.3} Let D be a digraph with vertices 1/1, 1:2, . . . gun, and let A
 be the adjacency matrix of G with respect to the natural ordering of
 the vertices, then for all positive integers k, the number of directed
 walks oflength k in Dfrom 1;; to vj is A"'(1l,j).
-Example 5.15 The number of walks in a digraph
+%=======================%
+\subsection{Example 5.15} The number of walks in a digraph
 Consider the following digraph D.
 v1 112
 l/3
@@ -375,34 +405,43 @@ Matrix algebra
 
 
 5.2.5
-ClS102 Mathematics ior computing volume 2
+%%--- ClS102 Mathematics ior computing volume 2
 Hence there is just one directed walk of length 3 from v; to v4 for
 example, while there is no directed walk of length 3 from 1:2 to 1:3.
 Rules of arithmetic for matrices
+
 Most of the rules of arithmetic you are used to from your experience
 with numbers hold also for matrices:
-Rule 5.4 If A,B and C are matrices of the same size then
-(A+B)+C=A+(B+C).
-Rule 5.5 If A,B and C are matrices such that the products AB and BC
+
+%=======================%
+\subsection{Rule 5.4} If A,B and C are matrices of the same size then
+\[(A+B)+C=A+(B+C).\]
+%=======================%
+\subsection{Rule 5.5} If A,B and C are matrices such that the products AB and BC
 both exist (that is, the number of columns ofA is the same as the
 number of rows ofB and the number of columns ofB is the same as
 the number of rows of C), then
-(AB)C = A(BC).
-Rule 5.6 Suppose that A and B are matrices of the same size,
+\[(AB)C = A(BC).\]
+%=======================%
+\subsection{Rule 5.6} Suppose that A and B are matrices of the same size,
 (a) IfC is a matrix such that CA and CB exist (that is, the number of
 columns ofC is the same as the number of rows ofA and B), then
-C(A+ B) = CA+CB.
+\[C(A+ B) = CA+CB.\]
 (b) If D is a matrix such that AD and BD exist (that is, the number
 of rows ofD is the same as the number cf columns ofA and B),
 then
 (A + B)D = AD + BD.
-Rule 5.7 If A and B are matrices of the same size then
-A + B = B + A.
+%=======================%
+\subsection{Rule 5.7} If A and B are matrices of the same size then
+\[A + B = B + A.\]
+
+%==============%
 Proofs of these rules are straightforward from the deﬁnitions of the
 various arithmetic operations on matrices. You will not be required
 to prove these rules in the examination, but knowing them can ease
 computations with matrices, and you are therefore advised to learn
 and use them.
+
 It is important to realise that Rule 5.7 does not have a multiplicative
 equivalent. Unlike multiplication of numbers, matrix multiplication
 need not always be commutative, i.e. the two products AB and BA
@@ -410,7 +449,8 @@ may yield different matrices. You have already seen in Example 5.11
 that the product BA is not necessarily deﬁned even though AB can
 be computed. Worse still, even when AB and BA are both deﬁned,
 they are not necessarily equal.
-Example 5.16 Matrix multiplication is not commutative
+
+\section{Example 5.16} Matrix multiplication is not commutative
 If A and B are n >< n matrices, then we can calculate both the
 product AB and the product BA. However, the two products AB
 and BA more often than not ﬁeld different matrices. To see an
@@ -450,7 +490,8 @@ I12] = Z@@,k5k.r = ﬂmlm = ﬂu
 r=1
 since 5;w : 0 if lc 7/j and 5]-7] : 1. Thus AL, and A have the same
 entries. Hence AI" = A.|
-Example 5.17 Properties of identity matrices We illustrate Lemma 5.8 by
+%=======================%
+\subsection{Example 5.17 Properties of identity matrices} We illustrate Lemma 5.8 by
 the 2 >< 3 matrix
 3 2 O
 A _ ( 1 O 1 )
@@ -499,7 +540,8 @@ L2
 -1+0-O+1~0 1-0+0-1+1-O 1-O+0~0+1
 < 
 5.3 Exercises on Chapter 5
-5.3.1 True/False questions
+%=======================%
+\subsection{5.3.1 True/False questions}
 In each of the following questions, decide whether the given
 statements are true or false.
 1. The equation 1-1 + 212 — mt-3 = O is linear.
@@ -535,7 +577,8 @@ CA can be computed.
 >d@®
 \O®>J>
 \_/
-5.3.2 Longer exercises
+
+\section{5.3.2 Longer exercises}
 Question 1
 Use Gaussian elimination to ﬁnd all solutions to the following
 systems of equations.
@@ -550,3 +593,4 @@ O1
 
 
 
+\end{document}

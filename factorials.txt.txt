@@ -1,0 +1,13 @@
+%------------------------------------------------%
+\section*{Probability}
+\subsection*{Binomial Coefficients}
+\begin{itemize}
+\item factorials 
+\[ n! = (n)\times (n-1)\times(n-2) \times \ldots \times 1 \]
+\begin{itemize}
+\item $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 $
+\item $3! = 3 \times 2 \times 1$
+\end{itemize}
+\item Zero factorial
+\[ 0! =  1 \]
+\end{itemize}
