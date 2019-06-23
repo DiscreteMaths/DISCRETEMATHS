@@ -93,34 +93,6 @@ J=XD %*% CM
 
 
 
-
-
-
-
-\begin{document}
-\section*{Schedules}
-\begin{itemize}
-\item[0] Numeracy
-\item[1]
-	\begin{itemize}
-	\item[1A]
-	\item[1B]
-	\end{itemize}
-\item[2]
-\item
-\item
-\item
-\end{itemize}
-
-\chapter{Maths Functions}
-%----------------------------------------- %
-
-
-
-%------------------------------------------%
-\newpage
-\chapter{Sequences and Series}
-
 %-------------------------------------------------------%
 
 
@@ -241,11 +213,7 @@ A \otimes B
 \item[1B.4] 
 \end{itemize}
 
-\begin{itemize}
-\item
-\item
-\item
-\end{itemize}
+
 %-------------------------------%
 \begin{itemize}
 \item[10A.1] Dimensions of a Matrix
@@ -255,26 +223,8 @@ A \otimes B
 \end{itemize}
 %-----------------------------------%
 \section{Digraphs and Relations}
-\begin{itemize}
-\item[6A.1]
-\item[6A.2]
-\item[6A.3]
-\end{itemize}
 
-\section*{Session 09: Probability}
-\begin{itemize}
-\item[9A.1] 
-\item[9A.2] 
-\item[9A.3] 
-\item[9A.4] 
-\end{itemize}
 
-\begin{itemize}
-\item[9B.1] 
-\item[9B.2] 
-\item[9B.3] 
-\item[9B.4] 
-\end{itemize}
 
 
 \section*{Session 10: Matrices and Systems of Equations}
