@@ -28,85 +28,6 @@ is also red? Select one of the options below, with a justification for your answ
 \end{itemize}
 
 
-% Computing with R
-%--------------------------------------------------------------------
------ %
-\section{Video 31 : R Computing}
-% Basic R Maths Operations
-[fragile]
-\subsection{Computing with \texttt{R}}
-
-\textbf{Basic Mathematical Exercises} Evaluate the following:
-
-\begin{itemize}
-\item The area of a circle of radius 2
-\item The factorial of 6
-\item The exponential of 6
-\item The natural log of 100
-\item The sine of 1.8$\pi$
-\end{itemize}
-
-
-
-
-
-
-%------------------------------------------------------------------------- %
-\section{Video 22 :  R Computing}
-% R Grep 
-[fragile]
-\subsection{The \texttt{grep} function}
-\begin{itemize}
-\item pattern of text, grep returns the indices  that match that pattern.
-\item
-\end{itemize}
-
-
-%------------------------------------------------------------------------- %
-\section{Video 32 : Inference with R}
-% prop.test
-[fragile]
-\subsection{The \texttt{prop.test} function}
-\begin{itemize}
-\item Test for equality for proportions
-\item Single sample and two sample 
-\end{itemize}
-
-%------------------------------------------------------------------------- %
-% prop.test
-[fragile]
-\subsection{The \texttt{prop.test} function}
-\begin{itemize}
-\item \texttt{conf.level = 0.95}
-\item \texttt{ "two-tailed","greater","less than"}
-\end{itemize}
-
-
-%---------------------------------------------------------------------- %
-\end{document}
-
-XR= matrix(c(0.6,0.4),ncol=2)
-XD= matrix(c(0.6,0,0,0.4),ncol=2)
-CM= matrix(c(0.7,0.3,0.2,0.8),nrow=2,byrow=T)
-Y=XR %*% CM
-J=XD %*% CM
-
-
-
-%-------------------------------------------------------%
-
-
-\subsection{Sequences: Example}
-{
-Let the sequence $u_n$ be defined by the recurrence relation:
-\[ u_{n+1} = u_n + 2n, \]
-\\ \bigskip
-for $n=1,2,3,\ldots$. \\ \bigskip Initial Condition: $u_1=1$.\\ \bigskip Calculate $u_2$, $u_3$, $u_4$ and $u_5$, showing all your workings.
-}
-
-
-}
-%-------------------------------------------------------%
 
 
 \subsection{Sequences}
@@ -227,20 +148,3 @@ A \otimes B
 
 
 
-\section*{Session 10: Matrices and Systems of Equations}
-\begin{itemize}
-\item[10A.1] Dimensions of a Matrix
-\item[10A.2] Matrix Multiplication
-\item[10A.3] Matrix Calculations
-\item[10A.4] 
-\end{itemize}
-
-\begin{itemize}
-\item[10B.1] Systems of Equations
-\item[10B.2] Expression Systems of Equations as Matrices
-\item[10B.3] Augmented Matrices
-\item[10B.4] Guassian Elimination
-\end{itemize}
-%-----------------------------------%
-
-\end{document}
