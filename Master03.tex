@@ -1,34 +1,3 @@
-\documentclass[]{report}
-
-\voffset=-1.5cm
-\oddsidemargin=0.0cm
-\textwidth = 480pt
-
-\usepackage{framed}
-\usepackage{subfiles}
-\usepackage{enumerate}
-\usepackage{graphics}
-\usepackage{newlfont}
-\usepackage{eurosym}
-\usepackage{amsmath,amsthm,amsfonts}
-\usepackage{amsmath}
-\usepackage{color}
-\usepackage{amssymb}
-\usepackage{multicol}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{graphicx}
-\begin{document}
-
-
-
-\chapter{Logic}
-
-\section{Chapter 3: Logic}
-
-
-
-\subsection{Logical Operations}
-
 \begin{itemize}
 	\item Logical "AND" ($\wedge$)
 	\item Logical "OR" ($\vee$)
@@ -52,9 +21,6 @@
 	\item NOT Gates
 \end{itemize}
 
-\newpage
-
-%--------------------------------------------%
 
 \chapter{Session 3}
 
@@ -76,22 +42,6 @@ Find the values of $n$ for which each of the following compound statement is tru
 	\item[(iii)] $\neg p \vee q$ 
 	\item[(iv)] $p \oplus q$
 \end{itemize}
-
-\section*{Question 3}
-
-Let $\mathcal{S} = \{10,11,12,13,14,15,16,17,18,19,20\}$
-$n  \in \mathcal{S}$
-p : n is a multiple of two
-q : n is a multiple of five
-
-Express the following statement using logic symbols
-n is not a multiple of either 2 or 5.
-
-List the elements of S which are in the truth set for the statement in (ii).
-
-Write the contrapositive of the following statement concerning an integer $n$.
-
-If the last digit of n is 4, then n is divisible by 3
 
 % %------------------------------------------------------
 \section{Conditional Connectives}
@@ -200,15 +150,7 @@ Evaluate the following
 	\item $1!$
 	\item $0!$
 \end{itemize}
-Evaluate the following expressions
-\[  \frac{5!}{3!}  \mbox{   and   } \frac{6!}{2!\times 4!}  \]
-\subsection*{Laws of Logarithms}
-\begin{itemize}
-	\item Addition of Logarithms
-	\item Subtraction of Logaritms
-	\item Powers of Logarithms
-\end{itemize}
-%----------------------------------------- %
+
 %----------------------------------------- %
 
 
@@ -356,66 +298,4 @@ Exponentials
 \end{itemize}
 \newpage
 %--------------------------------------------------- %
-%--------------------------------------------------- %
-\subsection*{1.5 Truth Sets}
-\textbf{2009} 
-
-Let $n = \{1, 2,3,4, 5,6,7, 8, 9\}$ and let p, q be the following propositions concerning the integer $n$.
-\begin{itemize}
-\item p: n is even, 
-\item q: $n\geq 5$.
-\end{itemize}
-By drawing up the appropriate truth table ﬁnd the truth set for each of the
-propositions $p \vee \neg q$ and $ \neg q \rightarrow p$
-
-\begin{tabular}{|c|c|c|c|c|}
-\hline n & p & q & $\neg q$ & $p \vee \neg q$ \\ 
-\hline 1 & 0 & 0 & 1 & 1\\ 
-\hline 2 & 1 & 0 & 1 & 0\\ 
-\hline 3 & 0 & 0 & 1 & 1\\ 
-\hline 4 & 1 & 0 & 1 & 0\\ 
-\hline 5 & 0 & 1 & 0 & 1\\ 
-\hline 6 & 1 & 1 & 0 & 1\\ 
-\hline 7 & 0 & 1 & 0 & 1\\ 
-\hline 8 & 1 & 1 & 0 & 1\\ 
-\hline 9 & 0 & 1 & 0 & 1\\ 
-\hline 
-\end{tabular} 
-\[\mbox{Truth Set} = \{1,3,5,6,7,8,9\}\]
-
-\begin{tabular}{|c|c|c|c|c|}
-\hline n & p & q & $  q \rightarrow p$ & $  q \rightarrow p$ \\ 
-\hline 1 & 0 & 0 & 1 & 0\\ 
-\hline 2 & 1 & 0 & 1 & 0\\ 
-\hline 3 & 0 & 0 & 1 & 0\\ 
-\hline 4 & 1 & 0 & 1 & 0\\ 
-\hline 5 & 0 & 1 & 0 & 1\\ 
-\hline 6 & 1 & 1 & 1 & 0\\ 
-\hline 7 & 0 & 1 & 0 & 1\\ 
-\hline 8 & 1 & 1 & 1 & 0\\ 
-\hline 9 & 0 & 1 & 0 & 1\\ 
-\hline 
-\end{tabular} 
-\[\mbox{Truth Set} = \{5,7,9\}\]
-%---------------------------------------
-%--------------------------------------------------- %
-%--------------------------------------------------- %
-
-\subsection{logical implication}
-
-%- http://whatis.techtarget.com/definition/logical-implication
-
-Logical implication is a type of relationship between two statements or sentences. The relation translates verbally into "logically implies" or "if/then" and is symbolized by a double-lined arrow pointing toward the right ( $\rightarrow$). If A and B represent statements, then $A\rightarrow B$ means "A implies B" or "If A, then B." The word "implies" is used in the strongest possible sense.
-
-
-As an example of logical implication, suppose the sentences A and B are assigned as follows:
-
-A = The sky is overcast.
-B = The sun is not visible.
-
-In this instance, A B is a true statement (assuming we are at the surface of the earth, below the cloud layer.) However, the statement B A is not necessarily true; it might be a clear night. Logical implication does not work both ways. However, the sense of logical implication is reversed if both statements are negated. That is,
-
-$$(A \rightarrow B)  \equiv (-B \rightarrow -A)$$
-
-Using the above sentences as examples, we can say that if the sun is visible, then the sky is not overcast. This is always true. In fact, the two statements A B and -B -A are logically equivalent.
 
